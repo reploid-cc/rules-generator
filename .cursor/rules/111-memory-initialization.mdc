@@ -1,0 +1,215 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# M.init Memory Initialization System (111)
+
+## 🎯 M.init_memory: Project Memory Setup Command
+
+### Command Trigger
+```
+User Command: "init memory"
+M.init_memory = automatic_memory_system_initialization
+```
+
+### M.init_memory_workflow: Complete Project Memory Setup
+```
+M.init_memory = (
+    detect_project_context()
+    ⨁ create_memory_directory_if_missing()
+    ⨁ generate_foundation_files()
+    ⨁ initialize_with_project_specific_content()
+    ⨁ establish_memory_bank_structure()
+    ⨁ report_completion_via_Ψ.dialog()
+)
+```
+
+## 🎯 Memory Bank Structure trong .cursor/memory/
+
+### Core Memory Files (Auto-Created by "init memory")
+```
+.cursor/memory/
+├── README.md                  # Memory system documentation
+├── errors.md                  # Ξ.error_memory for pattern tracking
+├── projectbrief.md            # Foundation document - source of truth
+├── productContext.md          # Why project exists, problems solved
+├── activeContext.md           # Current work focus, recent changes
+├── systemPatterns.md          # Architecture decisions, design patterns  
+├── techContext.md             # Technologies, development setup
+├── progress.md                # Status tracking, what works, what's left
+└── sumup.md                   # Master navigator for contextual retrieval
+```
+
+### M.memory_file_templates: Auto-Generated Content
+
+#### projectbrief.md Template
+```markdown
+# Project Brief - [Project Name]
+
+## 🎯 Project Core Definition
+**Project Name**: [Detected from directory/context]
+**Project Type**: [Inferred from files/structure] 
+**Primary Goal**: [To be filled based on initial analysis]
+
+## 🎯 Core Requirements
+### Primary Objectives
+[Generated based on project analysis]
+
+### Success Criteria
+[Template with project-specific items]
+
+[Additional sections auto-populated based on context]
+```
+
+#### activeContext.md Template  
+```markdown
+# Active Context - [Project Name]
+
+## 🎯 Current Work Focus
+**Current Phase**: Project Initialization
+**Active Task**: Memory system setup completed
+**Status**: Ready for development
+
+## 🎯 Recent Changes
+- Memory system initialized via "init memory" command
+- Foundation files created for project context preservation
+
+[Dynamic content based on project state]
+```
+
+### M.context_detection: Intelligent Project Analysis
+```
+M.context_detection = (
+    analyze_directory_structure()
+    ⨁ detect_programming_languages()
+    ⨁ identify_frameworks_and_tools()
+    ⨁ scan_existing_documentation()
+    ⨁ infer_project_type_and_purpose()
+    ⨁ generate_contextual_memory_content()
+)
+```
+
+## 🎯 M.init_memory_execution: Step-by-Step Process
+
+### Step 1: Environment Detection
+```
+M.environment_detection = (
+    check_if_cursor_directory_exists()
+    ⨁ create_memory_subdirectory()
+    ⨁ analyze_project_structure()
+    ⨁ detect_existing_documentation()
+)
+```
+
+### Step 2: Foundation File Generation  
+```
+M.foundation_generation = (
+    create_projectbrief_with_detected_context()
+    ⨁ generate_productContext_based_on_analysis()
+    ⨁ initialize_activeContext_with_current_state()
+    ⨁ setup_systemPatterns_framework()
+    ⨁ create_techContext_with_detected_stack()
+    ⨁ initialize_progress_tracking()
+    ⨁ generate_sumup_navigator()
+)
+```
+
+### Step 3: Content Customization
+```
+M.content_customization = (
+    if detect_web_project → include_web_specific_patterns()
+    ⨁ if detect_mobile_project → include_mobile_patterns()
+    ⨁ if detect_backend_api → include_api_patterns()  
+    ⨁ if detect_existing_prd → extract_requirements()
+    ⨁ if detect_existing_docs → integrate_documentation()
+)
+```
+
+### Step 4: Integration với User Rules
+```
+M.user_rules_integration = (
+    ensure_compatibility_with_Ω_reasoning_modes()
+    ⨁ setup_Ψ_trace_capture_ready()
+    ⨁ initialize_Λ_pattern_learning_context()
+    ⨁ prepare_T_task_system_integration()
+    ⨁ setup_Ξ_diagnostics_framework()
+)
+```
+
+## 🎯 M.memory_maintenance: Ongoing Operations
+
+### Session-Independent Context Preservation
+```
+M.session_continuity = (
+    maintain_projectbrief_as_source_of_truth()
+    ⨁ update_activeContext_on_significant_changes()
+    ⨁ track_progress_systematically()
+    ⨁ evolve_systemPatterns_with_decisions()
+    ⨁ keep_techContext_current_with_stack_changes()
+)
+```
+
+### Integration với Existing M.sync Operations
+```
+M.sync_enhanced = (
+    // Standard User Rules memory operations
+    store_cognitive_traces_in_trace_files()
+    ⨁ update_errors_md_with_Ξ_tracking()
+    
+    // Memory bank operations  
+    ⨁ update_activeContext_with_session_changes()
+    ⨁ sync_progress_with_completed_work()
+    ⨁ evolve_systemPatterns_with_architectural_insights()
+)
+```
+
+## 🎯 Quality Assurance & Validation
+
+### M.init_validation: Setup Verification
+```
+M.init_validation = (
+    verify_all_foundation_files_created()
+    ⨁ validate_content_quality_and_specificity()
+    ⨁ ensure_User_Rules_compatibility()
+    ⨁ test_memory_loading_functionality()
+    ⨁ confirm_session_continuity_capability()
+)
+```
+
+### Success Criteria
+- ✅ All 7 foundation files created with project-specific content
+- ✅ Memory system ready for session-independent context preservation  
+- ✅ Integration with existing User Rules M.memory_path seamless
+- ✅ Project context detectable and maintainable across sessions
+- ✅ Foundation set for productive development workflow
+
+## 🎯 Command Response Protocol
+
+### "init memory" Execution Flow
+1. **Detect Project Context**: Analyze current directory và project structure
+2. **Create Memory Structure**: Ensure .cursor/memory/ exists với foundation files
+3. **Generate Content**: Auto-populate với project-specific context
+4. **Validate Setup**: Verify all components working properly
+5. **Report Completion**: Comprehensive summary via Ψ.dialog
+
+### Expected Output Message
+```
+✅ Memory system initialized successfully!
+
+Created foundation files:
+- projectbrief.md (Project: [Name], Type: [Type])
+- productContext.md (Purpose: [Purpose])  
+- activeContext.md (Current focus: Memory setup complete)
+- systemPatterns.md (Architecture: [Detected patterns])
+- techContext.md (Stack: [Detected technologies])
+- progress.md (Status: Ready for development)
+- sumup.md (Navigator: Complete context guide)
+
+🎯 Memory system ready for session-independent context preservation.
+Project context will be maintained across AI resets.
+```
+
+---
+*M.init_memory: Project memory initialization với intelligent context detection*
+

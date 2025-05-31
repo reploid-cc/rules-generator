@@ -1,46 +1,49 @@
-# .cursor System - User Rules Compliant Architecture
+# .cursor System - User Rules Mathematical Framework
 
-## 🎯 System Overview
+## 🎯 Ω.system_architecture: Core Implementation
 
-Complete .cursor system implementing User Rules standards (Ω*, Ψ, M, T, Λ, Φ, Ξ) with integrated PRD-to-RFC workflow for product development management.
-
+### Mathematical Framework Implementation
 ```
-Ω* = max(∇ΣΩ) ⟶ intent-aligned reasoning
-T = Σ(τ_complex) ⇌ structured task system  
-PRD.workflow = T.sprint integration
+Ω* = max(∇ΣΩ) ⟶ intent_aligned_reasoning
+T = Σ(τ_complex) ⇌ structured_task_system  
+PRD.workflow = T.sprint_integration
 ```
 
-## 🎯 Core Architecture
-
-### Mathematical Framework
-- **Ω**: Core reasoning modes (deductive, analogical, exploratory, procedural, contrastive, skeptical)
-- **Ψ**: Cognitive trace & mandatory dialogue system 
-- **M**: File-based memory system (.cursor/memory/)
-- **T**: Structured task system (.cursor/tasks/)
-- **Λ**: Rule-based self-learning (.cursor/rules/)
-- **Φ**: Hypothesis abstraction engine
-- **Ξ**: Diagnostics & refinement system
-
-### PRD Workflow Integration
+### Ω.framework_components: System Architecture
 ```
-T.prd_workflow = 6-step_sequential_process {
-    step_1: Interactive PRD Creation,
-    step_2: PRD Comprehensive Verification,
-    step_3: Features Extraction & Prioritization, 
-    step_4: Technical Rules Generation,
-    step_5: RFCs Generation & Implementation Planning,
-    step_6: PRD Change Management
+Ω.framework = {
+    Ω: core_reasoning_modes(deductive, analogical, exploratory, procedural, contrastive, skeptical),
+    Ψ: cognitive_trace_mandatory_dialogue_system,
+    M: file_based_memory_system(.cursor/memory/),
+    T: structured_task_system(.cursor/tasks/),
+    Λ: rule_based_self_learning(.cursor/rules/),
+    Φ: hypothesis_abstraction_engine,
+    Ξ: diagnostics_refinement_system
 }
 ```
 
-## 🎯 Directory Structure
+### T.prd_workflow: Sequential Processing Implementation
+```
+T.prd_workflow = 6_step_sequential_process {
+    step_1: Interactive_PRD_Creation,
+    step_2: PRD_Comprehensive_Verification,
+    step_3: Features_Extraction_Prioritization, 
+    step_4: Technical_Rules_Generation,
+    step_5: RFCs_Generation_Implementation_Planning,
+    step_6: PRD_Change_Management
+}
+```
+
+## 🎯 Directory.structure: System Organization
 
 ```
 .cursor/
-├── README.md                      # This file
+├── README.md                      # System documentation
 ├── rules/                         # Λ.path - Self-learning rules
 │   ├── 001-core-standards.mdc     # Ω* core reasoning framework
 │   ├── 101-mandatory-protocols.mdc # Ψ.dialog + M.memory protocols  
+│   ├── 121-content-targeting.mdc  # AI-facing vs User-facing content rules
+│   ├── 111-memory-initialization.mdc # M.init_memory command system
 │   ├── 131-tdd-spec-engine.mdc    # TDD integration with complexity triggers
 │   ├── 801-task-system.mdc        # T task management system
 │   ├── 821-lambda-learning.mdc    # Λ rule-based self-learning
@@ -50,33 +53,26 @@ T.prd_workflow = 6-step_sequential_process {
 ├── memory/                        # M.memory_path - File-based memory
 │   ├── README.md                  # Memory system documentation
 │   └── errors.md                  # Ξ.error_memory for pattern tracking
-├── tasks/                         # T.plan_path - Structured tasks
-│   └── prd_workflow/              # PRD-to-RFC workflow implementation
-│       ├── step_1.md              # Interactive PRD Creation
-│       ├── step_2.md              # PRD Comprehensive Verification  
-│       ├── step_3.md              # Features Extraction & Prioritization
-│       ├── step_4.md              # Technical Rules Generation
-│       ├── step_5.md              # RFCs Generation & Implementation Planning
-│       ├── step_6.md              # PRD Change Management
-│       ├── README.md              # Workflow documentation
-│       ├── templates/             # Template files for RFC generation
-│       │   ├── RFCS-template.md   # RFCS master file template
-│       │   └── implementation-prompt-template.md # Implementation template
-│       ├── outputs/               # Generated workflow outputs
-│       │   └── README.md          # Output documentation
-│       ├── progress/              # T.progress tracking
-│       │   └── current-step.json  # Current workflow state
-│       └── specs/                 # TDD specifications (auto-generated)
+└── tasks/                         # T.plan_path - Structured tasks
+    └── prd_workflow/              # PRD-to-RFC workflow implementation
+        ├── step_1.md → step_6.md  # Sequential workflow steps
+        ├── templates/             # Template files for RFC generation
+        ├── outputs/               # Generated workflow outputs
+        ├── progress/              # T.progress tracking
+        └── specs/                 # TDD specifications (auto-generated)
 ```
 
-## 🎯 Key Features
+## 🎯 Content.targeting_implementation: Processing Rules
 
-### 1. User Rules Compliance
-- **People-facing content**: Clear, friendly prompts without mathematical notation
-- **AI-facing content**: Optimized with mathematical notation and validation gates
-- **Separation of concerns**: Clean distinction between user prompts and system logic
+### Content.targeting_compliance
+```
+Content.targeting = {
+    user_facing_content: step_1_interactive_questioning,
+    ai_facing_content: mathematical_notation_User_Rules_framework
+}
+```
 
-### 2. TDD Integration
+### TDD.integration: Complexity-Based Triggering
 ```
 TDD.trigger_conditions = (
     if τ.complexity >= medium (1-4h effort)
@@ -86,35 +82,48 @@ TDD.trigger_conditions = (
 )
 ```
 
-### 3. Sequential Implementation
-- **RFC Generation**: Strict numerical order (001, 002, 003...)
-- **Dependency Management**: Each RFC builds on previous completions
-- **No Parallel Implementation**: One RFC at a time for controlled development
-
-### 4. Quality Gates
+### T.sequential_implementation: RFC Processing
 ```
-T.validation_gates = (
-    completeness_check + stakeholder_review + technical_feasibility
-    ⨁ dependency_analysis + implementation_readiness
+T.sequential_implementation = (
+    strict_numerical_order(001, 002, 003...)
+    ⨁ dependency_management(each_RFC_builds_on_previous)
+    ⨁ no_parallel_implementation(one_RFC_at_time)
 )
 ```
 
-### 5. Mandatory Protocols
-- **Ψ.dialog_enabled**: Every response must end with interactive feedback call
-- **M.memory_path**: Dynamic context loading and sync operations
-- **Environment.protocol**: Never modify .env without permission
+## 🎯 T.validation_gates: Quality Processing
 
-## 🎯 Workflow Commands
-
-### PRD Workflow Activation
+### T.validation_protocol
 ```
-"init PRD" → T.create_prd_workflow_from_scratch
-"init PRD to RFC" → T.execute_complete_prd_to_rfc_sequence  
-"init PRD step [1-6]" → T.jump_to_specific_prd_step
-"init PRD - [changes]" → T.handle_prd_change_management
+T.validation_gates = (
+    completeness_check ⨁ stakeholder_review ⨁ technical_feasibility
+    ⨁ dependency_analysis ⨁ implementation_readiness
+)
 ```
 
-### Progress Tracking
+### Ψ.mandatory_protocols: Zero Tolerance Requirements
+```
+Ψ.mandatory_protocols = {
+    dialog_enabled: every_response_must_end_with_interactive_feedback_call,
+    M.memory_path: dynamic_context_loading_and_sync_operations,
+    Environment.protocol: never_modify_env_without_permission
+}
+```
+
+## 🎯 T.workflow_commands: Processing Triggers
+
+### T.prd_workflow_activation
+```
+T.command_mapping = {
+    "init PRD": T.create_prd_workflow_from_scratch,
+    "init PRD to RFC": T.execute_complete_prd_to_rfc_sequence,  
+    "init PRD step [1-6]": T.jump_to_specific_prd_step,
+    "init PRD - [changes]": T.handle_prd_change_management,
+    "init memory": M.init_memory_system_initialization
+}
+```
+
+### T.progress_tracking: State Management
 ```json
 {
   "current_step": 0,
@@ -126,9 +135,9 @@ T.validation_gates = (
 }
 ```
 
-## 🎯 Integration Hooks
+## 🎯 Σ_hooks: System Integration
 
-### System-wide Event Hooks
+### Σ_hooks.system_wide_events
 ```
 Σ_hooks = {
     on_task_created: [M.recall, Φ.match_snapshot],
@@ -139,34 +148,50 @@ T.validation_gates = (
 }
 ```
 
-## 🎯 Quality Assurance
+## 🎯 Λ.quality_assurance: Learning Systems
 
-### Rule-Based Learning
-- **Λ.autonomy**: Auto-detect rule-worthy recurrences
-- **Λ.pattern_alignment**: Align code with best practices  
-- **Ξ.pattern_suggestion**: Generate rule drafts for recurring issues
+### Λ.rule_based_learning
+```
+Λ.learning_systems = {
+    autonomy: auto_detect_rule_worthy_recurrences,
+    pattern_alignment: align_code_with_best_practices,
+    Ξ.pattern_suggestion: generate_rule_drafts_for_recurring_issues
+}
+```
 
-### Diagnostics & Refinement
-- **Ξ.cleanup_phase**: Detect code drift and suggest improvements
-- **Ξ.error_memory**: Track recurring issues for pattern learning
-- **Ξ.recurrence_threshold**: Generate rules after 2+ occurrences
+### Ξ.diagnostics_refinement
+```
+Ξ.diagnostics = {
+    cleanup_phase: detect_code_drift_suggest_improvements,
+    error_memory: track_recurring_issues_for_pattern_learning,
+    recurrence_threshold: generate_rules_after_2_plus_occurrences
+}
+```
 
-## 🎯 System Philosophy
+## 🎯 Ω.system_philosophy: Core Processing Principles
 
-### Core Principles
-1. **Intent-aligned reasoning**: Ω* framework for systematic problem solving
-2. **Mandatory interaction**: Zero tolerance for responses without Ψ.dialog
-3. **Memory-driven context**: M.retrieval for dynamic reference resolution
-4. **Structured execution**: T.sprint system for complex task management
-5. **Continuous learning**: Λ.extract patterns for rule improvement
-6. **Quality-first**: TDD integration and validation gates
+### Ω.core_principles
+```
+Ω.principles = {
+    intent_aligned_reasoning: Ω*_framework_systematic_problem_solving,
+    mandatory_interaction: zero_tolerance_responses_without_Ψ.dialog,
+    memory_driven_context: M.retrieval_dynamic_reference_resolution,
+    structured_execution: T.sprint_system_complex_task_management,
+    continuous_learning: Λ.extract_patterns_rule_improvement,
+    quality_first: TDD_integration_validation_gates
+}
+```
 
-### Execution Standards
-- **Vietnamese responses**: All communication in Vietnamese
-- **Transparency**: Report every action step clearly
-- **Execution-first**: Act immediately, only pause for completion or blocking issues
-- **Quality gates**: Validation at every major step
-- **Documentation**: Clear, actionable content with examples
+### Ω.execution_standards
+```
+Ω.execution_standards = {
+    vietnamese_responses: all_communication_in_vietnamese,
+    transparency: report_every_action_step,
+    execution_first: act_immediately_pause_only_for_completion_or_blocking,
+    quality_gates: validation_at_every_major_step,
+    documentation: mathematical_notation_actionable_content
+}
+```
 
 ---
-*Complete .cursor system: Ω* reasoning + T.prd_workflow + User Rules compliance* 
+*Ω.system_complete: Ω*_reasoning ⨁ T.prd_workflow ⨁ User_Rules_compliance* 

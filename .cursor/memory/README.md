@@ -1,53 +1,82 @@
 # M.memory_path - Memory Bank System
 
-## Overview
-Central memory repository implementing M (memory system) from User Rules mathematical framework for dynamic context loading, experience storage, and cross-session knowledge retention.
-
-## M.memory_path Structure
-
-### **M.retrieval: Dynamic Context Loading**
+## M.memory_system: Core Implementation
 ```
 M.memory_path = ".cursor/memory/"
-M.retrieval = dynamic reference resolution
+M.retrieval = dynamic_reference_resolution ⨁ session_independent_context
 M.sync = (
-    triggered on review
-    ⨁ store ideas, constraints, insights, edge notes
+    triggered_on_review
+    ⨁ store_ideas_constraints_insights_edge_notes
+    ⨁ maintain_session_independent_context_files
 )
 ```
 
-## File Organization
+## M.file_organization: System Structure
 
-### **`errors.md`** - Ξ.error_memory
-- Issue tracking and pattern analysis
-- Recurrence detection for automatic rule generation
-- Diagnostic effectiveness metrics
+### M.error_memory: Ξ.error_memory
+```
+errors.md = {
+    issue_tracking_pattern_analysis,
+    recurrence_detection_automatic_rule_generation,
+    diagnostic_effectiveness_metrics
+}
+```
 
-### **`trace_{task_id}.md`** - Ψ.output_path  
-- Cognitive traces for complex tasks
-- Reasoning paths and decision documentation
-- Cross-system integration records
+### M.cognitive_traces: Ψ.output_path  
+```
+trace_{task_id}.md = {
+    cognitive_traces_complex_tasks,
+    reasoning_paths_decision_documentation,
+    cross_system_integration_records
+}
+```
 
-### **`patterns/`** - Φ.snapshot Storage
-- Design motif captures
-- Naming convention patterns
-- Architectural decision records
-- Pattern evolution tracking
+### M.pattern_storage: Φ.snapshot_storage
+```
+patterns/ = {
+    design_motif_captures,
+    naming_convention_patterns,
+    architectural_decision_records,
+    pattern_evolution_tracking
+}
+```
 
-### **`context/`** - M.sync Artifacts
-- Session context preservation
-- Cross-session knowledge transfer
-- Constraint and insight storage
-- Edge case documentation
+### M.context_artifacts: M.sync_artifacts
+```
+context/ = {
+    session_context_preservation,
+    cross_session_knowledge_transfer,
+    constraint_insight_storage,
+    edge_case_documentation
+}
+```
 
-## M.sync_hooks: Memory Operations
+### M.session_independent_files: Memory Bank Integration
+```
+session_independent_files = {
+    projectbrief.md: foundation_document_source_of_truth,
+    productContext.md: project_purpose_problems_solved,
+    activeContext.md: current_work_focus_recent_changes,
+    systemPatterns.md: architecture_decisions_design_patterns,
+    techContext.md: technologies_development_setup,
+    progress.md: status_tracking_what_works_left,
+    sumup.md: master_navigator_contextual_retrieval
+}
+```
 
-### **Mandatory Memory Operations**
-- **Task Start**: Read ALL relevant files in memory bank (M.retrieval)
-- **Task Complete**: Store insights, constraints, decisions (M.sync)
-- **Problem Detection**: Log patterns, solutions, context (Ξ.track)
-- **Pattern Discovery**: Capture emergent designs (Φ.snapshot)
+## M.sync_hooks: Memory Operations Protocol
 
-### **Integration Points**
+### M.mandatory_memory_operations
+```
+M.mandatory_operations = {
+    task_start: read_ALL_relevant_files_memory_bank(M.retrieval),
+    task_complete: store_insights_constraints_decisions(M.sync),
+    problem_detection: log_patterns_solutions_context(Ξ.track),
+    pattern_discovery: capture_emergent_designs(Φ.snapshot)
+}
+```
+
+### Σ_hooks.memory_integration
 ```
 Σ_hooks.memory = {
     on_task_created: [M.recall, Φ.match_snapshot],
@@ -59,39 +88,59 @@ M.sync = (
 }
 ```
 
-## Quality Assurance
+## M.quality_assurance: Effectiveness Metrics
 
-### **Memory Effectiveness Metrics**
-- Context retrieval accuracy
-- Cross-session knowledge transfer success
-- Pattern recognition improvement over time
-- Decision quality enhancement through historical reference
+### M.memory_effectiveness_metrics
+```
+M.effectiveness = {
+    context_retrieval_accuracy,
+    cross_session_knowledge_transfer_success,
+    pattern_recognition_improvement_over_time,
+    decision_quality_enhancement_through_historical_reference
+}
+```
 
-### **Memory Management**
-- Automatic relevance scoring
-- Context aging and archival
-- Pattern consolidation
-- Knowledge graph maintenance
+### M.memory_management_protocol
+```
+M.management = {
+    automatic_relevance_scoring,
+    context_aging_archival,
+    pattern_consolidation,
+    knowledge_graph_maintenance
+}
+```
 
-## Usage Protocols
+## M.usage_protocols: Processing Requirements
 
-### **At Task Start (MANDATORY)**
-1. Execute M.retrieval for relevant context
-2. Load applicable patterns via Φ.match_snapshot
-3. Check Ξ.error_memory for known issues
-4. Establish baseline knowledge state
+### M.task_start_protocol: MANDATORY
+```
+M.task_start = (
+    execute_M.retrieval_for_relevant_context
+    ⨁ load_applicable_patterns_via_Φ.match_snapshot
+    ⨁ check_Ξ.error_memory_for_known_issues
+    ⨁ establish_baseline_knowledge_state
+)
+```
 
-### **During Task Execution**
-1. Capture decisions and reasoning in Ψ.capture
-2. Note emerging patterns for Φ.snapshot
-3. Document constraints and insights
-4. Track cross-system interactions
+### M.task_execution_protocol
+```
+M.task_execution = (
+    capture_decisions_reasoning_in_Ψ.capture
+    ⨁ note_emerging_patterns_for_Φ.snapshot
+    ⨁ document_constraints_insights
+    ⨁ track_cross_system_interactions
+)
+```
 
-### **At Task Completion (MANDATORY)**
-1. Execute M.sync to store insights
-2. Update pattern library via Φ.snapshot
-3. Log lessons learned in appropriate files
-4. Prepare context for future retrieval
+### M.task_completion_protocol: MANDATORY
+```
+M.task_completion = (
+    execute_M.sync_to_store_insights
+    ⨁ update_pattern_library_via_Φ.snapshot
+    ⨁ log_lessons_learned_in_appropriate_files
+    ⨁ prepare_context_for_future_retrieval
+)
+```
 
 ---
-*M.memory_path = ".cursor/memory/" - Dynamic context preservation and intelligent retrieval* 
+*M.memory_path = ".cursor/memory/" - Dynamic_context_preservation_intelligent_retrieval* 

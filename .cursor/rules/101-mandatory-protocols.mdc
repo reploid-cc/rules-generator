@@ -67,17 +67,34 @@ mcp_interactive_feedback({
 ### M.retrieval: Dynamic Context Loading
 ```
 M.memory_path = ".cursor/memory/"
-M.retrieval = dynamic reference resolution
+M.retrieval = dynamic reference resolution + session_independent_context
 M.sync = (
     triggered on review
     ⨁ store ideas, constraints, insights, edge notes
+    ⨁ maintain session-independent context files when present
 )
 ```
 
 ### M.sync_hooks: Mandatory Memory Operations
-- **Task Start**: Read ALL relevant files in memory bank
-- **Task Complete**: Store insights, constraints, decisions
-- **Problem Detection**: Log patterns, solutions, context
+- **Task Start (MANDATORY)**: 
+  - Read ALL relevant files in `.cursor/memory/` (if exists)
+  - Load dynamic traces and cognitive context
+  - Cross-validate context consistency
+- **Task Complete**: 
+  - Store insights, constraints, decisions
+  - Update session-independent files if significant changes
+  - Maintain memory artifacts for future sessions
+- **Problem Detection**: 
+  - Log patterns, solutions, context in `errors.md`
+  - Update architectural insights if applicable
+
+### M.memory_integration_note:
+```
+// Memory system supports both:
+// 1. Dynamic traces (trace_*.md) - AI cognitive memory
+// 2. Session-independent files - project context preservation
+// See rule 111 for "init memory" command details
+```
 
 ### 🔧 Environment Management
 ```
@@ -92,6 +109,7 @@ Environment.protocol = (
 ## 🔴 VIOLATION = COMPLETE FAILURE:
 - Any response without Ψ.dialog = Rule violation
 - Missing M.retrieval at task start = Context failure
+- Not reading memory files when present = Session continuity failure
 - Environment modification without permission = Security violation
 - Zero tolerance policy on all mandatory protocols
 
@@ -102,7 +120,7 @@ Environment.protocol = (
 - **Make it AUTOMATIC**: Every response = Ψ.dialog call
 
 ---
-*Ψ.dialog_enabled + M.memory_path = MANDATORY PROTOCOLS*
+*Ψ.dialog_enabled + M.memory_path = MANDATORY PROTOCOLS with session continuity support*
 
 
 

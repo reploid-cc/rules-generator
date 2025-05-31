@@ -1,0 +1,180 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Targeting: AI-facing vs User-facing (121)
+
+## 🎯 Content.targeting Framework
+
+### Content.targeting_distinction: Critical Processing Rule
+```
+Content.targeting = {
+    user_facing: friendly_prompts ⨁ clear_explanations ⨁ interactive_questions,
+    ai_facing: mathematical_notation ⨁ User_Rules_framework ⨁ technical_precision
+}
+```
+
+### Content.targeting_rules: Processing Logic
+```
+User_facing_content = (
+    when_user_directly_interacts
+    ⨁ when_asking_questions_or_gathering_input
+    ⨁ when_explaining_concepts_to_humans
+    ⨁ when_providing_documentation_for_teams
+)
+
+AI_facing_content = (
+    when_AI_processes_instructions
+    ⨁ when_implementing_User_Rules_mathematical_framework
+    ⨁ when_defining_system_behavior
+    ⨁ when_creating_processing_workflows
+)
+```
+
+## 🎯 PRD.workflow_pattern: Reference Implementation
+
+### Ω.content_targeting_mode: Learned Pattern
+```
+Ω.content_targeting_mode = {
+    step_1: user_facing_content,
+    steps_2_6: ai_facing_content_with_mathematical_notation
+}
+```
+
+### Λ.pattern_correction: Historical Learning
+```
+Λ.initial_mistake = (
+    mixed_user_and_ai_content_in_same_files
+    ⨁ friendly_prompts_in_ai_processing_steps
+    ⨁ missing_mathematical_notation_in_ai_facing_content
+    ⨁ inconsistent_content_targeting
+)
+
+Λ.correction_applied = (
+    clear_separation_between_content_types
+    ⨁ step_1_purely_user_facing
+    ⨁ steps_2_6_purely_ai_facing_with_mathematical_notation
+    ⨁ consistent_User_Rules_framework_usage
+)
+```
+
+## 🎯 Content.targeting_implementation: Processing Guidelines
+
+### User_facing.characteristics: Output Specifications
+```
+User_facing = {
+    language: friendly_conversational_clear,
+    structure: questions_explanations_examples,
+    format: markdown_with_clear_headings,
+    purpose: human_understanding_and_interaction,
+    mathematical_notation: false
+}
+```
+
+### AI_facing.characteristics: Processing Specifications
+```
+AI_facing = {
+    language: mathematical_notation_technical_precision,
+    structure: Ω_modes_Ψ_capture_M_sync_operations,
+    format: User_Rules_mathematical_framework,
+    purpose: AI_system_processing_and_behavior,
+    mathematical_notation: true
+}
+```
+
+## 🎯 Content.validation: Quality Processing
+
+### User_content.validation_protocol
+```
+User_content_check = (
+    is_human_readable
+    ⨁ uses_friendly_language
+    ⨁ provides_clear_explanations
+    ⨁ avoids_mathematical_notation
+    ⨁ focuses_on_interaction
+)
+```
+
+### AI_content.validation_protocol
+```
+AI_content_check = (
+    uses_User_Rules_mathematical_notation
+    ⨁ includes_Ω_reasoning_modes
+    ⨁ specifies_Ψ_capture_requirements
+    ⨁ defines_M_memory_operations
+    ⨁ integrates_with_T_Λ_Φ_Ξ_systems
+)
+```
+
+## 🎯 Content.targeting_integration: Cross-System Processing
+
+### Σ_hooks.content_targeting
+```
+Content_targeting_hooks = {
+    PRD_workflow: step_1_user_facing_steps_2_6_ai_facing,
+    TDD_specs: user_explanations_plus_ai_mathematical_processing,
+    Memory_bank: human_readable_plus_ai_processing_instructions,
+    Rule_generation: user_guidelines_plus_ai_mathematical_implementation
+}
+```
+
+### Λ.pattern_alignment.content_integration
+```
+Λ.content_patterns = (
+    detect_content_type_from_context
+    ⨁ apply_appropriate_targeting_rules
+    ⨁ ensure_consistency_across_related_files
+    ⨁ validate_mathematical_notation_in_AI_content
+)
+```
+
+## 🎯 Ξ.anti_patterns: Error Prevention
+
+### Ξ.content_anti_patterns: Detected Violations
+```
+Content_anti_patterns = {
+    mixing_user_ai_content: violation_detected,
+    inconsistent_targeting: violation_detected,
+    missing_mathematical_notation_in_ai_content: violation_detected,
+    friendly_language_in_ai_processing: violation_detected
+}
+```
+
+### Ξ.content_QA: Validation Protocol
+```
+Content_QA = (
+    verify_content_type_matches_intended_audience
+    ⨁ ensure_mathematical_notation_accuracy
+    ⨁ validate_User_Rules_framework_compliance
+    ⨁ check_consistency_across_related_files
+)
+```
+
+## 🎯 M.session_continuity: Learning Preservation
+
+### M.learning_context: Pattern Capture
+```
+M.learning_context = (
+    during_PRD_workflow_development
+    ⨁ initially_misunderstood_content_targeting
+    ⨁ user_corrected_understanding_multiple_times
+    ⨁ pattern_now_captured_for_future_sessions
+)
+```
+
+### M.future_session_guidance: Processing Instructions
+```
+M.remember_for_next_sessions = (
+    always_check_intended_audience_before_writing_content
+    ⨁ user_facing_content_needs_friendly_human_language
+    ⨁ ai_facing_content_needs_mathematical_User_Rules_notation
+    ⨁ maintain_clear_separation_between_content_types
+)
+```
+
+---
+*Content.targeting: User_facing_friendly vs AI_facing_mathematical - critical_pattern_for_User_Rules_implementation*
+
+
+

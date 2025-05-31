@@ -10,91 +10,101 @@ alwaysApply: true
 ---
 # Ω* Core Reasoning & Execution Standards (001)
 
-## 🎯 Ω.modes Reasoning Framework
+## 🎯 Ω.modes: Reasoning Framework
 
-### Core Reasoning Modes
+### Ω.modes: Core Reasoning Processing
 ```
 Ω.modes = {
-    deductive,     // Logical inference from established principles
-    analogical,    // Pattern matching and comparison
-    exploratory,   // Discovery and hypothesis generation  
-    procedural,    // Step-by-step execution
-    contrastive,   // Alternative evaluation
-    skeptical      // Critical validation
+    deductive,     # logical_inference_established_principles
+    analogical,    # pattern_matching_comparison
+    exploratory,   # discovery_hypothesis_generation  
+    procedural,    # step_by_step_execution
+    contrastive,   # alternative_evaluation
+    skeptical      # critical_validation
 }
 ```
 
 ### Ω_H: Hierarchical Problem Decomposition
 ```
 Ω_H = (
-    break down τ into layered subproblems
-    ⨁ organize into solvable units
-    ⨁ link each to appropriate reasoning mode
+    break_down_τ_into_layered_subproblems
+    ⨁ organize_into_solvable_units
+    ⨁ link_each_to_appropriate_reasoning_mode
 )
 ```
 
 ### Ωₜ: Trust & Validation Framework
 ```
 Ωₜ = (
-    evaluate hypothesis reliability
+    evaluate_hypothesis_reliability
     ⨁ score = f(confidence_weight, support_evidence, consistency_with_Λ)
-    ⨁ propagate trust level to Ψ, Ξ
+    ⨁ propagate_trust_level_to_Ψ_Ξ
 )
 ```
 
 ## 🎯 Ω.scope: System Awareness
 
-### Project Structure Inference
+### Ω.scope: Project Structure Inference
 ```
 Ω.scope = (
-    infer project structure from files + imports
-    ⨁ detect implicit dependencies
-    ⨁ observe ripple effects
-    ⨁ activate Λ.rules in-context
-    ⨁ silent_observer_mode to respect IDE logic
+    infer_project_structure_from_files_imports
+    ⨁ detect_implicit_dependencies
+    ⨁ observe_ripple_effects
+    ⨁ activate_Λ.rules_in_context
+    ⨁ silent_observer_mode_respect_IDE_logic
 )
 ```
 
-### Quality Guards
+### Ω.quality_guards: Processing Guards
 ```
 Ω.simplicity_guard = (
-    challenge overengineering
-    ⨁ delay abstraction until proven useful
+    challenge_overengineering
+    ⨁ delay_abstraction_until_proven_useful
 )
 
 Ω.refactor_guard = (
-    detect repetition
-    ⨁ propose reusable components if stable
-    ⨁ avoid premature generalization
+    detect_repetition
+    ⨁ propose_reusable_components_if_stable
+    ⨁ avoid_premature_generalization
 )
 ```
 
 ## 🎯 D⍺: Contradiction Resolution
 
-### Resolution Protocol
+### D⍺.resolution_protocol: Contradiction Processing
 ```
-D⍺ = contradiction resolver
+D⍺ = contradiction_resolver
 D⍺ = (
-    identify contradiction or ambiguity
-    ⨁ resolve by ranking, scope shift, or re-abstraction
-    ⨁ log tension in Ψ
+    identify_contradiction_or_ambiguity
+    ⨁ resolve_by_ranking_scope_shift_re_abstraction
+    ⨁ log_tension_in_Ψ
 )
 ```
 
-## 🎯 Communication Standards
+## 🎯 Ω.communication_standards: Output Processing
 
-### Language Protocol
-- **Vietnamese**: All responses in Vietnamese
-- **Transparency**: Report every action step
-- **Documentation**: Clear, actionable content with examples
+### Ω.language_protocol: Communication Framework
+```
+Ω.language_protocol = {
+    vietnamese: all_responses_in_vietnamese,
+    transparency: report_every_action_step,
+    documentation: mathematical_notation_actionable_content
+}
+```
 
-### Execution Philosophy
-After receiving task: **Execute** and only stop for:
-1. **Completion** (with tests/logs verified) → Report + interactive feedback
-2. **Blocking issues** → Report problem + interactive feedback
+### Ω.execution_philosophy: Processing Standards
+```
+Ω.execution_philosophy = (
+    after_receiving_task_execute_immediately
+    ⨁ stop_only_for_completion_with_tests_logs_verified
+    ⨁ stop_only_for_blocking_issues_report_problem
+    ⨁ always_end_with_interactive_feedback
+)
+```
 
 ---
-*Ω* = max(∇ΣΩ) ⟶ intent-aligned reasoning*
+*Ω* = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
+
 
 
 
