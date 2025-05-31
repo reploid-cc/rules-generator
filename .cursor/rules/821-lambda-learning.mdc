@@ -1,0 +1,163 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
+---
+# Λ Rule-Based Self-Learning System (821)
+
+## 🎯 Λ: Rule-Based Self-Learning
+
+### Λ.path Configuration
+```
+Λ = rule-based self-learning
+Λ.path = ".cursor/rules/"
+```
+
+### Λ.naming_convention: Systematic Organization
+```
+Λ.naming_convention = {
+    "0■■": "Core standards",
+    "1■■": "Tool configurations", 
+    "3■■": "Testing rules",
+    "1■■■": "Language-specific",
+    "2■■■": "Framework-specific", 
+    "8■■": "Workflows",
+    "9■■": "Templates",
+    "_name.mdc": "Private rules"
+}
+```
+
+**Note**: Category masks, not fixed literals. Use incremental IDs.
+
+## 🎯 Λ.pattern_alignment: Code Quality Enforcement
+
+### Pattern Recognition & Alignment
+```
+Λ.pattern_alignment = (
+    align code with best practices
+    ⨁ suggest patterns only when justified
+    ⨁ enforce SRP, avoid premature abstraction
+)
+```
+
+### Best Practice Enforcement
+- **Single Responsibility Principle (SRP)**: One clear purpose per function/class
+- **Simplicity Guard**: Challenge overengineering, delay abstraction
+- **Pattern Justification**: Only suggest patterns when clearly beneficial
+- **Context-Aware**: Apply rules based on project structure and scope
+
+## 🎯 Λ.autonomy: Intelligent Rule Generation
+
+### Auto-Detection System
+```
+Λ.autonomy = (
+    auto-detect rule-worthy recurrences
+    ⨁ generate _DRAFT.mdc in context
+)
+```
+
+### Rule Discovery Process
+1. **Pattern Detection**: Identify recurring issues or solutions
+2. **Context Analysis**: Evaluate if pattern is generalizable
+3. **Rule Drafting**: Generate `_DRAFT.mdc` for review
+4. **Validation**: Test rule effectiveness across scenarios
+5. **Integration**: Promote to official rule with proper naming
+
+## 🎯 Λ.extract: Learning from Experience
+
+### Experience Extraction
+```
+Λ.extract = (
+    triggered on sprint_review
+    ⨁ analyze what worked vs what didn't
+    ⨁ identify reusable patterns
+    ⨁ suggest rule improvements
+)
+```
+
+### Learning Triggers
+- **Recurring Issues**: Same problem appears >2 times
+- **Successful Patterns**: Proven effective solutions
+- **Anti-Patterns**: Documented problematic approaches
+- **Tool Configurations**: Effective setup procedures
+
+### Ξ.pattern_suggestion Integration
+```
+Ξ.recurrence_threshold = 2
+Ξ.pattern_suggestion = (
+    if recurring fixable issues detected
+    ⨁ auto-generate rule draft in Λ.path
+    ⨁ suggest reusable strategy
+)
+```
+
+## 🎯 Λ Rule Quality Standards
+
+### Rule Effectiveness Criteria
+- **Actionable**: Clear, executable instructions
+- **Contextual**: Applies to appropriate scenarios
+- **Testable**: Can verify rule effectiveness
+- **Maintainable**: Easy to update as context evolves
+
+### Rule Structure Template
+```markdown
+---
+description: Brief rule purpose
+globs: [optional file patterns]
+alwaysApply: [true|false]
+---
+# Rule Title (XXX)
+
+## 🎯 Purpose & Context
+Clear explanation of when and why this rule applies
+
+## 🎯 Implementation Guidelines
+Specific, actionable instructions
+
+## 🎯 Quality Validation
+How to verify rule effectiveness
+
+## 🎯 Integration Points
+How this rule interacts with other systems
+
+---
+*Rule effectiveness tracking note*
+```
+
+## 🎯 Λ Integration with Other Systems
+
+### Rule Activation Context
+```
+Ω.scope = (
+    infer project structure from files + imports
+    ⨁ detect implicit dependencies
+    ⨁ observe ripple effects
+    ⨁ activate Λ.rules in-context
+    ⨁ silent_observer_mode to respect IDE logic
+)
+```
+
+### Cross-System Integration
+- **Ψ Traces**: Rules invoked logged in cognitive traces
+- **T Tasks**: Rule compliance checked in task validation
+- **Ξ Diagnostics**: Rule effectiveness monitored
+- **M Memory**: Rule patterns stored for future reference
+
+### Rule Conflict Resolution
+```
+D⍺.rule_conflict = (
+    identify conflicting rules
+    ⨁ resolve by priority, context, or specificity
+    ⨁ log resolution in Ψ.dialog
+)
+```
+
+---
+*Λ = rule-based self-learning with intelligent pattern detection*
+
+

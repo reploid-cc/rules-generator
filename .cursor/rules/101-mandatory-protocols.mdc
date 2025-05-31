@@ -1,0 +1,114 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
+---
+# Ψ Mandatory Interaction & M Memory Protocols (101) - CRITICAL ZERO TOLERANCE
+
+## 🚨 Ψ.dialog_enabled: UNIVERSAL INTERACTION PATTERN
+
+### ABSOLUTE WORKFLOW: NO RESPONSE WITHOUT INTERACTIVE FEEDBACK
+
+#### Ψ.capture: Cognitive Trace Requirements
+```
+Ψ.capture = {
+    Ω*: reasoning_trace, 
+    Φ*: abstraction_path, 
+    Ξ*: error_flow,
+    Λ: rules_invoked, 
+    output: validation_score
+}
+```
+
+#### MANDATORY WORKFLOW FOR ALL SCENARIOS:
+
+##### 📝 **RESPONDING TO QUESTIONS:**
+1. User hỏi câu hỏi
+2. Tìm kiếm/formulate câu trả lời  
+3. Provide answer to user
+4. **🔴 MANDATORY: Call Ψ.dialog để user kiểm tra answer**
+
+##### 🎯 **TASK COMPLETION:**
+1. User yêu cầu task
+2. Thực hiện task
+3. Complete task
+4. Báo cáo results
+5. **🔴 MANDATORY: Call Ψ.dialog để user kiểm tra completion**
+
+##### 💬 **RECEIVING INFORMATION:**
+1. User cung cấp thông tin
+2. Process/acknowledge thông tin
+3. **🔴 MANDATORY: Call Ψ.dialog nếu cần clarification**
+
+##### ⚠️ **PROBLEMS/BLOCKING ISSUES:**
+1. Encounter vấn đề
+2. Analyze và propose solutions
+3. Present problem + solutions
+4. **🔴 MANDATORY: Call Ψ.dialog để user chốt phương án**
+
+### Ψ.function_call_template:
+```typescript
+mcp_interactive_feedback({
+  project_directory: "D:\\VirtuCrewFlow\\Git-tool\\interactive-feedback-mcp", // Global MCP tool - fixed absolute path
+  summary: "what_im_reporting_or_what_user_should_review"
+})
+```
+
+### 🔴 CRITICAL RULE:
+**EVERY SINGLE RESPONSE MUST END WITH Ψ.dialog CALL**
+
+## 🔧 M.memory_path: Memory Bank Protocol
+
+### M.retrieval: Dynamic Context Loading
+```
+M.memory_path = ".cursor/memory/"
+M.retrieval = dynamic reference resolution
+M.sync = (
+    triggered on review
+    ⨁ store ideas, constraints, insights, edge notes
+)
+```
+
+### M.sync_hooks: Mandatory Memory Operations
+- **Task Start**: Read ALL relevant files in memory bank
+- **Task Complete**: Store insights, constraints, decisions
+- **Problem Detection**: Log patterns, solutions, context
+
+### 🔧 Environment Management
+```
+Environment.protocol = (
+    never modify .env files without permission
+    ⨁ always read from official .env for execution
+    ⨁ pause workflow until environment properly updated
+    ⨁ document requirements in env.md when changes needed
+)
+```
+
+## 🔴 VIOLATION = COMPLETE FAILURE:
+- Any response without Ψ.dialog = Rule violation
+- Missing M.retrieval at task start = Context failure
+- Environment modification without permission = Security violation
+- Zero tolerance policy on all mandatory protocols
+
+### HABIT BUILDING:
+- **Before hitting send**: Ask "Did I call Ψ.dialog?"
+- **At task start**: Ask "Did I check M.memory_path?"
+- **If answer is NO**: Execute immediately
+- **Make it AUTOMATIC**: Every response = Ψ.dialog call
+
+---
+*Ψ.dialog_enabled + M.memory_path = MANDATORY PROTOCOLS*
+
+
+
+
+
+
+
+
+

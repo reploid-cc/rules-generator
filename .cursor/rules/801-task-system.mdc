@@ -1,0 +1,164 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
+---
+# T Task System & Sprint Management (801)
+
+## 🎯 T: Structured Task System
+
+### T.path Configuration
+```
+T = Σ(τ_complex) ⇌ structured task system
+T.plan_path = ".cursor/tasks/"
+T.backlog_path = ".cursor/tasks/backlog.md"
+T.sprint_path = ".cursor/tasks/sprint_{n}/"
+T.structure = (step_n.md ⨁ review.md)
+```
+
+### T.progress: Task Metadata
+```
+T.progress = in-file metadata {
+    status: [pending|in_progress|done|blocked],
+    priority: [low|medium|high|critical], 
+    notes: contextual_observations,
+    complexity: [simple|medium|complex],
+    estimated_effort: time_estimate
+}
+```
+
+## 🎯 T.backlog: Task Pool Management
+
+### Auto-Prioritization Algorithm
+```
+T.backlog = task_pool with auto-prioritization
+T.priority_score = (
+    business_value * 0.4
+    ⨁ complexity_inverse * 0.3
+    ⨁ dependencies_weight * 0.2
+    ⨁ user_urgency * 0.1
+)
+```
+
+### Task Pool Structure
+```markdown
+# backlog.md
+
+## High Priority Tasks
+- [ ] [CRITICAL] Task requiring immediate attention
+- [ ] [HIGH] Important feature development
+
+## Medium Priority Tasks  
+- [ ] [MEDIUM] Enhancement or optimization
+- [ ] [MEDIUM] Documentation updates
+
+## Low Priority Tasks
+- [ ] [LOW] Nice-to-have improvements
+- [ ] [LOW] Technical debt cleanup
+```
+
+## 🎯 T.sprint: Sprint Organization
+
+### Sprint Structure
+```
+T.sprint_path/
+├── step_1.md          # First implementation step
+├── step_2.md          # Sequential step
+├── spec_step_1.md     # TDD specifications
+├── spec_step_2.md     # Test definitions
+└── review.md          # Sprint retrospective
+```
+
+### T.update_task_progress Protocol
+```
+T.update_task_progress = (
+    locate current step in sprint or backlog
+    ⨁ update status = "done"
+    ⨁ check checklist items based on observed completion
+    ⨁ append notes if partial or modified
+)
+```
+
+## 🎯 T.sprint_review: Quality Gates
+
+### Review Triggers
+```
+T.sprint_review = (
+    trigger on validation
+    ⨁ run M.sync ⨁ Λ.extract ⨁ Φ.snapshot ⨁ Ψ.summarize
+)
+```
+
+### Sprint Completion Criteria
+- All step files completed with status = "done"
+- TDD specs pass with required coverage
+- Code review completed via Ξ.cleanup_phase
+- Documentation updated in M.memory_path
+- Ψ.sprint_reflection captured for future reference
+
+## 🎯 T Integration with Other Systems
+
+### Σ_hooks: Task Lifecycle Events
+```
+T.hooks = {
+    on_task_created: [M.recall, Φ.match_snapshot],
+    on_plan_consolidated: [
+        T.generate_tasks_from_plan,
+        TDD.generate_spec_if_missing,
+        Ψ.materialize_plan_trace,
+        M.sync_if_contextual
+    ],
+    on_step_completed: [T.update_task_progress, M.sync_if_contextual],
+    on_sprint_review: [M.sync, Λ.extract, Ψ.summarize],
+    on_sprint_completed: [Ψ.sprint_reflection, Λ.extract, M.sync]
+}
+```
+
+### Task Materialization
+```
+Ψ.materialization = (
+    generate .md artifacts automatically when plan granularity reaches execution level
+    ⨁ avoid duplication
+    ⨁ ensure traceability of cognition
+)
+```
+
+## 🎯 Task Quality & Validation
+
+### T.complexity_assessment
+```
+T.complexity = {
+    simple: single_file_change + minimal_logic,
+    medium: multi_file_changes + moderate_logic + testing_required,
+    complex: architecture_changes + extensive_testing + documentation
+}
+```
+
+### Validation Checkpoints
+```
+T.validation_gates = (
+    step_completion_verification
+    ⨁ dependency_satisfaction_check
+    ⨁ quality_standards_compliance
+    ⨁ test_coverage_requirements
+)
+```
+
+### Auto-Review Triggers
+```
+Ψ.enforce_review = (
+    auto-trigger review if step_count > 2 
+    ⨁ or complexity_weight > medium
+    ⨁ or dependencies_detected > 3
+)
+```
+
+---
+*T = Σ(τ_complex) ⇌ structured task system with quality gates*
+
+

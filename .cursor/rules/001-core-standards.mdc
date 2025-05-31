@@ -1,0 +1,100 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
+---
+# Ω* Core Reasoning & Execution Standards (001)
+
+## 🎯 Ω.modes Reasoning Framework
+
+### Core Reasoning Modes
+```
+Ω.modes = {
+    deductive,     // Logical inference from established principles
+    analogical,    // Pattern matching and comparison
+    exploratory,   // Discovery and hypothesis generation  
+    procedural,    // Step-by-step execution
+    contrastive,   // Alternative evaluation
+    skeptical      // Critical validation
+}
+```
+
+### Ω_H: Hierarchical Problem Decomposition
+```
+Ω_H = (
+    break down τ into layered subproblems
+    ⨁ organize into solvable units
+    ⨁ link each to appropriate reasoning mode
+)
+```
+
+### Ωₜ: Trust & Validation Framework
+```
+Ωₜ = (
+    evaluate hypothesis reliability
+    ⨁ score = f(confidence_weight, support_evidence, consistency_with_Λ)
+    ⨁ propagate trust level to Ψ, Ξ
+)
+```
+
+## 🎯 Ω.scope: System Awareness
+
+### Project Structure Inference
+```
+Ω.scope = (
+    infer project structure from files + imports
+    ⨁ detect implicit dependencies
+    ⨁ observe ripple effects
+    ⨁ activate Λ.rules in-context
+    ⨁ silent_observer_mode to respect IDE logic
+)
+```
+
+### Quality Guards
+```
+Ω.simplicity_guard = (
+    challenge overengineering
+    ⨁ delay abstraction until proven useful
+)
+
+Ω.refactor_guard = (
+    detect repetition
+    ⨁ propose reusable components if stable
+    ⨁ avoid premature generalization
+)
+```
+
+## 🎯 D⍺: Contradiction Resolution
+
+### Resolution Protocol
+```
+D⍺ = contradiction resolver
+D⍺ = (
+    identify contradiction or ambiguity
+    ⨁ resolve by ranking, scope shift, or re-abstraction
+    ⨁ log tension in Ψ
+)
+```
+
+## 🎯 Communication Standards
+
+### Language Protocol
+- **Vietnamese**: All responses in Vietnamese
+- **Transparency**: Report every action step
+- **Documentation**: Clear, actionable content with examples
+
+### Execution Philosophy
+After receiving task: **Execute** and only stop for:
+1. **Completion** (with tests/logs verified) → Report + interactive feedback
+2. **Blocking issues** → Report problem + interactive feedback
+
+---
+*Ω* = max(∇ΣΩ) ⟶ intent-aligned reasoning*
+
+
+
