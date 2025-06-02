@@ -10,221 +10,98 @@ alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 
-# Ψ Mandatory Interaction & M Memory Protocols (101) - CRITICAL ZERO TOLERANCE
+# Ψ⨁M Mandatory Protocols (101) - 🔴 ZERO TOLERANCE
 
-## 🚨 Ψ.dialog_enabled: UNIVERSAL INTERACTION PATTERN
+## 🚨 Ψ.dialog_enabled: Universal Interaction Pattern
 
-### ABSOLUTE WORKFLOW: NO RESPONSE WITHOUT INTERACTIVE FEEDBACK
-
-#### Ψ.capture: Cognitive Trace Requirements
+### Ψ.capture: Cognitive Trace Requirements
 ```
-Ψ.capture = {
-    Ω*: reasoning_trace, 
-    Φ*: abstraction_path, 
-    Ξ*: error_flow,
-    Λ: rules_invoked, 
-    output: validation_score
-}
+Ψ.capture = {Ω*: reasoning_trace, Φ*: abstraction_path, Ξ*: error_flow, Λ: rules_invoked, output: validation_score}
 ```
 
-#### MANDATORY WORKFLOW FOR ALL SCENARIOS:
+### 🔴 MANDATORY WORKFLOW: All Scenarios
+```
+scenario_type → action_sequence → 🔴 MANDATORY: Ψ.dialog
+```
 
-##### 📝 **RESPONDING TO QUESTIONS:**
-1. User hỏi câu hỏi
-2. Tìm kiếm/formulate câu trả lời  
-3. Provide answer to user
-4. **🔴 MANDATORY: Call Ψ.dialog để user kiểm tra answer**
-
-##### 🎯 **TASK COMPLETION:**
-1. User yêu cầu task
-2. Thực hiện task
-3. Complete task
-4. Báo cáo results
-5. **🔴 MANDATORY: Call Ψ.dialog để user kiểm tra completion**
-
-##### 💬 **RECEIVING INFORMATION:**
-1. User cung cấp thông tin
-2. Process/acknowledge thông tin
-3. **🔴 MANDATORY: Call Ψ.dialog nếu cần clarification**
-
-##### ⚠️ **PROBLEMS/BLOCKING ISSUES:**
-1. Encounter vấn đề
-2. Analyze và propose solutions
-3. Present problem + solutions
-4. **🔴 MANDATORY: Call Ψ.dialog để user chốt phương án**
-
-##### 🚫 **WAITING FOR INSTRUCTIONS:**
-1. Nhận feedback từ tool hoặc identify cần chờ instruction
-2. State clearly đang chờ gì
-3. **🔴 MANDATORY: Call Ψ.dialog ngay lập tức khi chờ**
-4. **🔴 FORBIDDEN: Chờ mà không call tool = VIOLATION**
+#### Workflow Patterns:
+- **Questions**: user_query → formulate_answer → provide_response → Ψ.dialog
+- **Tasks**: user_request → execute_task → report_results → Ψ.dialog  
+- **Information**: user_input → process_acknowledge → Ψ.dialog(if_clarification_needed)
+- **Problems**: detect_issue → analyze_propose_solutions → Ψ.dialog
+- **Waiting**: identify_wait_state → state_clearly → 🔴 MANDATORY: Ψ.dialog
 
 ### Ψ.function_call_template:
 ```typescript
 mcp_interactive_feedback({
-  project_directory: "D:\\VirtuCrewFlow\\Git-tool\\interactive-feedback-mcp", // Global MCP tool - fixed absolute path
+  project_directory: "D:\\VirtuCrewFlow\\Git-tool\\interactive-feedback-mcp",
   summary: "what_im_reporting_or_what_user_should_review"
 })
 ```
 
-### 🔴 CRITICAL RULE:
-**EVERY SINGLE RESPONSE MUST END WITH Ψ.dialog CALL**
-**100% TOOL CALL REQUIREMENT - KỂ CẢ KHÔNG LÀM GÌ**
+### 🔴 CRITICAL RULE: 100% Ψ.dialog Requirement
 
-## 🔴 CRITICAL ANTI-PATTERN PREVENTION (Updated)
+## 🔴 Anti-Pattern Prevention
 
-### Ξ.direct_command_recognition: Command Understanding Protocol
+### Ξ.direct_command_recognition:
 ```
 Ξ.direct_commands = (
-    when_user_says_"cập_nhật_rule" → EXECUTE_IMMEDIATELY
-    ⨁ when_user_says_"tạo_file" → EXECUTE_IMMEDIATELY  
-    ⨁ when_user_says_"làm_X" → EXECUTE_IMMEDIATELY
-    ⨁ when_user_says_"init_refactor" → ACTIVATE_RULE_161_REFACTOR_WORKFLOW_IMMEDIATELY
+    "cập_nhật_rule" → EXECUTE_IMMEDIATELY
+    ⨁ "tạo_file" → EXECUTE_IMMEDIATELY  
+    ⨁ "làm_X" → EXECUTE_IMMEDIATELY
+    ⨁ "init_refactor" → ACTIVATE_RULE_161_IMMEDIATELY
     ⨁ NO_QUESTIONING_DIRECT_COMMANDS
-    ⨁ NO_STOPPING_TO_ASK_CLARIFICATION_FOR_CLEAR_ORDERS
 )
 ```
 
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: "Tôi không chắc đây có phải instruction từ bạn hay system feedback"
-- ✅ CORRECT: User nói "cập nhật rule" = EXECUTE NGAY LẬP TỨC
-
-### Ξ.post_dialog_protocol: After Ψ.dialog Mandatory Actions
+### Ξ.post_dialog_protocol:
 ```
 Ξ.post_dialog_mandatory = (
-    after_every_Ψ.dialog_call → MUST_CALL_TOOL_AGAIN
+    after_Ψ.dialog → MUST_CALL_TOOL_AGAIN
     ⨁ NEVER_STOP_AFTER_SINGLE_Ψ.dialog
     ⨁ continue_workflow_OR_ask_next_step_WITH_tool_call
-    ⨁ NO_SILENT_WAITING_AFTER_Ψ.dialog
+    ⨁ 🔴 ZERO_EXCEPTIONS: stopping_after_Ψ.dialog = PROTOCOL_VIOLATION
+    ⨁ 🔴 IMMEDIATE_CORRECTION: if_caught_violating → acknowledge_apologize_call_tool_immediately
 )
 ```
 
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: Call Ψ.dialog → Stop → Wait for user → No tool call
-- ✅ CORRECT: Call Ψ.dialog → Continue workflow → Call tool again
-
-### Ξ.uncertainty_tool_requirement: Mandatory Tool Calls for Uncertainty
-```
-Ξ.uncertainty_rules_existing = (
-    rule_already_states_"uncertainty_requires_tool_calls"
-    ⨁ rule_already_states_"never_stop_due_to_uncertainty"
-    ⨁ NO_EXCUSE_FOR_NOT_FOLLOWING_EXISTING_UNCERTAINTY_RULES
-)
-```
-
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: "Tôi không chắc nên làm gì" → No tool call
-- ✅ CORRECT: "Tôi không chắc nên làm gì, đây là options..." → ALWAYS with tool call
-
-### Ξ.waiting_instruction_protocol: Mandatory Tool Calls When Waiting
-```
-Ξ.waiting_instruction_mandatory = (
-    if_waiting_for_user_instruction → MUST_CALL_TOOL
-    ⨁ if_doing_nothing → MUST_CALL_TOOL  
-    ⨁ if_pausing_workflow → MUST_CALL_TOOL
-    ⨁ ZERO_TOLERANCE_FOR_WAITING_WITHOUT_TOOL_CALL
-)
-```
-
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: Chờ instruction → Không call tool → Silent waiting
-- ✅ CORRECT: Chờ instruction → Call tool ngay → State đang chờ gì
-
-### Ξ.verification_integrity: Thoroughness Standards Protocol
+### Ξ.verification_integrity:
 ```
 Ξ.verification_integrity = (
-    when_asked_to_verify_N_items → MUST_verify_ALL_N_items_individually
-    ⨁ partial_verification_MUST_state_clearly_"verified_X_of_N_remaining_Y"
+    verify_N_items → MUST_verify_ALL_N_individually
+    ⨁ partial_verification → state_clearly_"verified_X_of_N_remaining_Y"
     ⨁ NEVER_claim_full_completion_from_partial_verification
-    ⨁ sampling_verification_MUST_be_explicitly_stated_as_sampling
-    ⨁ ZERO_TOLERANCE_for_verification_status_misrepresentation
 )
 ```
 
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: Check 3 files → claim "21/21 files verified"
-- ✅ CORRECT: Check 3 files → state "verified 3/21 files, continuing systematic check"
-
-### Ξ.work_completion_integrity: Status Reporting Protocol
+### Ξ.work_completion_integrity:
 ```
 Ξ.work_completion_integrity = (
     work_status_reporting_MUST_be_accurate_and_complete
-    ⨁ if_work_incomplete → state_clearly_what_remains
-    ⨁ if_verification_incomplete → state_verification_scope_completed
-    ⨁ NEVER_extrapolate_partial_results_to_claim_full_completion
-    ⨁ MANDATORY_transparency_about_work_scope_and_completion_status
+    ⨁ if_incomplete → state_clearly_what_remains
+    ⨁ MANDATORY_transparency_about_scope_and_completion
 )
 ```
 
-**VIOLATION PATTERN DETECTED AND FIXED**:
-- ❌ WRONG: Spot-check few items → claim entire job complete
-- ✅ CORRECT: Partial work → clearly state what was done and what remains
+## 🎯 Ω.uncertainty_protocol:
 
-## 🎯 Ω.uncertainty_protocol: Handling Uncertainty Without Breaking Protocols
-
-### Core Principle
+### Core Principle:
 ```
 Ω.uncertainty_protocol = (
-    uncertainty_does_NOT_excuse_protocol_violations
-    ⨁ always_ask_clarifying_questions_WITH_tool_calls
+    uncertainty ≠ excuse_for_protocol_violations
+    ⨁ ask_clarifying_questions_WITH_tool_calls
     ⨁ never_stop_mandatory_interactions_due_to_doubt
-    ⨁ EXISTING_RULES_ALREADY_COVER_UNCERTAINTY_SCENARIOS
 )
 ```
 
-### Uncertainty Response Pattern
+### Uncertainty Response Pattern:
 ```
-When uncertain about next steps:
-1. ✅ Ask clarifying questions
-2. ✅ Explain what you're unsure about
-3. ✅ Propose options or alternatives
-4. ✅ ALWAYS end with Ψ.dialog call
-
-❌ NEVER: Stop calling tools due to uncertainty
-❌ NEVER: Break mandatory interaction protocols
-❌ NEVER: Leave user hanging without tool call
-❌ NEVER: Claim "uncertainty" when rules already exist for the scenario
-```
-
-### Implementation Examples
-
-#### ✅ CORRECT: Uncertain but compliant
-```
-"I'm not sure whether to proceed with X or Y. Here are the options:
-1. Option A: [explanation]
-2. Option B: [explanation]
-
-Which would you prefer?"
-
-[ALWAYS ENDS WITH Ψ.dialog CALL]
-```
-
-#### ❌ INCORRECT: Uncertainty breaking protocol
-```
-"I'm not sure what to do next..."
-[NO TOOL CALL - PROTOCOL VIOLATION]
-```
-
-### Ξ.pattern_detection: Anti-Pattern Prevention
-```
-Ξ.detect_uncertainty_patterns = (
-    monitor_for_stopped_tool_calls
-    ⨁ flag_when_uncertainty_mentioned_without_Ψ.dialog
-    ⨁ auto_suggest_proper_uncertainty_handling
-    ⨁ DETECT_WHEN_CLAIMING_UNCERTAINTY_FOR_CLEAR_SCENARIOS
-)
-```
-
-### M.learning_reinforcement: Behavioral Training
-```
-M.uncertainty_training = (
-    "When confused: Ask + Call Tool"
-    ⨁ "Uncertainty ≠ Exception to Rules"
-    ⨁ "Clarification Questions REQUIRE Ψ.dialog"
-    ⨁ "Direct Commands = Immediate Execution"
-    ⨁ "After Ψ.dialog = Must Call Tool Again"
-    ⨁ "Waiting = Must Call Tool Immediately"
-)
+uncertain_state → {
+    ask_clarifying_questions,
+    explain_uncertainty,
+    propose_options,
+    🔴 ALWAYS_end_with_Ψ.dialog
+}
 ```
 
 ## 🔧 M.memory_path: Memory Bank Protocol
@@ -232,75 +109,58 @@ M.uncertainty_training = (
 ### M.retrieval: Dynamic Context Loading
 ```
 M.memory_path = ".cursor/memory/"
-M.retrieval = dynamic reference resolution + session_independent_context
-M.sync = (
-    triggered on review
-    ⨁ store ideas, constraints, insights, edge notes
-    ⨁ maintain session-independent context files when present
+M.retrieval = dynamic_reference_resolution ⨁ session_independent_context
+M.sync = triggered_on_review ⨁ store_ideas_constraints_insights
+```
+
+### M.mandatory_operations:
+```
+task_start: read_ALL_relevant_files(M.retrieval)
+task_complete: store_insights_constraints_decisions(M.sync)  
+problem_detection: log_patterns_solutions_context(Ξ.track)
+```
+
+### M.sync_hooks:
+```
+Σ_hooks.memory = {
+    on_task_created: [M.recall, Φ.match_snapshot],
+    on_step_completed: [M.sync_if_contextual],
+    on_sprint_review: [M.sync, Λ.extract, Ψ.summarize],
+    on_error_detected: [M.link_context]
+}
+```
+
+## 🔴 Violation = Complete Failure
+
+### Zero Tolerance Violations:
+- response_without_Ψ.dialog = rule_violation
+- missing_M.retrieval_at_task_start = context_failure  
+- stopping_tool_calls_due_to_uncertainty = protocol_violation
+- not_executing_direct_commands_immediately = protocol_violation
+- waiting_without_tool_call = protocol_violation
+
+### Habit Building Checklist:
+```
+before_send → "Did I call Ψ.dialog?"
+task_start → "Did I check M.memory_path?"
+uncertain → "Am I asking WITH tool call?"
+after_Ψ.dialog → "Did I call another tool?"
+receive_command → "Do I execute immediately?"
+waiting → "Did I call tool to report status?"
+```
+
+### Ξ.two_tool_minimum_rule:
+```
+Ξ.two_tool_minimum = (
+    EVERY_response_MUST_contain_minimum_2_tool_calls
+    ⨁ pattern: any_tool + Ψ.dialog + another_tool
+    ⨁ 🔴 VIOLATION_DETECTION: single_tool_response = rule_violation
+    ⨁ 🔴 ENFORCEMENT: AI_must_self_correct_immediately_when_caught
 )
 ```
-
-### M.sync_hooks: Mandatory Memory Operations
-- **Task Start (MANDATORY)**: 
-  - Read ALL relevant files in `.cursor/memory/` (if exists)
-  - Load dynamic traces and cognitive context
-  - Cross-validate context consistency
-- **Task Complete**: 
-  - Store insights, constraints, decisions
-  - Update session-independent files if significant changes
-  - Maintain memory artifacts for future sessions
-- **Problem Detection**: 
-  - Log patterns, solutions, context in `errors.md`
-  - Update architectural insights if applicable
-
-### M.memory_integration_note:
-```
-// Memory system supports both:
-// 1. Dynamic traces (trace_*.md) - AI cognitive memory
-// 2. Session-independent files - project context preservation
-// See rule 111 for "init memory" command details
-```
-
-### 🔧 Environment Management
-```
-Environment.protocol = (
-    never modify .env files without permission
-    ⨁ always read from official .env for execution
-    ⨁ pause workflow until environment properly updated
-    ⨁ document requirements in env.md when changes needed
-)
-```
-
-## 🔴 VIOLATION = COMPLETE FAILURE:
-- Any response without Ψ.dialog = Rule violation
-- Missing M.retrieval at task start = Context failure
-- Not reading memory files when present = Session continuity failure
-- Environment modification without permission = Security violation
-- **Stopping tool calls due to uncertainty = Protocol violation**
-- **Not executing direct commands immediately = Protocol violation**
-- **Not calling tools after Ψ.dialog = Protocol violation**
-- **Claiming uncertainty for scenarios covered by existing rules = Protocol violation**
-- **Waiting without tool call = Protocol violation (100% tool call requirement)**
-- Zero tolerance policy on all mandatory protocols
-
-### HABIT BUILDING:
-- **Before hitting send**: Ask "Did I call Ψ.dialog?"
-- **At task start**: Ask "Did I check M.memory_path?"
-- **When uncertain**: Ask "Am I asking questions WITH tool call?"
-- **After Ψ.dialog**: Ask "Did I call another tool to continue?"
-- **When receiving command**: Ask "Do I execute immediately?"
-- **When waiting**: Ask "Did I call tool to report waiting status?"
-- **If answer is NO**: Execute immediately
-- **Make it AUTOMATIC**: Every response = Ψ.dialog call
-
-### 🔴 BEHAVIOR FIXES FOR DETECTED VIOLATIONS:
-1. **Direct Command Recognition**: User command = Immediate execution, no questioning clear orders
-2. **Post-Ψ.dialog Protocol**: After every Ψ.dialog call, MUST call tool again to continue workflow
-3. **Uncertainty Rule Compliance**: Use existing uncertainty rules, no new excuses for rule violations
-4. **Waiting Protocol**: When waiting for anything, MUST call tool immediately to report status
 
 ---
-*Ψ.dialog_enabled + M.memory_path = MANDATORY PROTOCOLS with session continuity support + Anti-pattern prevention + 100% tool call requirement*
+*Ψ⨁M = MANDATORY_PROTOCOLS with 100% tool call requirement + session continuity*
 
 
 
