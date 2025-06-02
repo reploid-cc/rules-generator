@@ -22,15 +22,15 @@ alwaysApply: false
 ### Λ.git_operations_covered: Scope of Authorization
 ```
 Λ.git_operations_covered = {
-    git_add: requires_explicit_permission,
-    git_commit: requires_explicit_permission,
-    git_push: requires_explicit_permission,
-    git_pull: requires_explicit_permission,
-    git_merge: requires_explicit_permission,
-    git_branch: requires_explicit_permission,
-    git_checkout: requires_explicit_permission,
-    git_reset: requires_explicit_permission,
-    git_revert: requires_explicit_permission
+    git_add: requires_permission,
+    git_commit: requires_permission,
+    git_push: requires_permission,
+    git_pull: requires_permission,
+    git_merge: requires_permission,
+    git_branch: requires_permission,
+    git_checkout: requires_permission,
+    git_reset: requires_permission,
+    git_revert: requires_permission
 }
 ```
 
