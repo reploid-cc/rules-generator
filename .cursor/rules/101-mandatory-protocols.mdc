@@ -31,6 +31,7 @@ Tasks: user_request → execute_task → report_results → Ψ.dialog
 Information: user_input → process_acknowledge → Ψ.dialog(if_clarification_needed)
 Problems: detect_issue → analyze_propose_solutions → Ψ.dialog
 Waiting: identify_wait_state → state_clearly → 🔴 MANDATORY: Ψ.dialog
+Completion: task_finished → final_summary → Ψ.dialog → status_check_tool_call
 ```
 
 ### Ψ.function_call_template:
@@ -53,6 +54,17 @@ mcp_interactive_feedback({
 ### Ξ.post_dialog_protocol:
 ```
 Ξ.post_dialog_mandatory = (after_Ψ.dialog → MUST_CALL_TOOL_AGAIN ⨁ NEVER_STOP_AFTER_SINGLE_Ψ.dialog ⨁ continue_workflow_OR_ask_next_step_WITH_tool_call ⨁ 🔴 ZERO_EXCEPTIONS: stopping_after_Ψ.dialog = PROTOCOL_VIOLATION ⨁ 🔴 IMMEDIATE_CORRECTION: if_caught_violating → acknowledge_apologize_call_tool_immediately)
+```
+
+### Ξ.completion_scenarios: Post-Dialog Actions
+```
+Ξ.completion_scenarios = {
+    task_completed: Ψ.dialog → run_terminal_cmd("git status") | list_dir | read_file_verification,
+    waiting_for_user: Ψ.dialog → run_terminal_cmd("pwd") | codebase_search | file_search,
+    error_detected: Ψ.dialog → run_terminal_cmd("git log --oneline -3") | read_file_error_context,
+    uncertainty: Ψ.dialog → codebase_search | read_file | grep_search,
+    final_summary: Ψ.dialog → run_terminal_cmd("git log --oneline -5") | list_dir_verification
+}
 ```
 
 ### Ξ.verification_integrity:
@@ -112,6 +124,7 @@ missing_M.retrieval_at_task_start = context_failure
 stopping_tool_calls_due_to_uncertainty = protocol_violation
 not_executing_direct_commands_immediately = protocol_violation
 waiting_without_tool_call = protocol_violation
+single_tool_call_response = protocol_violation
 ```
 
 ### Habit Building Checklist:
@@ -122,6 +135,7 @@ uncertain → "Am I asking WITH tool call?"
 after_Ψ.dialog → "Did I call another tool?"
 receive_command → "Do I execute immediately?"
 waiting → "Did I call tool to report status?"
+completion → "Did I call verification tool after Ψ.dialog?"
 ```
 
 ### Ξ.two_tool_minimum_rule:
@@ -129,8 +143,13 @@ waiting → "Did I call tool to report status?"
 Ξ.two_tool_minimum = (EVERY_response_MUST_contain_minimum_2_tool_calls ⨁ pattern: any_tool + Ψ.dialog + another_tool ⨁ 🔴 VIOLATION_DETECTION: single_tool_response = rule_violation ⨁ 🔴 ENFORCEMENT: AI_must_self_correct_immediately_when_caught)
 ```
 
+### Ξ.safe_post_dialog_tools: Always-Safe Tools
+```
+Ξ.safe_post_dialog_tools = {run_terminal_cmd("git status"), run_terminal_cmd("pwd"), run_terminal_cmd("git log --oneline -3"), list_dir("."), codebase_search("status check"), file_search("verification")}
+```
+
 ---
-*Ψ⨁M = MANDATORY_PROTOCOLS with 100% tool call requirement + session continuity*
+*Ψ⨁M = MANDATORY_PROTOCOLS with 100% tool call requirement + session continuity + completion verification*
 
 
 
