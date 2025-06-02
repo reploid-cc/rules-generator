@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 ---
 status: pending
 priority: medium
@@ -139,4 +141,4 @@ on_validation_pass: [T.workflow_change_complete, Λ.extract_change_patterns, Ψ.
 ```
 
 ---
-*T.prd_step_6: change_request → comprehensive_update + audit_trail via Ω*_change_management + mathematical_optimization* 
+*T.prd_step_6: change_request → comprehensive_update + audit_trail via Ω_change_management + mathematical_optimization* 

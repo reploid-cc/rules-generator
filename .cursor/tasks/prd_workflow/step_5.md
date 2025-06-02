@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 ---
 status: pending
 priority: high
@@ -152,4 +154,4 @@ on_validation_pass: [T.advance_to_step_6, Ψ.dialog_required]
 ```
 
 ---
-*T.prd_step_5: RFC_breakdown + sequential_implementation + Ω*_mathematical_optimization + template_cloning_protocol* 
+*T.prd_step_5: RFC_breakdown + sequential_implementation + Ω_mathematical_optimization + template_cloning_protocol* 

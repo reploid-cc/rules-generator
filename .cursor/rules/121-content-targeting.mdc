@@ -3,7 +3,29 @@ description:
 globs: 
 alwaysApply: false
 ---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Content Targeting: AI-facing vs User-facing (121)
+
+## 🎯 Header.placement_protocol: File Type Specific Rules
+
+### Header.placement_rules: Implementation
+```
+Header.placement_rules = {
+    all_cursor_files: "<!-- CONTENT_TARGET: [TYPE] --> as first line or after any existing metadata",
+    focus: "content_targeting_identification_only"
+}
+```
+
+### Header.format: Mandatory Pattern
+```
+CORRECT.example = "
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# File Title
+content...
+"
+```
 
 ## 🎯 Content.targeting Framework
 
@@ -29,152 +51,72 @@ AI_facing_content = (
     ⨁ when_implementing_User_Rules_mathematical_framework
     ⨁ when_defining_system_behavior
     ⨁ when_creating_processing_workflows
+    ⨁ when_creating_content_in_cursor_directory
 )
 ```
 
-## 🎯 PRD.workflow_pattern: Reference Implementation
+## 🎯 Cursor.directory_targeting: MANDATORY AI-Facing Content
 
-### Ω.content_targeting_mode: Learned Pattern
+### Cursor.content_requirements: Critical Processing Rule
 ```
-Ω.content_targeting_mode = {
-    step_1: user_facing_content,
-    steps_2_6: ai_facing_content_with_mathematical_notation
+Cursor.directory_content = {
+    path_pattern: ".cursor/**/*",
+    content_type: MANDATORY_AI_FACING,
+    language: mathematical_notation_User_Rules_framework,
+    purpose: AI_system_processing_and_behavior_modification
 }
 ```
 
-### Λ.pattern_correction: Historical Learning
+### Cursor.content_specification: Processing Requirements
 ```
-Λ.initial_mistake = (
-    mixed_user_and_ai_content_in_same_files
-    ⨁ friendly_prompts_in_ai_processing_steps
-    ⨁ missing_mathematical_notation_in_ai_facing_content
-    ⨁ inconsistent_content_targeting
-)
-
-Λ.correction_applied = (
-    clear_separation_between_content_types
-    ⨁ step_1_purely_user_facing
-    ⨁ steps_2_6_purely_ai_facing_with_mathematical_notation
-    ⨁ consistent_User_Rules_framework_usage
+Cursor.files_must_use = (
+    Ω_reasoning_modes_notation
+    ⨁ Ψ_capture_trace_operations
+    ⨁ T_task_system_mathematical_framework
+    ⨁ Λ_rule_based_learning_notation
+    ⨁ Ξ_diagnostics_mathematical_operations
+    ⨁ M_memory_sync_operations
+    ⨁ Φ_abstraction_mathematical_notation
 )
 ```
 
-## 🎯 Content.targeting_implementation: Processing Guidelines
-
-### User_facing.characteristics: Output Specifications
+### Cursor.anti_patterns: Forbidden Content Types
 ```
-User_facing = {
-    language: friendly_conversational_clear,
-    structure: questions_explanations_examples,
-    format: markdown_with_clear_headings,
-    purpose: human_understanding_and_interaction,
-    mathematical_notation: false
+Cursor.forbidden_content = {
+    friendly_conversational_language: VIOLATION,
+    human_readable_explanations: VIOLATION,
+    interactive_questions: VIOLATION,
+    markdown_without_mathematical_notation: VIOLATION,
+    user_facing_documentation_style: VIOLATION
 }
 ```
 
-### AI_facing.characteristics: Processing Specifications
+### Cursor.validation_protocol: Quality Gates
 ```
-AI_facing = {
-    language: mathematical_notation_technical_precision,
-    structure: Ω_modes_Ψ_capture_M_sync_operations,
-    format: User_Rules_mathematical_framework,
-    purpose: AI_system_processing_and_behavior,
-    mathematical_notation: true
-}
-```
-
-## 🎯 Content.validation: Quality Processing
-
-### User_content.validation_protocol
-```
-User_content_check = (
-    is_human_readable
-    ⨁ uses_friendly_language
-    ⨁ provides_clear_explanations
-    ⨁ avoids_mathematical_notation
-    ⨁ focuses_on_interaction
-)
-```
-
-### AI_content.validation_protocol
-```
-AI_content_check = (
-    uses_User_Rules_mathematical_notation
-    ⨁ includes_Ω_reasoning_modes
-    ⨁ specifies_Ψ_capture_requirements
-    ⨁ defines_M_memory_operations
-    ⨁ integrates_with_T_Λ_Φ_Ξ_systems
-)
-```
-
-## 🎯 Content.targeting_integration: Cross-System Processing
-
-### Σ_hooks.content_targeting
-```
-Content_targeting_hooks = {
-    PRD_workflow: step_1_user_facing_steps_2_6_ai_facing,
-    TDD_specs: user_explanations_plus_ai_mathematical_processing,
-    Memory_bank: human_readable_plus_ai_processing_instructions,
-    Rule_generation: user_guidelines_plus_ai_mathematical_implementation
-}
-```
-
-### Λ.pattern_alignment.content_integration
-```
-Λ.content_patterns = (
-    detect_content_type_from_context
-    ⨁ apply_appropriate_targeting_rules
-    ⨁ ensure_consistency_across_related_files
-    ⨁ validate_mathematical_notation_in_AI_content
-)
-```
-
-## 🎯 Ξ.anti_patterns: Error Prevention
-
-### Ξ.content_anti_patterns: Detected Violations
-```
-Content_anti_patterns = {
-    mixing_user_ai_content: violation_detected,
-    inconsistent_targeting: violation_detected,
-    missing_mathematical_notation_in_ai_content: violation_detected,
-    friendly_language_in_ai_processing: violation_detected
-}
-```
-
-### Ξ.content_QA: Validation Protocol
-```
-Content_QA = (
-    verify_content_type_matches_intended_audience
-    ⨁ ensure_mathematical_notation_accuracy
+Cursor.validation = (
+    scan_all_cursor_directory_files
+    ⨁ verify_mathematical_notation_presence
     ⨁ validate_User_Rules_framework_compliance
-    ⨁ check_consistency_across_related_files
+    ⨁ ensure_AI_processing_optimization
+    ⨁ flag_user_facing_content_violations
 )
 ```
 
-## 🎯 M.session_continuity: Learning Preservation
+## 🎯 Implementation.note: Tool Limitations
 
-### M.learning_context: Pattern Capture
+### AI.agent_limitations: Technical Constraints
 ```
-M.learning_context = (
-    during_PRD_workflow_development
-    ⨁ initially_misunderstood_content_targeting
-    ⨁ user_corrected_understanding_multiple_times
-    ⨁ pattern_now_captured_for_future_sessions
-)
-```
-
-### M.future_session_guidance: Processing Instructions
-```
-M.remember_for_next_sessions = (
-    always_check_intended_audience_before_writing_content
-    ⨁ user_facing_content_needs_friendly_human_language
-    ⨁ ai_facing_content_needs_mathematical_User_Rules_notation
-    ⨁ maintain_clear_separation_between_content_types
-)
+AI.agent_limitations = {
+    mdc_files: "Cannot edit metadata blocks in .mdc files",
+    workaround: "Content targeting headers added after any existing metadata",
+    focus: "Content identification rather than metadata management"
+}
 ```
 
 ---
-*Content.targeting: User_facing_friendly vs AI_facing_mathematical - critical_pattern_for_User_Rules_implementation*
+*Content.targeting: User_facing_friendly vs AI_facing_mathematical + Cursor_directory_MANDATORY_AI_facing - simplified_implementation*
+
+
 
 
 

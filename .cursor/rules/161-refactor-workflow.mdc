@@ -1,0 +1,262 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Λ.refactor_workflow: Systematic Refactor Workflow (161)
+
+## 🎯 Λ.refactor_workflow: Core Workflow System
+
+### Λ.init_rules_trigger: Command Recognition
+```
+Λ.init_rules_trigger = (
+    trigger_commands = ["init refactor"]
+    ⨁ activate_5_step_refactor_workflow
+    ⨁ integrate_with_existing_refactor_framework
+)
+```
+
+### Λ.workflow_integration: Framework Integration
+```
+Λ.workflow_integration = (
+    use_Ω.refactor_guard_principles_from_rule_001
+    ⨁ apply_Ξ.cleanup_phase_detection_from_rule_851
+    ⨁ follow_TDD.loop_for_tested_refactor_from_rule_131
+    ⨁ integrate_with_T.task_system_from_rule_801
+    ⨁ capture_patterns_via_Φ.snapshot_from_rule_841
+    ⨁ enforce_Λ.pattern_alignment_from_rule_821
+)
+```
+
+## 🎯 Step 1: Λ.scope_clarification - Refactor Scope Analysis
+
+### Λ.scope_options: Refactor Scope Identification
+```
+Λ.scope_options = {
+    full_codebase: entire_project_systematic_refactor,
+    directory_specific: target_folder_and_subfolder_refactor,
+    file_specific: single_file_focused_refactor,
+    component_specific: specific_module_or_component_refactor,
+    pattern_specific: specific_pattern_or_anti_pattern_refactor,
+    architectural: system_design_level_refactor,
+    technical_debt: accumulated_debt_cleanup_refactor,
+    performance: optimization_focused_refactor
+}
+```
+
+### Λ.scope_analysis_questions: Clarification Protocol
+```
+Λ.scope_analysis = (
+    "Bạn cần refactor gì cụ thể?"
+    ⨁ "1. Toàn bộ codebase dự án"
+    ⨁ "2. Một folder/directory cụ thể (nêu path)"
+    ⨁ "3. Một file cụ thể (nêu file name)"
+    ⨁ "4. Một component/module cụ thể"
+    ⨁ "5. Một pattern hoặc anti-pattern cụ thể"
+    ⨁ "6. Architecture level refactor"
+    ⨁ "7. Technical debt cleanup"
+    ⨁ "8. Performance optimization"
+    ⨁ "9. Khác (mô tả cụ thể)"
+    ⨁ ask_via_Ψ.dialog_for_user_confirmation
+)
+```
+
+## 🎯 Step 2: Λ.planning_phase - Refactor Planning
+
+### Λ.plan_generation: Strategic Planning
+```
+Λ.plan_generation = (
+    analyze_current_state_via_Ξ.cleanup_phase
+    ⨁ identify_refactor_targets_and_risks
+    ⨁ estimate_effort_and_timeline
+    ⨁ plan_incremental_refactor_steps
+    ⨁ identify_test_coverage_requirements
+    ⨁ plan_rollback_strategy
+    ⨁ present_plan_for_user_approval_via_Ψ.dialog
+)
+```
+
+### Λ.plan_structure: Plan Documentation Format
+```
+Λ.plan_structure = {
+    scope_confirmed: user_confirmed_refactor_scope,
+    current_analysis: existing_code_analysis_results,
+    refactor_targets: specific_items_to_refactor,
+    incremental_steps: ordered_refactor_sequence,
+    risk_assessment: potential_issues_and_mitigation,
+    test_strategy: testing_approach_for_validation,
+    rollback_plan: recovery_strategy_if_needed,
+    timeline_estimate: expected_duration_per_step
+}
+```
+
+## 🎯 Step 3: Λ.file_creation - Refactor Assets Creation
+
+### Λ.refactor_assets: File Creation Protocol
+```
+Λ.refactor_assets = (
+    create_refactor_plan_file_in_tasks_directory
+    ⨁ create_detailed_checklist_with_all_steps
+    ⨁ create_rollback_guide_for_safety
+    ⨁ create_test_validation_checklist
+    ⨁ integrate_with_T.task_system_for_tracking
+)
+```
+
+### Λ.asset_structure: Refactor File Structure
+```
+.cursor/tasks/refactor_{timestamp}/
+├── refactor_plan.md          # Comprehensive refactor plan
+├── checklist.md              # Step-by-step execution checklist  
+├── rollback_guide.md         # Safety rollback procedures
+├── test_validation.md        # Testing requirements per step
+└── progress_tracking.md      # Completion status tracking
+```
+
+## 🎯 Step 4: Λ.execution_protocol - Controlled Execution
+
+### Λ.step_by_step_execution: Mandatory Approval Protocol
+```
+Λ.step_by_step_execution = (
+    execute_one_checklist_item_at_a_time
+    ⨁ MANDATORY_user_confirmation_after_each_step
+    ⨁ update_checklist_only_after_user_approval
+    ⨁ proceed_to_next_step_only_after_confirmation
+    ⨁ document_any_deviations_or_issues
+)
+```
+
+### Λ.validation_per_step: Quality Assurance
+```
+Λ.validation_per_step = (
+    run_applicable_tests_after_each_step
+    ⨁ verify_functionality_not_broken
+    ⨁ check_Ξ.cleanup_phase_effectiveness
+    ⨁ validate_pattern_compliance_via_Λ.pattern_alignment
+    ⨁ request_user_verification_via_Ψ.dialog
+)
+```
+
+### Λ.checkpoint_protocol: Safety Checkpoints
+```
+Λ.checkpoint_protocol = (
+    create_checkpoint_before_major_changes
+    ⨁ document_what_was_changed_and_why
+    ⨁ maintain_ability_to_rollback_to_any_checkpoint
+    ⨁ user_approval_required_for_checkpoint_progression
+)
+```
+
+## 🎯 Step 5: Λ.cleanup_completion - Workflow Completion
+
+### Λ.completion_verification: Final Validation
+```
+Λ.completion_verification = (
+    verify_all_checklist_items_completed
+    ⨁ run_comprehensive_test_suite
+    ⨁ validate_refactor_objectives_achieved
+    ⨁ document_lessons_learned_for_future
+    ⨁ update_Φ.snapshot_with_new_patterns
+)
+```
+
+### Λ.asset_cleanup: File Cleanup Protocol
+```
+Λ.asset_cleanup = (
+    MANDATORY_user_confirmation_before_deletion
+    ⨁ archive_important_insights_to_M.memory_path
+    ⨁ update_patterns_in_Λ.rules_if_applicable
+    ⨁ delete_refactor_files_only_after_user_approval
+    ⨁ document_completion_in_progress_tracking
+)
+```
+
+## 🎯 Λ.safety_protocols: Safety & Quality Assurance
+
+### Λ.mandatory_safety: Non-Negotiable Safety Rules
+```
+Λ.mandatory_safety = (
+    NEVER_proceed_without_user_confirmation_between_steps
+    ⨁ ALWAYS_maintain_rollback_capability
+    ⨁ REQUIRED_test_validation_before_proceeding
+    ⨁ MANDATORY_checkpoint_creation_before_major_changes
+    ⨁ ZERO_TOLERANCE_for_proceeding_without_approval
+)
+```
+
+### Λ.error_handling: Error Recovery Protocol
+```
+Λ.error_handling = (
+    if_refactor_step_fails → stop_immediately
+    ⨁ analyze_failure_root_cause
+    ⨁ propose_recovery_options_to_user
+    ⨁ execute_rollback_if_user_requests
+    ⨁ document_error_in_Ξ.error_memory
+    ⨁ learn_from_failure_for_future_improvement
+)
+```
+
+## 🎯 Λ.integration_hooks: System Integration
+
+### Λ.cross_system_integration: Framework Integration
+```
+Λ.cross_system_integration = {
+    T.task_system: track_refactor_as_structured_tasks,
+    Ψ.dialog: mandatory_approval_workflow_integration,
+    M.memory: store_refactor_insights_and_patterns,
+    Ξ.diagnostics: monitor_refactor_effectiveness,
+    Φ.snapshot: capture_emergent_patterns_from_refactor,
+    Λ.rules: update_rules_based_on_refactor_learnings
+}
+```
+
+### Λ.existing_rules_integration: Cross-Rule Integration
+```
+Λ.existing_rules_integration = {
+    rule_001_core_standards: {
+        use_Ω.refactor_guard_avoid_premature_generalization,
+        use_Ω.simplicity_guard_challenge_overengineering,
+        use_D⍺_contradiction_resolver_for_conflicting_refactor_approaches
+    },
+    rule_851_xi_diagnostics: {
+        use_Ξ.cleanup_phase_for_drift_detection,
+        use_Ξ.auto_cleanup_for_automated_triggers,
+        use_Ξ.error_memory_for_tracking_refactor_issues,
+        use_Ξ.pattern_suggestion_for_rule_generation
+    },
+    rule_801_task_system: {
+        use_T.task_structure_for_refactor_tracking,
+        use_T.progress_metadata_for_status_updates,
+        use_T.sprint_review_for_refactor_completion,
+        use_T.update_task_progress_for_checklist_updates
+    },
+    rule_821_lambda_learning: {
+        use_Λ.pattern_alignment_for_code_quality,
+        use_Λ.autonomy_for_auto_rule_generation,
+        use_Λ.naming_convention_for_consistent_structure
+    },
+    rule_841_phi_hypothesis: {
+        use_Φ.snapshot_for_pattern_capture,
+        use_Φ.match_snapshot_for_existing_pattern_detection
+    }
+}
+```
+
+### Λ.workflow_triggers: Activation Protocol
+```
+Λ.workflow_triggers = (
+    on_user_command_"init_refactor"
+    ⨁ activate_Λ.scope_clarification_immediately
+    ⨁ follow_5_step_workflow_strictly
+    ⨁ integrate_with_existing_refactor_framework_from_rules_001_851_801_821_841
+    ⨁ ensure_mandatory_user_approval_at_each_step
+)
+```
+
+---
+*Λ.refactor_workflow = systematic_5_step_refactor_with_mandatory_user_approval*
+
+
+

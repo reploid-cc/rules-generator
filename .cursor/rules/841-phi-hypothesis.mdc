@@ -1,13 +1,15 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 ---
 description:
 globs:
 alwaysApply: true
 ---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Φ* Hypothesis Abstraction Engine (841)
 
 ## 🎯 Φ*: Hypothesis Abstraction Engine
@@ -161,5 +163,5 @@ alwaysApply: true
 ```
 
 ---
-*Φ* = hypothesis abstraction engine with pattern evolution tracking*
+*Φ = hypothesis abstraction engine with pattern evolution tracking*
 

@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Interactive PRD Creation - Step 1
 
 ## Welcome! Let's create your Product Requirements Document

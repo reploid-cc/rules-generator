@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # M.memory_path - Memory Bank System
 
 ## M.memory_system: Core Implementation
@@ -61,6 +63,32 @@ session_independent_files = {
     techContext.md: technologies_development_setup,
     progress.md: status_tracking_what_works_left,
     sumup.md: master_navigator_contextual_retrieval
+}
+```
+
+### M.lambda_rules_integration: Active Λ Rules
+```
+Λ.active_rules = {
+    141-documentation-quality: {
+        Λ.broken_links_prevention: zero_tolerance_broken_links,
+        Λ.user_workflow_validation: user_centric_documentation,
+        Λ.content_placement_logic: context_appropriate_placement,
+        Λ.pre_commit_validation: mandatory_link_verification
+    },
+    142-git-permission: {
+        Λ.explicit_permission_required: mandatory_git_authorization,
+        Λ.git_operations_covered: comprehensive_git_command_scope,
+        Λ.permission_request_protocol: standardized_authorization_workflow,
+        Λ.violation_detection: unauthorized_operation_prevention
+    },
+    161-refactor-workflow: {
+        Λ.init_rules_trigger: ["init refactor"] command_recognition,
+        Λ.scope_clarification: 8_refactor_scope_options_with_user_confirmation,
+        Λ.step_by_step_execution: mandatory_user_approval_between_each_step,
+        Λ.mandatory_safety: zero_tolerance_proceeding_without_approval,
+        Λ.asset_cleanup: user_confirmation_required_before_file_deletion,
+        Λ.existing_rules_integration: cross_rule_integration_with_001_851_801_821_841
+    }
 }
 ```
 

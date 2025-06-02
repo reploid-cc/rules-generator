@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T.RFCS_template - Sequential Implementation Protocol
 
 ## T.template_purpose: Mathematical Framework

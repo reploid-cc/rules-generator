@@ -1,13 +1,10 @@
 ---
 description: 
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
----
-description:
-globs:
-alwaysApply: true
----
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T Task System & Sprint Management (801)
 
 ## 🎯 T: Structured Task System

@@ -1,8 +1,15 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
+---
+description:
+globs:
+alwaysApply: true
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # M.init Memory Initialization System (111)
 
 ## 🎯 M.init_memory: Project Memory Setup Command

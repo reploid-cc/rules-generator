@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T.implementation_template: RFC-[ID] Implementation Protocol
 
 ## T.developer_context: Processing Framework

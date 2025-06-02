@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # .cursor System - User Rules Mathematical Framework
 
 ## 🎯 Ω.system_architecture: Core Implementation
@@ -194,4 +196,4 @@ T.command_mapping = {
 ```
 
 ---
-*Ω.system_complete: Ω*_reasoning ⨁ T.prd_workflow ⨁ User_Rules_compliance* 
+*Ω.system_complete: Ω_reasoning ⨁ T.prd_workflow ⨁ User_Rules_compliance* 

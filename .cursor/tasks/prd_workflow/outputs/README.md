@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T.prd_workflow/outputs - PRD Workflow Artifacts
 
 ## T.outputs_management: Mathematical Framework Implementation

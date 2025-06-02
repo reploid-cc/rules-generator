@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T.backlog - Task Pool Management
 
 ## T.priority_scoring: Auto-Prioritization Protocol

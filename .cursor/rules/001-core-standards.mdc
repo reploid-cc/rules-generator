@@ -8,6 +8,8 @@ description:
 globs:
 alwaysApply: true
 ---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Ω* Core Reasoning & Execution Standards (001)
 
 ## 🎯 Ω.modes: Reasoning Framework
@@ -103,7 +105,7 @@ D⍺ = (
 ```
 
 ---
-*Ω* = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
+*Ω = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
 
 
 

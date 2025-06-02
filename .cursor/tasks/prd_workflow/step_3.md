@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 ---
 status: pending
 priority: high
@@ -106,4 +108,4 @@ on_validation_pass: [T.advance_to_step_4, Ψ.dialog_required]
 ```
 
 ---
-*T.prd_step_3: PRD → features.md via Ω*_extraction + MoSCoW_mathematical_optimization* 
+*T.prd_step_3: PRD → features.md via Ω_extraction + MoSCoW_mathematical_optimization* 

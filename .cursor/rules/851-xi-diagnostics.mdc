@@ -8,6 +8,8 @@ description:
 globs:
 alwaysApply: true
 ---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Ξ* Diagnostics & Refinement Engine (851)
 
 ## 🎯 Ξ*: Diagnostics & Refinement
@@ -191,6 +193,6 @@ alwaysApply: true
 - **Pattern Violation Frequency**: Monitor rule compliance
 
 ---
-*Ξ* = diagnostics & refinement with predictive issue prevention*
+*Ξ = diagnostics & refinement with predictive issue prevention*
 
 

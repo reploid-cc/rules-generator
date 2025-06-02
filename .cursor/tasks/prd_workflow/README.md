@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # T.prd_workflow - PRD Development Sprint
 
 ## T.prd_workflow: Mathematical Framework Implementation

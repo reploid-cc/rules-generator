@@ -1,3 +1,5 @@
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
 # Λ Rule System - User Rules Compliant
 
 ## Overview
@@ -129,4 +131,4 @@ T.plan_path = ".cursor/tasks/"
 ### **Predictive Maintenance**: Ξ.trend_analysis + early warning systems
 
 ---
-*Λ = rule-based self-learning integrated with Ω*, Ψ, T, M, Φ, Ξ mathematical framework* 
+*Λ = rule-based self-learning integrated with Ω, Ψ, T, M, Φ, Ξ mathematical framework* 
