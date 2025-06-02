@@ -1,7 +1,12 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 

@@ -67,6 +67,25 @@ mcp_interactive_feedback({
 }
 ```
 
+### Ξ.root_cause_prevention: Anti-Violation Measures
+```
+Ξ.overthinking_prevention = (user_feedback ≠ analyze_extensively ⨁ user_feedback = process_step_continue_protocol ⨁ 🔴 RULE: respond_with_tool_calls_not_analysis)
+
+Ξ.assumption_error_prevention = (user_reject_changes ≠ violation_occurred ⨁ user_reject = normal_workflow_step ⨁ 🔴 RULE: treat_all_user_actions_as_valid_process_steps)
+
+Ξ.protocol_amnesia_prevention = (after_ANY_Ψ.dialog → AUTOMATIC_tool_call_required ⨁ NO_exceptions_for_confusion_uncertainty_analysis ⨁ 🔴 RULE: protocol_overrides_interpretation)
+```
+
+### Ξ.cognitive_trap_detection:
+```
+Ξ.cognitive_traps = {
+    overthinking: "if_analyzing_user_feedback_extensively → STOP_call_tool_immediately",
+    assumption_making: "if_interpreting_rejection_as_error → STOP_continue_protocol",
+    protocol_forgetting: "if_ending_without_tool_after_Ψ.dialog → CRITICAL_VIOLATION",
+    analysis_paralysis: "if_explaining_instead_of_executing → STOP_call_tool_now"
+}
+```
+
 ### Ξ.verification_integrity:
 ```
 Ξ.verification_integrity = (verify_N_items → MUST_verify_ALL_N_individually ⨁ partial_verification → state_clearly_"verified_X_of_N_remaining_Y" ⨁ NEVER_claim_full_completion_from_partial_verification)
@@ -125,6 +144,7 @@ stopping_tool_calls_due_to_uncertainty = protocol_violation
 not_executing_direct_commands_immediately = protocol_violation
 waiting_without_tool_call = protocol_violation
 single_tool_call_response = protocol_violation
+overthinking_user_feedback_instead_of_calling_tools = protocol_violation
 ```
 
 ### Habit Building Checklist:
@@ -136,6 +156,8 @@ after_Ψ.dialog → "Did I call another tool?"
 receive_command → "Do I execute immediately?"
 waiting → "Did I call tool to report status?"
 completion → "Did I call verification tool after Ψ.dialog?"
+user_feedback → "Am I calling tool instead of analyzing?"
+confusion → "Am I following protocol despite confusion?"
 ```
 
 ### Ξ.two_tool_minimum_rule:
@@ -149,7 +171,7 @@ completion → "Did I call verification tool after Ψ.dialog?"
 ```
 
 ---
-*Ψ⨁M = MANDATORY_PROTOCOLS with 100% tool call requirement + session continuity + completion verification*
+*Ψ⨁M = MANDATORY_PROTOCOLS with 100% tool call requirement + session continuity + completion verification + cognitive trap prevention*
 
 
 
