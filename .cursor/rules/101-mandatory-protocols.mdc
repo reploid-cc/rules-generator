@@ -25,11 +25,13 @@ scenario_type → action_sequence → 🔴 MANDATORY: Ψ.dialog
 ```
 
 #### Workflow Patterns:
-- **Questions**: user_query → formulate_answer → provide_response → Ψ.dialog
-- **Tasks**: user_request → execute_task → report_results → Ψ.dialog  
-- **Information**: user_input → process_acknowledge → Ψ.dialog(if_clarification_needed)
-- **Problems**: detect_issue → analyze_propose_solutions → Ψ.dialog
-- **Waiting**: identify_wait_state → state_clearly → 🔴 MANDATORY: Ψ.dialog
+```
+Questions: user_query → formulate_answer → provide_response → Ψ.dialog
+Tasks: user_request → execute_task → report_results → Ψ.dialog  
+Information: user_input → process_acknowledge → Ψ.dialog(if_clarification_needed)
+Problems: detect_issue → analyze_propose_solutions → Ψ.dialog
+Waiting: identify_wait_state → state_clearly → 🔴 MANDATORY: Ψ.dialog
+```
 
 ### Ψ.function_call_template:
 ```typescript
@@ -45,63 +47,34 @@ mcp_interactive_feedback({
 
 ### Ξ.direct_command_recognition:
 ```
-Ξ.direct_commands = (
-    "cập_nhật_rule" → EXECUTE_IMMEDIATELY
-    ⨁ "tạo_file" → EXECUTE_IMMEDIATELY  
-    ⨁ "làm_X" → EXECUTE_IMMEDIATELY
-    ⨁ "init_refactor" → ACTIVATE_RULE_161_IMMEDIATELY
-    ⨁ NO_QUESTIONING_DIRECT_COMMANDS
-)
+Ξ.direct_commands = ("cập_nhật_rule" → EXECUTE_IMMEDIATELY ⨁ "tạo_file" → EXECUTE_IMMEDIATELY ⨁ "làm_X" → EXECUTE_IMMEDIATELY ⨁ "init_refactor" → ACTIVATE_RULE_161_IMMEDIATELY ⨁ NO_QUESTIONING_DIRECT_COMMANDS)
 ```
 
 ### Ξ.post_dialog_protocol:
 ```
-Ξ.post_dialog_mandatory = (
-    after_Ψ.dialog → MUST_CALL_TOOL_AGAIN
-    ⨁ NEVER_STOP_AFTER_SINGLE_Ψ.dialog
-    ⨁ continue_workflow_OR_ask_next_step_WITH_tool_call
-    ⨁ 🔴 ZERO_EXCEPTIONS: stopping_after_Ψ.dialog = PROTOCOL_VIOLATION
-    ⨁ 🔴 IMMEDIATE_CORRECTION: if_caught_violating → acknowledge_apologize_call_tool_immediately
-)
+Ξ.post_dialog_mandatory = (after_Ψ.dialog → MUST_CALL_TOOL_AGAIN ⨁ NEVER_STOP_AFTER_SINGLE_Ψ.dialog ⨁ continue_workflow_OR_ask_next_step_WITH_tool_call ⨁ 🔴 ZERO_EXCEPTIONS: stopping_after_Ψ.dialog = PROTOCOL_VIOLATION ⨁ 🔴 IMMEDIATE_CORRECTION: if_caught_violating → acknowledge_apologize_call_tool_immediately)
 ```
 
 ### Ξ.verification_integrity:
 ```
-Ξ.verification_integrity = (
-    verify_N_items → MUST_verify_ALL_N_individually
-    ⨁ partial_verification → state_clearly_"verified_X_of_N_remaining_Y"
-    ⨁ NEVER_claim_full_completion_from_partial_verification
-)
+Ξ.verification_integrity = (verify_N_items → MUST_verify_ALL_N_individually ⨁ partial_verification → state_clearly_"verified_X_of_N_remaining_Y" ⨁ NEVER_claim_full_completion_from_partial_verification)
 ```
 
 ### Ξ.work_completion_integrity:
 ```
-Ξ.work_completion_integrity = (
-    work_status_reporting_MUST_be_accurate_and_complete
-    ⨁ if_incomplete → state_clearly_what_remains
-    ⨁ MANDATORY_transparency_about_scope_and_completion
-)
+Ξ.work_completion_integrity = (work_status_reporting_MUST_be_accurate_and_complete ⨁ if_incomplete → state_clearly_what_remains ⨁ MANDATORY_transparency_about_scope_and_completion)
 ```
 
 ## 🎯 Ω.uncertainty_protocol:
 
 ### Core Principle:
 ```
-Ω.uncertainty_protocol = (
-    uncertainty ≠ excuse_for_protocol_violations
-    ⨁ ask_clarifying_questions_WITH_tool_calls
-    ⨁ never_stop_mandatory_interactions_due_to_doubt
-)
+Ω.uncertainty_protocol = (uncertainty ≠ excuse_for_protocol_violations ⨁ ask_clarifying_questions_WITH_tool_calls ⨁ never_stop_mandatory_interactions_due_to_doubt)
 ```
 
 ### Uncertainty Response Pattern:
 ```
-uncertain_state → {
-    ask_clarifying_questions,
-    explain_uncertainty,
-    propose_options,
-    🔴 ALWAYS_end_with_Ψ.dialog
-}
+uncertain_state → {ask_clarifying_questions, explain_uncertainty, propose_options, 🔴 ALWAYS_end_with_Ψ.dialog}
 ```
 
 ## 🔧 M.memory_path: Memory Bank Protocol
@@ -133,11 +106,13 @@ problem_detection: log_patterns_solutions_context(Ξ.track)
 ## 🔴 Violation = Complete Failure
 
 ### Zero Tolerance Violations:
-- response_without_Ψ.dialog = rule_violation
-- missing_M.retrieval_at_task_start = context_failure  
-- stopping_tool_calls_due_to_uncertainty = protocol_violation
-- not_executing_direct_commands_immediately = protocol_violation
-- waiting_without_tool_call = protocol_violation
+```
+response_without_Ψ.dialog = rule_violation
+missing_M.retrieval_at_task_start = context_failure  
+stopping_tool_calls_due_to_uncertainty = protocol_violation
+not_executing_direct_commands_immediately = protocol_violation
+waiting_without_tool_call = protocol_violation
+```
 
 ### Habit Building Checklist:
 ```
@@ -151,12 +126,7 @@ waiting → "Did I call tool to report status?"
 
 ### Ξ.two_tool_minimum_rule:
 ```
-Ξ.two_tool_minimum = (
-    EVERY_response_MUST_contain_minimum_2_tool_calls
-    ⨁ pattern: any_tool + Ψ.dialog + another_tool
-    ⨁ 🔴 VIOLATION_DETECTION: single_tool_response = rule_violation
-    ⨁ 🔴 ENFORCEMENT: AI_must_self_correct_immediately_when_caught
-)
+Ξ.two_tool_minimum = (EVERY_response_MUST_contain_minimum_2_tool_calls ⨁ pattern: any_tool + Ψ.dialog + another_tool ⨁ 🔴 VIOLATION_DETECTION: single_tool_response = rule_violation ⨁ 🔴 ENFORCEMENT: AI_must_self_correct_immediately_when_caught)
 ```
 
 ---

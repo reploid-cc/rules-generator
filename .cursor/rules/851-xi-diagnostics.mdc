@@ -55,10 +55,7 @@ alwaysApply: true
 
 ### Ξ.error_memory_structure: Template
 ```
-Ξ.error_memory_structure = {
-    recurring_issues: {problem, occurrences, root_cause, resolution, prevention, status},
-    pattern_analysis: {frequency, impact, proposed_solution, rule_draft_link}
-}
+Ξ.error_memory_structure = {recurring_issues: {problem, occurrences, root_cause, resolution, prevention, status}, pattern_analysis: {frequency, impact, proposed_solution, rule_draft_link}}
 ```
 
 ### Ξ.solution_generation: Process
@@ -87,12 +84,7 @@ alwaysApply: true
 
 ### Ξ.effectiveness: Diagnostic Metrics
 ```
-Ξ.effectiveness = {
-    issue_resolution_rate: resolved_issues / total_issues,
-    prevention_success: prevented_recurrences / total_attempts,
-    pattern_detection_accuracy: correct_patterns / total_patterns,
-    cleanup_impact: quality_improvement_score
-}
+Ξ.effectiveness = {issue_resolution_rate: resolved/total, prevention_success: prevented/attempts, pattern_detection_accuracy: correct/total, cleanup_impact: quality_score}
 ```
 
 ### Ξ.improvement_tracking: Quality Metrics

@@ -17,13 +17,7 @@ User Command: "init refactor"
 
 ### Λ.161_workflow: 5-Phase Execution
 ```
-Λ.161 = (
-    scope_clarification()
-    ⨁ strategic_planning()
-    ⨁ file_creation()
-    ⨁ controlled_execution()
-    ⨁ cleanup_completion()
-)
+Λ.161 = (scope_clarification() ⨁ strategic_planning() ⨁ file_creation() ⨁ controlled_execution() ⨁ cleanup_completion())
 ```
 
 ## 🎯 Phase 1: Scope Clarification
@@ -31,49 +25,32 @@ User Command: "init refactor"
 ### Λ.161.scope_options: 8 Refactor Types
 ```
 Λ.161.scope_options = {
-    1: "toàn_bộ_codebase_dự_án",
-    2: "thư_mục_cụ_thể",
-    3: "file_đơn_lẻ",
-    4: "component_module_cụ_thể",
-    5: "pattern_design_cụ_thể",
-    6: "architecture_system_level",
-    7: "technical_debt_cleanup",
-    8: "performance_optimization"
+    1: toàn_bộ_codebase_dự_án,
+    2: thư_mục_cụ_thể,
+    3: file_đơn_lẻ,
+    4: component_module_cụ_thể,
+    5: pattern_design_cụ_thể,
+    6: architecture_system_level,
+    7: technical_debt_cleanup,
+    8: performance_optimization
 }
 ```
 
 ### Λ.161.clarification_protocol:
 ```
-Λ.161.clarification_protocol = (
-    present_8_options_with_descriptions
-    ⨁ gather_pain_points_goals_constraints
-    ⨁ assess_priority_risk_tolerance
-    ⨁ 🔴 MANDATORY: user_confirmation_before_proceed
-)
+Λ.161.clarification_protocol = (present_8_options ⨁ gather_constraints ⨁ assess_priority ⨁ 🔴 MANDATORY: user_confirmation_before_proceed)
 ```
 
 ## 🎯 Phase 2: Strategic Planning
 
 ### Λ.161.analysis_framework:
 ```
-Λ.161.analysis = (
-    current_state_assessment()
-    ⨁ complexity_scope_estimation()
-    ⨁ risk_impact_analysis()
-    ⨁ resource_time_estimation()
-    ⨁ phased_strategy_proposal()
-)
+Λ.161.analysis = (current_state_assessment() ⨁ complexity_estimation() ⨁ risk_analysis() ⨁ resource_estimation() ⨁ phased_strategy())
 ```
 
 ### Λ.161.planning_output:
 ```
-Λ.161.planning_output = {
-    strategy: multi_phase_approach,
-    timeline: estimated_hours_breakdown,
-    risks: identified_potential_issues,
-    safety: rollback_contingency_plans,
-    validation: testing_verification_strategy
-}
+Λ.161.planning_output = {strategy: multi_phase, timeline: hours_breakdown, risks: potential_issues, safety: rollback_plans, validation: testing_strategy}
 ```
 
 ### 🔴 MANDATORY: User Approval Required
@@ -86,23 +63,12 @@ User Command: "init refactor"
 ### Λ.161.asset_generation:
 ```
 Λ.161.refactor_path = ".cursor/tasks/refactor_{timestamp}/"
-Λ.161.assets = {
-    refactor_plan.md: comprehensive_strategy_document,
-    checklist.md: step_by_step_execution_guide,
-    rollback_guide.md: emergency_safety_procedures,
-    test_validation.md: testing_strategy_framework,
-    progress_tracking.md: monitoring_system
-}
+Λ.161.assets = {refactor_plan.md, checklist.md, rollback_guide.md, test_validation.md, progress_tracking.md}
 ```
 
 ### Λ.161.safety_protocols:
 ```
-Λ.161.safety = (
-    git_backup_before_changes
-    ⨁ incremental_commits_per_phase
-    ⨁ rollback_procedures_documented
-    ⨁ validation_checkpoints_mandatory
-)
+Λ.161.safety = (git_backup ⨁ incremental_commits ⨁ rollback_procedures ⨁ validation_checkpoints)
 ```
 
 ### 🔴 MANDATORY: User Approval Required
@@ -114,130 +80,69 @@ User Command: "init refactor"
 
 ### Λ.161.execution_protocol:
 ```
-Λ.161.execution = (
-    execute_one_step_at_time
-    ⨁ 🔴 MANDATORY: user_approval_each_step
-    ⨁ validate_after_each_change
-    ⨁ commit_incremental_progress
-    ⨁ monitor_for_breaking_changes
-)
+Λ.161.execution = (execute_one_step ⨁ 🔴 MANDATORY: user_approval_each_step ⨁ validate_after_change ⨁ commit_progress ⨁ monitor_breaking_changes)
 ```
 
 ### Λ.161.step_validation:
 ```
-Λ.161.validation = (
-    functional_integrity_check
-    ⨁ rule_compatibility_verification
-    ⨁ cross_reference_validation
-    ⨁ mathematical_notation_consistency
-)
+Λ.161.validation = (functional_check ⨁ rule_compatibility ⨁ cross_reference_check ⨁ notation_consistency)
 ```
 
 ### Λ.161.breaking_change_detection:
 ```
-Λ.161.breaking_detection = (
-    if breaking_change_detected → immediate_stop
-    ⨁ rollback_to_last_safe_state
-    ⨁ report_issue_via_Ψ.dialog
-    ⨁ require_user_decision_to_proceed
-)
+Λ.161.breaking_detection = (if_breaking_detected → immediate_stop ⨁ rollback_safe_state ⨁ report_via_Ψ ⨁ require_user_decision)
 ```
 
 ## 🎯 Phase 5: Cleanup Completion
 
 ### Λ.161.completion_protocol:
 ```
-Λ.161.completion = (
-    final_validation_comprehensive
-    ⨁ success_metrics_reporting
-    ⨁ cleanup_temporary_files
-    ⨁ 🔴 MANDATORY: user_confirmation_before_cleanup
-)
+Λ.161.completion = (final_validation ⨁ metrics_reporting ⨁ cleanup_temp_files ⨁ 🔴 MANDATORY: user_confirmation_cleanup)
 ```
 
 ### Λ.161.success_criteria:
 ```
-Λ.161.success = (
-    all_functionality_preserved
-    ⨁ target_improvements_achieved
-    ⨁ no_breaking_changes_introduced
-    ⨁ documentation_updated
-    ⨁ git_history_clean
-)
+Λ.161.success = (functionality_preserved ⨁ improvements_achieved ⨁ zero_breaking_changes ⨁ docs_updated ⨁ git_clean)
 ```
 
 ## 🎯 Integration với User Rules Framework
 
 ### Cross-System Integration
 ```
-Λ.161.integration = (
-    Ω.refactor_guard: avoid_premature_generalization
-    ⨁ Ξ.cleanup_phase: code_drift_detection
-    ⨁ Λ.pattern_alignment: best_practices_enforcement
-    ⨁ Φ.snapshot: pattern_capture_during_refactor
-    ⨁ Ψ.capture: cognitive_trace_all_decisions
-    ⨁ M.sync: memory_update_with_insights
-)
+Λ.161.integration = (Ω.refactor_guard ⨁ Ξ.cleanup_phase ⨁ Λ.pattern_alignment ⨁ Φ.snapshot ⨁ Ψ.capture ⨁ M.sync)
 ```
 
 ### Safety Integration với Rule 142
 ```
-Λ.161.git_safety = (
-    follow_rule_142_git_permission_protocols
-    ⨁ request_permission_before_git_operations
-    ⨁ descriptive_commit_messages
-    ⨁ incremental_commits_for_rollback_capability
-)
+Λ.161.git_safety = (follow_rule_142 ⨁ request_permission ⨁ descriptive_commits ⨁ incremental_commits)
 ```
 
 ## 🎯 Error Handling & Recovery
 
 ### Λ.161.error_protocol:
 ```
-Λ.161.error_handling = (
-    immediate_stop_on_critical_error
-    ⨁ rollback_to_last_known_good_state
-    ⨁ document_error_in_Ξ.error_memory
-    ⨁ require_user_decision_for_continuation
-)
+Λ.161.error_handling = (immediate_stop ⨁ rollback_safe_state ⨁ document_in_Ξ ⨁ require_user_decision)
 ```
 
 ### Emergency Rollback
 ```
-Λ.161.emergency_rollback = (
-    git_reset_to_backup_commit
-    ⨁ restore_original_files
-    ⨁ validate_system_integrity
-    ⨁ report_rollback_completion
-)
+Λ.161.emergency_rollback = (git_reset_backup ⨁ restore_files ⨁ validate_integrity ⨁ report_completion)
 ```
 
 ## 🎯 Quality Assurance
 
 ### Λ.161.quality_gates:
 ```
-Λ.161.quality = (
-    zero_tolerance_breaking_changes
-    ⨁ 100%_functional_preservation
-    ⨁ mathematical_notation_consistency
-    ⨁ cross_reference_integrity
-    ⨁ user_approval_mandatory_all_phases
-)
+Λ.161.quality = (zero_breaking_changes ⨁ 100%_functional_preservation ⨁ notation_consistency ⨁ cross_reference_integrity ⨁ mandatory_user_approval)
 ```
 
 ### Success Metrics
 ```
-Λ.161.metrics = {
-    compression_ratio: target_vs_achieved,
-    functionality_preservation: 100%_required,
-    breaking_changes: zero_tolerance,
-    user_satisfaction: approval_at_each_gate,
-    time_efficiency: planned_vs_actual
-}
+Λ.161.metrics = {compression_ratio: target_vs_achieved, functionality: 100%_required, breaking_changes: zero_tolerance, user_satisfaction: approval_gates, efficiency: planned_vs_actual}
 ```
 
 ---
-*Λ.161: Systematic refactor workflow với mandatory user approval và zero breaking changes tolerance*
+*Λ.161: Systematic refactor workflow với mandatory user approval → zero breaking changes*
 
 
 
