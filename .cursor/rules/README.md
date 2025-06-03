@@ -131,4 +131,4 @@ T.plan_path = ".cursor/tasks/"
 ### **Predictive Maintenance**: Ξ.trend_analysis + early warning systems
 
 ---
-*Λ = rule-based self-learning integrated with Ω, Ψ, T, M, Φ, Ξ mathematical framework* 
+*Λ = rule-based self-learning integrated with Ω*, Ψ, T, M, Φ, Ξ mathematical framework* 

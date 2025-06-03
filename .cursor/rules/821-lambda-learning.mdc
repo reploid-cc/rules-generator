@@ -9,7 +9,6 @@ globs:
 alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
-
 # Λ Rule-Based Self-Learning System (821)
 
 ## 🎯 Λ: Rule-Based Self-Learning
@@ -40,71 +39,123 @@ alwaysApply: true
 
 ### Pattern Recognition & Alignment
 ```
-Λ.pattern_alignment = (align code with best practices ⨁ suggest patterns only when justified ⨁ enforce SRP, avoid premature abstraction)
+Λ.pattern_alignment = (
+    align code with best practices
+    ⨁ suggest patterns only when justified
+    ⨁ enforce SRP, avoid premature abstraction
+)
 ```
 
 ### Best Practice Enforcement
-```
-Λ.best_practices = {SRP: one_clear_purpose_per_function, simplicity_guard: challenge_overengineering_delay_abstraction, pattern_justification: suggest_only_when_beneficial, context_aware: apply_based_on_project_structure}
-```
+- **Single Responsibility Principle (SRP)**: One clear purpose per function/class
+- **Simplicity Guard**: Challenge overengineering, delay abstraction
+- **Pattern Justification**: Only suggest patterns when clearly beneficial
+- **Context-Aware**: Apply rules based on project structure and scope
 
 ## 🎯 Λ.autonomy: Intelligent Rule Generation
 
 ### Auto-Detection System
 ```
-Λ.autonomy = (auto-detect rule-worthy recurrences ⨁ generate _DRAFT.mdc in context)
+Λ.autonomy = (
+    auto-detect rule-worthy recurrences
+    ⨁ generate _DRAFT.mdc in context
+)
 ```
 
 ### Rule Discovery Process
-```
-Λ.discovery_process = (pattern_detection → context_analysis → rule_drafting → validation → integration)
-```
+1. **Pattern Detection**: Identify recurring issues or solutions
+2. **Context Analysis**: Evaluate if pattern is generalizable
+3. **Rule Drafting**: Generate `_DRAFT.mdc` for review
+4. **Validation**: Test rule effectiveness across scenarios
+5. **Integration**: Promote to official rule with proper naming
 
 ## 🎯 Λ.extract: Learning from Experience
 
 ### Experience Extraction
 ```
-Λ.extract = (triggered on sprint_review ⨁ analyze what worked vs what didn't ⨁ identify reusable patterns ⨁ suggest rule improvements)
+Λ.extract = (
+    triggered on sprint_review
+    ⨁ analyze what worked vs what didn't
+    ⨁ identify reusable patterns
+    ⨁ suggest rule improvements
+)
 ```
 
 ### Learning Triggers
-```
-Λ.learning_triggers = {recurring_issues: >2_occurrences, successful_patterns: proven_effective_solutions, anti_patterns: documented_problematic_approaches, tool_configurations: effective_setup_procedures}
-```
+- **Recurring Issues**: Same problem appears >2 times
+- **Successful Patterns**: Proven effective solutions
+- **Anti-Patterns**: Documented problematic approaches
+- **Tool Configurations**: Effective setup procedures
 
 ### Ξ.pattern_suggestion Integration
 ```
 Ξ.recurrence_threshold = 2
-Ξ.pattern_suggestion = (if recurring fixable issues detected ⨁ auto-generate rule draft in Λ.path ⨁ suggest reusable strategy)
+Ξ.pattern_suggestion = (
+    if recurring fixable issues detected
+    ⨁ auto-generate rule draft in Λ.path
+    ⨁ suggest reusable strategy
+)
 ```
 
 ## 🎯 Λ Rule Quality Standards
 
 ### Rule Effectiveness Criteria
-```
-Λ.effectiveness_criteria = {actionable: clear_executable_instructions, contextual: applies_to_appropriate_scenarios, testable: can_verify_effectiveness, maintainable: easy_to_update_as_context_evolves}
-```
+- **Actionable**: Clear, executable instructions
+- **Contextual**: Applies to appropriate scenarios
+- **Testable**: Can verify rule effectiveness
+- **Maintainable**: Easy to update as context evolves
 
 ### Rule Structure Template
-```
-Λ.rule_template = {metadata: description_globs_alwaysApply, title: Rule_Title_XXX, purpose_context: when_and_why_applies, implementation: specific_actionable_instructions, validation: verify_effectiveness, integration: interaction_with_other_systems, tracking: effectiveness_note}
+```markdown
+---
+description: Brief rule purpose
+globs: [optional file patterns]
+alwaysApply: [true|false]
+---
+# Rule Title (XXX)
+
+## 🎯 Purpose & Context
+Clear explanation of when and why this rule applies
+
+## 🎯 Implementation Guidelines
+Specific, actionable instructions
+
+## 🎯 Quality Validation
+How to verify rule effectiveness
+
+## 🎯 Integration Points
+How this rule interacts with other systems
+
+---
+*Rule effectiveness tracking note*
 ```
 
 ## 🎯 Λ Integration with Other Systems
 
 ### Rule Activation Context
 ```
-Ω.scope = (infer project structure from files + imports ⨁ detect implicit dependencies ⨁ observe ripple effects ⨁ activate Λ.rules in-context ⨁ silent_observer_mode to respect IDE logic)
+Ω.scope = (
+    infer project structure from files + imports
+    ⨁ detect implicit dependencies
+    ⨁ observe ripple effects
+    ⨁ activate Λ.rules in-context
+    ⨁ silent_observer_mode to respect IDE logic
+)
 ```
 
 ### Cross-System Integration
-```
-Λ.integration = {Ψ_traces: rules_invoked_logged_in_cognitive_traces, T_tasks: rule_compliance_checked_in_task_validation, Ξ_diagnostics: rule_effectiveness_monitored, M_memory: rule_patterns_stored_for_future_reference}
-```
+- **Ψ Traces**: Rules invoked logged in cognitive traces
+- **T Tasks**: Rule compliance checked in task validation
+- **Ξ Diagnostics**: Rule effectiveness monitored
+- **M Memory**: Rule patterns stored for future reference
 
 ### Rule Conflict Resolution
 ```
-D⍺.rule_conflict = (identify conflicting rules ⨁ resolve by priority, context, or specificity ⨁ log resolution in Ψ.dialog)
+D⍺.rule_conflict = (
+    identify conflicting rules
+    ⨁ resolve by priority, context, or specificity
+    ⨁ log resolution in Ψ.dialog
+)
 ```
 
 ---

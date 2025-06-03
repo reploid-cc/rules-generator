@@ -1,10 +1,14 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
-
 # Content Targeting: AI-facing vs User-facing (121)
 
 ## 🎯 Header.placement_protocol: File Type Specific Rules
@@ -12,14 +16,19 @@ alwaysApply: false
 ### Header.placement_rules: Implementation
 ```
 Header.placement_rules = {
-    all_cursor_files: "<!-- CONTENT_TARGET: [TYPE] --> as first line or after metadata",
-    focus: content_targeting_identification_only
+    all_cursor_files: "<!-- CONTENT_TARGET: [TYPE] --> as first line or after any existing metadata",
+    focus: "content_targeting_identification_only"
 }
 ```
 
 ### Header.format: Mandatory Pattern
 ```
-CORRECT.format = "<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->"
+CORRECT.example = "
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# File Title
+content...
+"
 ```
 
 ## 🎯 Content.targeting Framework
@@ -34,9 +43,20 @@ Content.targeting = {
 
 ### Content.targeting_rules: Processing Logic
 ```
-User_facing_content = (when_user_directly_interacts ⨁ when_asking_questions ⨁ when_explaining_concepts ⨁ when_providing_documentation)
+User_facing_content = (
+    when_user_directly_interacts
+    ⨁ when_asking_questions_or_gathering_input
+    ⨁ when_explaining_concepts_to_humans
+    ⨁ when_providing_documentation_for_teams
+)
 
-AI_facing_content = (when_AI_processes_instructions ⨁ when_implementing_User_Rules_framework ⨁ when_defining_system_behavior ⨁ when_creating_workflows ⨁ when_creating_cursor_content)
+AI_facing_content = (
+    when_AI_processes_instructions
+    ⨁ when_implementing_User_Rules_mathematical_framework
+    ⨁ when_defining_system_behavior
+    ⨁ when_creating_processing_workflows
+    ⨁ when_creating_content_in_cursor_directory
+)
 ```
 
 ## 🎯 Cursor.directory_targeting: MANDATORY AI-Facing Content
@@ -53,28 +73,52 @@ Cursor.directory_content = {
 
 ### Cursor.content_specification: Processing Requirements
 ```
-Cursor.files_must_use = (Ω_reasoning_modes ⨁ Ψ_capture_operations ⨁ T_task_framework ⨁ Λ_rule_learning ⨁ Ξ_diagnostics ⨁ M_memory_sync ⨁ Φ_abstraction)
+Cursor.files_must_use = (
+    Ω_reasoning_modes_notation
+    ⨁ Ψ_capture_trace_operations
+    ⨁ T_task_system_mathematical_framework
+    ⨁ Λ_rule_based_learning_notation
+    ⨁ Ξ_diagnostics_mathematical_operations
+    ⨁ M_memory_sync_operations
+    ⨁ Φ_abstraction_mathematical_notation
+)
 ```
 
 ### Cursor.anti_patterns: Forbidden Content Types
 ```
-Cursor.forbidden_content = {friendly_language: VIOLATION, human_explanations: VIOLATION, interactive_questions: VIOLATION, markdown_without_notation: VIOLATION, user_facing_style: VIOLATION}
+Cursor.forbidden_content = {
+    friendly_conversational_language: VIOLATION,
+    human_readable_explanations: VIOLATION,
+    interactive_questions: VIOLATION,
+    markdown_without_mathematical_notation: VIOLATION,
+    user_facing_documentation_style: VIOLATION
+}
 ```
 
 ### Cursor.validation_protocol: Quality Gates
 ```
-Cursor.validation = (scan_cursor_files ⨁ verify_mathematical_notation ⨁ validate_User_Rules_compliance ⨁ ensure_AI_optimization ⨁ flag_violations)
+Cursor.validation = (
+    scan_all_cursor_directory_files
+    ⨁ verify_mathematical_notation_presence
+    ⨁ validate_User_Rules_framework_compliance
+    ⨁ ensure_AI_processing_optimization
+    ⨁ flag_user_facing_content_violations
+)
 ```
 
 ## 🎯 Implementation.note: Tool Limitations
 
 ### AI.agent_limitations: Technical Constraints
 ```
-AI.agent_limitations = {mdc_files: "Cannot edit metadata blocks", workaround: "Headers after metadata", focus: "Content identification vs metadata management"}
+AI.agent_limitations = {
+    mdc_files: "Cannot edit metadata blocks in .mdc files",
+    workaround: "Content targeting headers added after any existing metadata",
+    focus: "Content identification rather than metadata management"
+}
 ```
 
 ---
-*Content.targeting: User_facing_friendly vs AI_facing_mathematical + Cursor_MANDATORY_AI_facing*
+*Content.targeting: User_facing_friendly vs AI_facing_mathematical + Cursor_directory_MANDATORY_AI_facing - simplified_implementation*
 
 
 

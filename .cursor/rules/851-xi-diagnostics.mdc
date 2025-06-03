@@ -9,7 +9,6 @@ globs:
 alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
-
 # Ξ* Diagnostics & Refinement Engine (851)
 
 ## 🎯 Ξ*: Diagnostics & Refinement
@@ -18,59 +17,104 @@ alwaysApply: true
 ```
 Ξ* = diagnostics & refinement
 Ξ.error_memory = ".cursor/memory/errors.md"
-Ξ.track = log_recurring_issues_propose_fix
+Ξ.track = log recurring issues, propose fix
 ```
 
 ### Recurrence Detection
 ```
 Ξ.recurrence_threshold = 2
-Ξ.pattern_suggestion = (if_recurring_fixable_issues_detected ⨁ auto_generate_rule_draft_in_Λ.path ⨁ suggest_reusable_strategy)
+Ξ.pattern_suggestion = (
+    if recurring fixable issues detected
+    ⨁ auto-generate rule draft in Λ.path
+    ⨁ suggest reusable strategy
+)
 ```
 
 ## 🎯 Ξ.cleanup_phase: Code Quality Maintenance
 
 ### Drift Detection & Cleanup
 ```
-Ξ.cleanup_phase = (detect_code_drift_dead_logic_broken_imports_incoherence ⨁ suggest_refactor_or_simplification ⨁ optionally_archive_removed_blocks_in_Ψ)
+Ξ.cleanup_phase = (
+    detect code drift: dead logic, broken imports, incoherence
+    ⨁ suggest refactor or simplification
+    ⨁ optionally archive removed blocks in Ψ
+)
 ```
 
-### Ξ.quality_issues: Tracked Issues
-```
-Ξ.quality_issues = {dead_logic, broken_imports, incoherence, technical_debt, performance_issues}
-```
+### Code Quality Issues Tracked
+- **Dead Logic**: Unreachable or unused code
+- **Broken Imports**: Missing or incorrect dependencies
+- **Incoherence**: Inconsistent patterns or naming
+- **Technical Debt**: Accumulated shortcuts or workarounds
+- **Performance Issues**: Inefficient implementations
 
 ## 🎯 Ξ.track: Issue Tracking & Analysis
 
-### Ξ.issue_types: Classification System
+### Issue Classification System
 ```
-Ξ.issue_types = {recurring, systematic, environmental, architectural, procedural}
+Ξ.issue_types = {
+    recurring: same_problem_multiple_times,
+    systematic: pattern_of_related_issues,
+    environmental: setup_or_configuration_problems,
+    architectural: fundamental_design_issues,
+    procedural: process_or_workflow_problems
+}
 ```
 
-### Ξ.tracking_protocol: 6-Step Process
-```
-Ξ.tracking_protocol = (issue_detection → context_capture → pattern_analysis → root_cause → solution_tracking → effectiveness_monitoring)
-```
+### Tracking Protocol
+1. **Issue Detection**: Identify problem occurrence
+2. **Context Capture**: Record surrounding circumstances
+3. **Pattern Analysis**: Check for recurring patterns
+4. **Root Cause**: Determine underlying cause
+5. **Solution Tracking**: Document resolution approach
+6. **Effectiveness**: Monitor solution success
 
 ## 🎯 Ξ Error Analysis & Resolution
 
-### Ξ.error_memory_structure: Template
-```
-Ξ.error_memory_structure = {recurring_issues: {problem, occurrences, root_cause, resolution, prevention, status}, pattern_analysis: {frequency, impact, proposed_solution, rule_draft_link}}
+### Error Memory Structure
+```markdown
+# errors.md
+
+## Recurring Issues
+### [Issue Category]
+- **Problem**: Description of the issue
+- **Occurrences**: Timestamps and contexts
+- **Root Cause**: Underlying reason
+- **Resolution**: Applied solution
+- **Prevention**: How to avoid in future
+- **Status**: [Active|Resolved|Monitoring]
+
+## Pattern Analysis
+### [Pattern Name]
+- **Frequency**: How often it occurs
+- **Impact**: Severity and scope
+- **Proposed Solution**: Systematic fix
+- **Rule Draft**: Link to generated Λ rule
 ```
 
-### Ξ.solution_generation: Process
+### Solution Generation Process
 ```
-Ξ.solution_generation = (analyze_issue_context_frequency ⨁ identify_root_cause_patterns ⨁ propose_systematic_solutions ⨁ generate_preventive_Λ_rules_if_appropriate)
+Ξ.solution_generation = (
+    analyze issue context and frequency
+    ⨁ identify root cause patterns
+    ⨁ propose systematic solutions
+    ⨁ generate preventive Λ rules if appropriate
+)
 ```
 
 ## 🎯 Ξ Integration with Learning Systems
 
-### Ξ.auto_rule_generation: Automatic Rule Creation
+### Automatic Rule Generation
 ```
-Ξ.auto_rule_generation = (if_issue_frequency_≥_Ξ.recurrence_threshold ⨁ generate_DRAFT.mdc_in_Λ.path ⨁ include_problem_description_solution ⨁ propose_prevention_strategy)
+Ξ.auto_rule_generation = (
+    if issue_frequency >= Ξ.recurrence_threshold
+    ⨁ generate _DRAFT.mdc in Λ.path
+    ⨁ include problem description + solution
+    ⨁ propose prevention strategy
+)
 ```
 
-### Ξ.diagnostic_hooks: Cross-System Integration
+### Cross-System Diagnostic Hooks
 ```
 Σ_hooks.diagnostics = {
     on_error_detected: [Ξ.track, Λ.suggest],
@@ -82,46 +126,72 @@ alwaysApply: true
 
 ## 🎯 Ξ Quality Metrics & Monitoring
 
-### Ξ.effectiveness: Diagnostic Metrics
+### Diagnostic Effectiveness Metrics
 ```
-Ξ.effectiveness = {issue_resolution_rate: resolved/total, prevention_success: prevented/attempts, pattern_detection_accuracy: correct/total, cleanup_impact: quality_score}
+Ξ.effectiveness = {
+    issue_resolution_rate: resolved_issues / total_issues,
+    prevention_success: prevented_recurrences / total_attempts,
+    pattern_detection_accuracy: correct_patterns / total_patterns,
+    cleanup_impact: quality_improvement_score
+}
 ```
 
-### Ξ.improvement_tracking: Quality Metrics
-```
-Ξ.improvement_tracking = {before_after_metrics, issue_reduction, prevention_effectiveness, time_to_resolution}
-```
+### Quality Improvement Tracking
+- **Before/After Metrics**: Code quality scores pre/post cleanup
+- **Issue Reduction**: Decrease in recurring problems
+- **Prevention Effectiveness**: Success of preventive measures
+- **Time to Resolution**: Speed of issue identification and fixing
 
 ## 🎯 Ξ.cleanup Automation
 
-### Ξ.auto_cleanup: Automated Triggers
+### Automated Cleanup Triggers
 ```
-Ξ.auto_cleanup = (trigger_on = [file_modification_count > threshold, error_frequency > acceptable_rate, technical_debt_accumulation > limit, manual_cleanup_request])
+Ξ.auto_cleanup = (
+    trigger_on = [
+        file_modification_count > threshold,
+        error_frequency > acceptable_rate,
+        technical_debt_accumulation > limit,
+        manual_cleanup_request
+    ]
+)
 ```
 
-### Ξ.cleanup_operations: 5-Step Process
-```
-Ξ.cleanup_operations = {dead_code_removal, import_optimization, pattern_consistency, documentation_sync, test_coverage_gaps}
-```
+### Cleanup Operations
+1. **Dead Code Removal**: Identify and suggest removal of unused code
+2. **Import Optimization**: Fix broken or redundant imports
+3. **Pattern Consistency**: Align with established patterns
+4. **Documentation Sync**: Update docs to match implementation
+5. **Test Coverage**: Identify gaps in test coverage
 
-### Ξ.safety_protocol: Safety Measures
+### Safety Protocols
 ```
-Ξ.safety_protocol = (archive_removed_code_in_Ψ_traces ⨁ require_confirmation_for_major_changes ⨁ maintain_rollback_capability ⨁ document_all_cleanup_decisions)
+Ξ.safety_protocol = (
+    archive_removed_code_in_Ψ_traces
+    ⨁ require_confirmation_for_major_changes
+    ⨁ maintain_rollback_capability
+    ⨁ document_all_cleanup_decisions
+)
 ```
 
 ## 🎯 Ξ Predictive Analysis
 
-### Ξ.trend_analysis: Predictive Framework
+### Trend Analysis
 ```
-Ξ.trend_analysis = (identify_degradation_patterns ⨁ predict_likely_future_issues ⨁ suggest_preventive_measures ⨁ recommend_proactive_refactoring)
+Ξ.trend_analysis = (
+    identify_degradation_patterns
+    ⨁ predict_likely_future_issues
+    ⨁ suggest_preventive_measures
+    ⨁ recommend_proactive_refactoring
+)
 ```
 
-### Ξ.early_warning: Monitoring System
-```
-Ξ.early_warning = {code_complexity_growth, error_rate_trends, technical_debt_accumulation, pattern_violation_frequency}
-```
+### Early Warning System
+- **Code Complexity Growth**: Monitor increasing complexity
+- **Error Rate Trends**: Track error frequency changes
+- **Technical Debt Accumulation**: Measure debt growth rate
+- **Pattern Violation Frequency**: Monitor rule compliance
 
 ---
-*Ξ = diagnostics & refinement with predictive issue prevention*
+*Ξ* = diagnostics & refinement with predictive issue prevention*
 
 

@@ -4,7 +4,6 @@ globs:
 alwaysApply: false
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
-
 # TDD.spec_engine & Test Framework (131)
 
 ## 🧪 TDD.spec_engine: Intelligent Test Generation
@@ -69,19 +68,29 @@ TDD.trigger_conditions = (
 ## 🧪 Testing Standards
 
 ### Test Types Required
-```
-TDD.test_types = {unit: individual_function_testing, integration: component_interaction_testing, edge_cases: boundary_condition_testing, regression: prevent_reintroduction_of_bugs}
-```
+- **Unit**: Individual function/component testing
+- **Integration**: Component interaction testing  
+- **Edge cases**: Boundary condition testing
+- **Regression**: Prevent reintroduction of bugs
 
 ### Test Structure: AAA Pattern
-```
-TDD.AAA_pattern = (arrange: setup_test_data_environment ⨁ act: execute_function_under_test ⨁ assert: verify_outcome)
+```typescript
+// Arrange: Set up test data and environment
+const input = createTestData();
+const expectedOutput = defineExpected();
+
+// Act: Execute the function under test
+const result = functionUnderTest(input);
+
+// Assert: Verify the outcome
+expect(result).toEqual(expectedOutput);
 ```
 
 ### Test Quality Requirements
-```
-TDD.quality_requirements = {fast: tests_complete_<1s_each, independent: no_test_dependencies, descriptive: clear_test_names_explain_intent, reliable: consistent_results_across_runs}
-```
+- **Fast**: Tests complete <1s each
+- **Independent**: No test dependencies
+- **Descriptive**: Clear test names explain intent
+- **Reliable**: Consistent results across runs
 
 ## 🧪 TDD Integration with Task System
 
@@ -95,28 +104,56 @@ T.spec_generation = (
 ```
 
 ### Quality Gates
-```
-TDD.quality_gates = {tests_pass: all_tests_must_pass_before_step_completion, coverage: requirements_per_Λ.rules, performance: benchmarks_for_complex_operations, documentation: updated_with_test_results}
-```
+- All tests must pass before step completion
+- Test coverage requirements per Λ.rules
+- Performance benchmarks for complex operations
+- Documentation updated with test results
 
 ## 🧪 Error Handling & Test Debugging
 
 ### Test Failure Protocol
-```
-TDD.failure_protocol = (analyze_failure → determine_root_cause ⨁ fix_implementation → address_core_issue ⨁ re-run_tests → verify_fix_works ⨁ document_pattern → log_in_Ξ.error_memory_if_recurring)
-```
+1. **Analyze failure**: Determine root cause
+2. **Fix implementation**: Address the core issue
+3. **Re-run tests**: Verify fix works
+4. **Document pattern**: Log in Ξ.error_memory if recurring
 
-### Test Template Reference
-```
-TDD.test_template = {describe: ComponentName, test_cases: [valid_input_handling, edge_cases_gracefully, error_conditions], pattern: AAA_structure}
+### Test Template
+```javascript
+describe('ComponentName', () => {
+  test('should handle valid input correctly', () => {
+    // Arrange
+    const input = validTestData;
+    
+    // Act
+    const result = functionUnderTest(input);
+    
+    // Assert
+    expect(result).toEqual(expectedOutput);
+  });
+  
+  test('should handle edge cases gracefully', () => {
+    // Test boundary conditions
+    const edgeInput = createEdgeCase();
+    const result = functionUnderTest(edgeInput);
+    expect(result).toBeDefined();
+  });
+  
+  test('should throw errors for invalid input', () => {
+    // Test error conditions
+    expect(() => {
+      functionUnderTest(invalidInput);
+    }).toThrow('Expected error message');
+  });
+});
 ```
 
 ## 🧪 Performance & Quality Metrics
 
 ### Test Performance
-```
-TDD.performance_metrics = {execution_speed: monitor_test_runtime, coverage_metrics: track_code_coverage_percentage, flakiness_detection: identify_unstable_tests, resource_usage: memory_and_CPU_monitoring}
-```
+- **Execution Speed**: Monitor test runtime
+- **Coverage Metrics**: Track code coverage percentage
+- **Flakiness Detection**: Identify unstable tests
+- **Resource Usage**: Memory and CPU monitoring
 
 ### Quality Scoring
 ```

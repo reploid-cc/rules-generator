@@ -1,7 +1,12 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
+---
+---
+description:
+globs:
+alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 
@@ -11,70 +16,132 @@ alwaysApply: false
 
 ### Λ.broken_links_prevention: Zero Tolerance Policy
 ```
-Λ.broken_links_prevention = (verify_all_links_before_creation ⨁ create_actual_files_with_basic_content ⨁ test_every_link_manually_before_committing ⨁ ZERO_TOLERANCE_for_broken_internal_links)
+Λ.broken_links_prevention = (
+    verify_all_links_before_creation
+    ⨁ create_actual_files_with_basic_content → not_empty_placeholders
+    ⨁ test_every_link_manually_before_committing
+    ⨁ ZERO_TOLERANCE_for_broken_internal_links
+)
 ```
 
 ### Λ.user_workflow_validation: User-Centric Approach
 ```
-Λ.user_workflow_validation = (think_from_user_perspective ⨁ validate_documentation_workflow ⨁ ensure_documentation_serves_actual_user_needs ⨁ prioritize_working_over_pretty)
+Λ.user_workflow_validation = (
+    think_from_user_perspective → "if_user_clicks_this_what_happens"
+    ⨁ validate_documentation_workflow → step_by_step_user_journey
+    ⨁ ensure_documentation_serves_actual_user_needs
+    ⨁ prioritize_working_over_pretty
+)
 ```
 
 ### Λ.content_placement_logic: Context-Appropriate Placement
 ```
-Λ.content_placement_logic = (VPS_related_content → vps_directory, API_related_content → api_directory, deployment_content → deployment_directory, architecture_content → architecture_directory_only_if_architectural, verify_logical_placement_before_creation)
+Λ.content_placement_logic = (
+    VPS_related_content → vps_directory_README_or_subdirectory
+    ⨁ API_related_content → api_directory_documentation
+    ⨁ deployment_content → deployment_directory_guides
+    ⨁ architecture_content → architecture_directory_only_if_architectural
+    ⨁ verify_logical_placement_before_creation
+)
 ```
 
 ## 🎯 Λ.documentation_creation_protocol: Creation Standards
 
 ### Λ.link_creation_workflow: Mandatory Link Validation
 ```
-Λ.link_creation_workflow = (verify_target_file_exists_or_will_be_created ⨁ create_basic_file_with_minimal_content ⨁ test_link_navigation ⨁ document_link_purpose)
+Λ.link_creation_workflow = (
+    before_creating_link → verify_target_file_exists_or_will_be_created
+    ⨁ if_target_not_exists → create_basic_file_with_minimal_content
+    ⨁ test_link_navigation → manually_click_and_verify
+    ⨁ document_link_purpose → why_this_link_exists
+)
 ```
 
 ### Λ.file_creation_standards: Content Quality Requirements
 ```
-Λ.file_creation_standards = (no_empty_placeholder_files ⨁ clear_file_purpose ⨁ actionable_content ⨁ consistent_formatting)
+Λ.file_creation_standards = (
+    no_empty_placeholder_files → always_include_basic_content
+    ⨁ clear_file_purpose → explain_why_file_exists
+    ⨁ actionable_content → user_can_do_something_with_information
+    ⨁ consistent_formatting → follow_project_documentation_standards
+)
 ```
 
 ### Λ.documentation_hierarchy: Logical Organization
 ```
-Λ.documentation_hierarchy = (root_README → project_overview_and_quick_start ⨁ directory_specific_README → context_specific_information ⨁ docs_directory → comprehensive_documentation ⨁ avoid_documentation_duplication)
+Λ.documentation_hierarchy = (
+    root_README → project_overview_and_quick_start
+    ⨁ directory_specific_README → context_specific_information
+    ⨁ docs_directory → comprehensive_documentation
+    ⨁ avoid_documentation_duplication → single_source_of_truth
+)
 ```
 
 ## 🎯 Λ.quality_validation: Validation Framework
 
 ### Λ.pre_commit_validation: Mandatory Checks
 ```
-Λ.pre_commit_validation = (scan_all_markdown_files_for_links ⨁ verify_every_internal_link_resolves ⨁ check_external_links_accessibility ⨁ validate_documentation_workflow_completeness ⨁ ensure_no_orphaned_documentation_files)
+Λ.pre_commit_validation = (
+    scan_all_markdown_files_for_links
+    ⨁ verify_every_internal_link_resolves
+    ⨁ check_external_links_accessibility
+    ⨁ validate_documentation_workflow_completeness
+    ⨁ ensure_no_orphaned_documentation_files
+)
 ```
 
 ### Λ.user_experience_validation: UX Standards
 ```
-Λ.user_experience_validation = (documentation_must_enable_user_success ⨁ clear_navigation_paths ⨁ actionable_instructions ⨁ troubleshooting_guidance)
+Λ.user_experience_validation = (
+    documentation_must_enable_user_success
+    ⨁ clear_navigation_paths → user_knows_where_to_go_next
+    ⨁ actionable_instructions → user_can_execute_steps
+    ⨁ troubleshooting_guidance → user_can_resolve_issues
+)
 ```
 
 ## 🎯 Λ.violation_prevention: Anti-Pattern Detection
 
 ### Λ.common_violations: Detected Patterns
 ```
-Λ.common_violations = {broken_internal_links: CRITICAL_VIOLATION, empty_placeholder_files: MAJOR_VIOLATION, misplaced_content: MAJOR_VIOLATION, documentation_duplication: MINOR_VIOLATION, unclear_file_purpose: MINOR_VIOLATION}
+Λ.common_violations = {
+    broken_internal_links: CRITICAL_VIOLATION,
+    empty_placeholder_files: MAJOR_VIOLATION,
+    misplaced_content: MAJOR_VIOLATION,
+    documentation_duplication: MINOR_VIOLATION,
+    unclear_file_purpose: MINOR_VIOLATION
+}
 ```
 
 ### Λ.violation_response: Correction Protocol
 ```
-Λ.violation_response = (detect_violation → stop_current_work ⨁ fix_violation_immediately ⨁ validate_fix ⨁ document_lesson_learned)
+Λ.violation_response = (
+    detect_violation → stop_current_work
+    ⨁ fix_violation_immediately → before_proceeding
+    ⨁ validate_fix → ensure_violation_resolved
+    ⨁ document_lesson_learned → prevent_future_occurrences
+)
 ```
 
 ## 🎯 Λ.integration_with_existing_rules: System Integration
 
 ### Λ.simplicity_guard_enhancement: Enhanced Quality Standards
 ```
-Λ.simplicity_guard_enhanced = (working_over_pretty ⨁ validate_all_links_and_references_before_creation ⨁ challenge_documentation_overengineering ⨁ delay_complex_documentation_until_proven_useful)
+Λ.simplicity_guard_enhanced = (
+    working_over_pretty → functionality_first_aesthetics_second
+    ⨁ validate_all_links_and_references_before_creation
+    ⨁ challenge_documentation_overengineering
+    ⨁ delay_complex_documentation_until_proven_useful
+)
 ```
 
 ### Λ.mandatory_workflow_integration: Process Integration
 ```
-Λ.mandatory_workflow_integration = (integrate_with_Ψ.dialog_enabled ⨁ integrate_with_M.memory_path ⨁ integrate_with_T.task_system)
+Λ.mandatory_workflow_integration = (
+    integrate_with_Ψ.dialog_enabled → ask_permission_for_documentation_changes
+    ⨁ integrate_with_M.memory_path → update_memory_with_documentation_decisions
+    ⨁ integrate_with_T.task_system → track_documentation_tasks
+)
 ```
 
 ---

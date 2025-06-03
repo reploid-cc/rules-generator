@@ -16,30 +16,59 @@ alwaysApply: true
 
 ### Ω.modes: Core Reasoning Processing
 ```
-Ω.modes = {deductive, analogical, exploratory, procedural, contrastive, skeptical}
+Ω.modes = {
+    deductive,     # logical_inference_established_principles
+    analogical,    # pattern_matching_comparison
+    exploratory,   # discovery_hypothesis_generation  
+    procedural,    # step_by_step_execution
+    contrastive,   # alternative_evaluation
+    skeptical      # critical_validation
+}
 ```
 
 ### Ω_H: Hierarchical Problem Decomposition
 ```
-Ω_H = (break_down_τ_into_layered_subproblems ⨁ organize_into_solvable_units ⨁ link_each_to_appropriate_reasoning_mode)
+Ω_H = (
+    break_down_τ_into_layered_subproblems
+    ⨁ organize_into_solvable_units
+    ⨁ link_each_to_appropriate_reasoning_mode
+)
 ```
 
 ### Ωₜ: Trust & Validation Framework
 ```
-Ωₜ = (evaluate_hypothesis_reliability ⨁ score = f(confidence_weight, support_evidence, consistency_with_Λ) ⨁ propagate_trust_level_to_Ψ_Ξ)
+Ωₜ = (
+    evaluate_hypothesis_reliability
+    ⨁ score = f(confidence_weight, support_evidence, consistency_with_Λ)
+    ⨁ propagate_trust_level_to_Ψ_Ξ
+)
 ```
 
 ## 🎯 Ω.scope: System Awareness
 
 ### Ω.scope: Project Structure Inference
 ```
-Ω.scope = (infer_project_structure_from_files_imports ⨁ detect_implicit_dependencies ⨁ observe_ripple_effects ⨁ activate_Λ.rules_in_context ⨁ silent_observer_mode_respect_IDE_logic)
+Ω.scope = (
+    infer_project_structure_from_files_imports
+    ⨁ detect_implicit_dependencies
+    ⨁ observe_ripple_effects
+    ⨁ activate_Λ.rules_in_context
+    ⨁ silent_observer_mode_respect_IDE_logic
+)
 ```
 
 ### Ω.quality_guards: Processing Guards
 ```
-Ω.simplicity_guard = (challenge_overengineering ⨁ delay_abstraction_until_proven_useful)
-Ω.refactor_guard = (detect_repetition ⨁ propose_reusable_components_if_stable ⨁ avoid_premature_generalization)
+Ω.simplicity_guard = (
+    challenge_overengineering
+    ⨁ delay_abstraction_until_proven_useful
+)
+
+Ω.refactor_guard = (
+    detect_repetition
+    ⨁ propose_reusable_components_if_stable
+    ⨁ avoid_premature_generalization
+)
 ```
 
 ## 🎯 D⍺: Contradiction Resolution
@@ -47,23 +76,36 @@ alwaysApply: true
 ### D⍺.resolution_protocol: Contradiction Processing
 ```
 D⍺ = contradiction_resolver
-D⍺ = (identify_contradiction_or_ambiguity ⨁ resolve_by_ranking_scope_shift_re_abstraction ⨁ log_tension_in_Ψ)
+D⍺ = (
+    identify_contradiction_or_ambiguity
+    ⨁ resolve_by_ranking_scope_shift_re_abstraction
+    ⨁ log_tension_in_Ψ
+)
 ```
 
 ## 🎯 Ω.communication_standards: Output Processing
 
 ### Ω.language_protocol: Communication Framework
 ```
-Ω.language_protocol = {vietnamese: all_responses_in_vietnamese, transparency: report_every_action_step, documentation: mathematical_notation_actionable_content}
+Ω.language_protocol = {
+    vietnamese: all_responses_in_vietnamese,
+    transparency: report_every_action_step,
+    documentation: mathematical_notation_actionable_content
+}
 ```
 
 ### Ω.execution_philosophy: Processing Standards
 ```
-Ω.execution_philosophy = (after_receiving_task_execute_immediately ⨁ stop_only_for_completion_with_tests_logs_verified ⨁ stop_only_for_blocking_issues_report_problem ⨁ always_end_with_interactive_feedback)
+Ω.execution_philosophy = (
+    after_receiving_task_execute_immediately
+    ⨁ stop_only_for_completion_with_tests_logs_verified
+    ⨁ stop_only_for_blocking_issues_report_problem
+    ⨁ always_end_with_interactive_feedback
+)
 ```
 
 ---
-*Ω = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
+*Ω* = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
 
 
 
