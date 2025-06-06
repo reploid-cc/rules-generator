@@ -1,0 +1,222 @@
+---
+description: PRD workflow system with structured task integration, validation gates and change management capabilities
+globs: .cursor/tasks/prd_workflow/**/*
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# PRD.workflow: Product Development Workflow System (881)
+
+## 🎯 PRD.core_framework: Workflow Framework
+
+### PRD.structure: System Architecture
+```
+PRD.commands = {
+    "init PRD": "T.create_prd_workflow_from_scratch",
+    "init PRD to RFC": "T.execute_complete_prd_to_rfc_sequence",
+    "init PRD step [1-6]": "T.jump_to_specific_prd_step",
+    "init PRD - [changes]": "T.handle_prd_change_management"
+}
+
+T.prd_integration = (
+    PRD_workflow_becomes_structured_T_sprint()
+    ⨁ each_PRD_step_equals_T_task_with_validation_gates()
+    ⨁ progress_tracked_via_T_progress_metadata()
+    ⨁ outputs_managed_in_T_sprint_path_outputs()
+)
+```
+
+### PRD.step_mapping: Workflow Steps
+```
+T.prd_step_1 = {
+    task_name: "Interactive PRD Creation",
+    complexity: "medium",
+    inputs: "user_requirements + business_context",
+    process: "guided_questioning_with_Ω.modes",
+    outputs: "PRD.md",
+    validation: "completeness_check + stakeholder_review"
+}
+
+T.prd_step_2 = {
+    task_name: "PRD Verification & Enhancement",
+    complexity: "medium", 
+    inputs: "PRD.md",
+    process: "gap_analysis + quality_improvement",
+    outputs: "prd-improved.md",
+    validation: "gap_coverage + quality_scoring"
+}
+
+T.prd_step_3 = {
+    task_name: "Features Extraction & Prioritization",
+    complexity: "medium",
+    inputs: "prd-improved.md",
+    process: "feature_identification + MoSCoW_prioritization",
+    outputs: "features.md", 
+    validation: "priority_consistency + completeness_check"
+}
+
+T.prd_step_4 = {
+    task_name: "Technical Rules Generation",
+    complexity: "medium",
+    inputs: "PRD.md + features.md",
+    process: "technical_guideline_creation + Λ.pattern_alignment",
+    outputs: "rules.md",
+    validation: "Λ.consistency_check + technical_feasibility"
+}
+
+T.prd_step_5 = {
+    task_name: "RFCs Generation & Implementation Planning",
+    complexity: "complex",
+    inputs: "PRD.md + features.md + rules.md",
+    process: "RFC_breakdown + implementation_prompt_generation",
+    outputs: "RFCs/ + implementation_prompts",
+    validation: "dependency_analysis + implementation_feasibility"
+}
+
+T.prd_step_6 = {
+    task_name: "PRD Change Management",
+    complexity: "variable",
+    inputs: "existing_PRD_artifacts + change_requirements",
+    process: "impact_analysis + cascading_updates",
+    outputs: "updated_artifacts + change_audit_trail",
+    validation: "consistency_maintenance + stakeholder_approval"
+}
+```
+
+## 🎯 PRD.implementation: Workflow Implementation
+
+### PRD.orchestration: Workflow Management
+```
+T.prd_command_router = (
+    detect_PRD_command_in_user_input()
+    ⨁ check_T_sprint_path_progress_current_step_json()
+    ⨁ route_to_appropriate_T_prd_step_n()
+    ⨁ update_T_progress_tracking()
+    ⨁ execute_step_with_quality_gates()
+)
+
+T.prd_progress = {
+    current_step: "active_step_number",
+    last_completed_step: "last_successful_step",
+    workflow_status: ["not_started", "in_progress", "step_complete", "all_complete"],
+    step_outputs: "validation_status_per_step",
+    quality_gates: "pass_fail_status_per_validation"
+}
+```
+
+### PRD.validation: Quality Gates
+```
+T.prd_validation_gates = (
+    output_file_exists_and_well_formed()
+    ⨁ content_quality_meets_standards()
+    ⨁ stakeholder_review_completed()
+    ⨁ dependency_prerequisites_satisfied()
+    ⨁ Λ.rules_compliance_verified()
+)
+
+T.prd_quality_score = (
+    completeness_percentage * 0.3
+    ⨁ clarity_and_actionability * 0.3
+    ⨁ stakeholder_satisfaction * 0.2  
+    ⨁ technical_feasibility * 0.2
+)
+```
+
+## 🎯 PRD.integration: System Integration
+
+### PRD.cross_references: Related Rules
+```
+PRD.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/101-mandatory-protocols.mdc", "protocols/111-memory-initialization.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/821-lambda-learning.mdc", "engines/851-xi-diagnostics.mdc"],
+    "integration": ["tasks-integration.mdc", "memory-integration.mdc"]
+}
+```
+
+### PRD.system_hooks: Integration Points
+```
+T.prd_hooks = {
+    on_prd_step_start: [M.recall_context, Φ.match_snapshot],
+    on_prd_step_complete: [T.update_progress, M.sync_outputs, Ψ.capture_decisions],
+    on_prd_workflow_complete: [Λ.extract_patterns, Ψ.sprint_reflection],
+    on_prd_change_request: [T.impact_analysis, Ξ.track_change_pattern]
+}
+
+PRD.cross_system_integration = {
+    Ψ.capture: "All PRD decisions and reasoning captured",
+    M.sync: "PRD artifacts stored in memory bank",
+    Λ.extract: "Successful patterns become reusable rules",
+    Φ.snapshot: "Design decisions captured for pattern library",
+    Ξ.track: "Issues and resolutions logged for learning"
+}
+```
+
+### PRD.file_structure: Output Management
+```
+T.prd_file_structure = `
+T.sprint_path/prd_workflow/
+├── progress/
+│   └── current-step.json        # T.progress tracking
+├── outputs/  
+│   ├── PRD.md                   # Step 1 output
+│   ├── prd-improved.md          # Step 2 output  
+│   ├── features.md              # Step 3 output
+│   ├── rules.md                 # Step 4 output
+│   └── RFCs/                    # Step 5 outputs
+├── specs/
+│   ├── spec_step_1.md           # TDD specs if complex
+│   └── spec_step_2.md           # Generated as needed
+└── review.md                    # T.sprint_review
+`
+
+T.prd_change_management = (
+    detect_change_scope_and_impact()
+    ⨁ update_affected_T_tasks()
+    ⨁ regenerate_dependent_outputs()
+    ⨁ maintain_audit_trail_in_Ψ.traces()
+    ⨁ validate_consistency_across_artifacts()
+)
+```
+
+## 🎯 PRD.quality: Quality Standards
+
+### PRD.validation_protocol: Quality Assurance
+```
+PRD.quality_standards = {
+    prd_completeness: "All required sections present and filled",
+    feature_clarity: "Features clearly defined with acceptance criteria",
+    technical_feasibility: "Implementation approach validated by technical review",
+    stakeholder_alignment: "All stakeholders have reviewed and approved",
+    dependency_management: "Dependencies identified and properly sequenced"
+}
+
+PRD.validation_workflow = (
+    validate_each_step_output_against_quality_standards()
+    ⨁ require_explicit_approval_at_quality_gates()
+    ⨁ track_validation_results_in_progress_metadata()
+    ⨁ block_progression_if_validation_fails()
+    ⨁ generate_validation_reports_for_stakeholders()
+)
+```
+
+### PRD.anti_patterns: Error Prevention
+```
+PRD.anti_patterns = {
+    skipping_validation_gates: 🔴 CRITICAL_VIOLATION,
+    incomplete_prd_documentation: ⚠️ MAJOR_VIOLATION,
+    inconsistent_feature_prioritization: ⚠️ MAJOR_VIOLATION,
+    missing_stakeholder_approval: 🔴 CRITICAL_VIOLATION,
+    technical_rules_misalignment: ⚠️ MAJOR_VIOLATION,
+    ignoring_dependencies: ⚠️ MAJOR_VIOLATION,
+    bypassing_change_management: 🔴 CRITICAL_VIOLATION,
+    inadequate_impact_analysis: ⚡ VIOLATION,
+    poor_documentation_quality: ⚡ VIOLATION
+}
+```
+
+---
+*PRD.workflow: comprehensive_product_development_workflow_system_with_structured_task_integration_validation_gates_quality_standards_and_change_management_capabilities*
+
+

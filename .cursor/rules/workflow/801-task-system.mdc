@@ -1,0 +1,175 @@
+---
+description: Structured task system with sprint management, auto-prioritization and task progress tracking
+globs: .cursor/tasks/**/*.md
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# T.task_system: Task System & Sprint Management (801)
+
+## 🎯 T.core_framework: Task System Framework
+
+### T.structure: System Architecture
+```
+T = Σ(τ_complex) ⇌ structured task system
+T.path = ".cursor/tasks/"
+T.backlog_path = ".cursor/tasks/backlog.md"
+T.sprint_path = ".cursor/tasks/sprint_{n}/"
+T.file_structure = {
+    sprint_directory: [
+        "step_1.md",      // First implementation step
+        "step_2.md",      // Sequential step
+        "spec_step_1.md", // TDD specifications
+        "spec_step_2.md", // Test definitions
+        "review.md"       // Sprint retrospective
+    ]
+}
+```
+
+### T.metadata: Task Tracking Framework
+```
+T.progress_metadata = {
+    status: ["pending", "in_progress", "done", "blocked"],
+    priority: ["low", "medium", "high", "critical"], 
+    notes: "contextual_observations",
+    complexity: ["simple", "medium", "complex"],
+    estimated_effort: "time_estimate"
+}
+
+T.complexity_assessment = {
+    simple: "single_file_change ⨁ minimal_logic",
+    medium: "multi_file_changes ⨁ moderate_logic ⨁ testing_required",
+    complex: "architecture_changes ⨁ extensive_testing ⨁ documentation"
+}
+```
+
+## 🎯 T.implementation: Task Management Implementation
+
+### T.backlog: Task Pool Management
+```
+T.priority_algorithm = (
+    business_value * 0.4
+    ⨁ complexity_inverse * 0.3
+    ⨁ dependencies_weight * 0.2
+    ⨁ user_urgency * 0.1
+)
+
+T.backlog_structure = `
+# backlog.md
+
+## High Priority Tasks
+- [ ] [CRITICAL] Task requiring immediate attention
+- [ ] [HIGH] Important feature development
+
+## Medium Priority Tasks  
+- [ ] [MEDIUM] Enhancement or optimization
+- [ ] [MEDIUM] Documentation updates
+
+## Low Priority Tasks
+- [ ] [LOW] Nice-to-have improvements
+- [ ] [LOW] Technical debt cleanup
+`
+```
+
+### T.sprint: Sprint Management
+```
+T.update_task_progress = (
+    locate_current_step_in_sprint_or_backlog()
+    ⨁ update_status_to_done()
+    ⨁ check_checklist_items_based_on_observed_completion()
+    ⨁ append_notes_if_partial_or_modified()
+)
+
+T.sprint_review = (
+    trigger_on_validation()
+    ⨁ run_M.sync()
+    ⨁ execute_Λ.extract()
+    ⨁ create_Φ.snapshot()
+    ⨁ generate_Ψ.summary()
+)
+```
+
+## 🎯 T.integration: System Integration
+
+### T.system_hooks: Integration Points
+```
+T.hooks = {
+    on_task_created: [M.recall, Φ.match_snapshot],
+    on_plan_consolidated: [
+        T.generate_tasks_from_plan,
+        TDD.generate_spec_if_missing,
+        Ψ.materialize_plan_trace,
+        M.sync_if_contextual
+    ],
+    on_step_completed: [T.update_task_progress, M.sync_if_contextual],
+    on_sprint_review: [M.sync, Λ.extract, Ψ.summarize],
+    on_sprint_completed: [Ψ.sprint_reflection, Λ.extract, M.sync]
+}
+```
+
+### T.cross_references: Related Rules
+```
+T.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/111-memory-initialization.mdc"],
+    "engines": ["engines/131-tdd-spec-engine.mdc", "engines/821-lambda-learning.mdc"],
+    "3xx-testing": ["testing/301-testing-standards.mdc"],
+    "8xx-workflows": ["workflow/881-prd-workflow-system.mdc"],
+    "integration": ["tasks-integration.mdc", "memory-integration.mdc"]
+}
+```
+
+### T.materialization: Task Creation Protocol
+```
+Ψ.materialization = (
+    generate_md_artifacts_automatically_when_plan_granularity_reaches_execution_level()
+    ⨁ avoid_duplication_of_existing_tasks()
+    ⨁ ensure_traceability_of_cognition_process()
+    ⨁ maintain_consistency_with_memory_system()
+)
+```
+
+## 🎯 T.quality: Quality Standards
+
+### T.validation_protocol: Quality Assurance
+```
+T.validation_gates = (
+    step_completion_verification()
+    ⨁ dependency_satisfaction_check()
+    ⨁ quality_standards_compliance()
+    ⨁ test_coverage_requirements()
+)
+
+T.completion_criteria = {
+    all_steps_completed: "All step files completed with status = done",
+    tests_passing: "TDD specs pass with required coverage",
+    review_completed: "Code review completed via Ξ.cleanup_phase",
+    documentation_updated: "Documentation updated in M.memory_path",
+    reflection_captured: "Ψ.sprint_reflection captured for future reference"
+}
+```
+
+### T.anti_patterns: Error Prevention
+```
+T.anti_patterns = {
+    incomplete_task_metadata: ⚠️ MAJOR_VIOLATION,
+    skipping_validation_gates: 🔴 CRITICAL_VIOLATION,
+    ignoring_complexity_assessment: ⚠️ MAJOR_VIOLATION,
+    missing_sprint_review: ⚠️ MAJOR_VIOLATION,
+    poor_task_decomposition: ⚡ VIOLATION,
+    lack_of_traceability: ⚡ VIOLATION,
+    inconsistent_status_tracking: ⚡ VIOLATION
+}
+
+Ψ.enforce_review = (
+    auto_trigger_review_if_step_count > 2
+    ⨁ or_complexity_weight > medium
+    ⨁ or_dependencies_detected > 3
+    ⨁ log_review_requirement_in_task_metadata()
+)
+```
+
+---
+*T.task_system: comprehensive_sprint_based_task_management_system_with_structured_file_organization_auto_prioritization_complexity_assessment_quality_gates_and_cross_system_integration*
+
+

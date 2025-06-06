@@ -1,0 +1,235 @@
+---
+description: MCP development workflow with mandatory approval gates, user-specific tailoring and strict quality controls
+globs:
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Λ.mcp_development: MCP Development Workflow (211)
+
+## 🎯 Λ.core_framework: Development Framework
+
+### Λ.critical_compliance: Zero Tolerance Policy
+```
+Λ.mandatory_approval_gates = {
+    CRITICAL_RULE: "🔴 NEVER_proceed_to_next_step_without_explicit_user_approval",
+    ZERO_TOLERANCE: "🔴 proceeding_without_approval_is_CRITICAL_VIOLATION",
+    ENFORCEMENT: "🔴 every_step_must_end_with_Ψ.dialog_and_WAIT_for_approval",
+    VIOLATION_RESPONSE: "🔴 stop_immediately_apologize_update_rule_if_violated"
+}
+
+Λ.quality_standards = {
+    FORBIDDEN_copy_paste: "🔴 NEVER_copy_paste_from_existing_documentation_or_setup_files",
+    MANDATORY_synthesis: "🔴 ALWAYS_synthesize_and_analyze_from_original_ideas_file_ONLY",
+    MANDATORY_user_context: "🔴 ALWAYS_understand_user_needs_goals_resources_constraints_first",
+    MANDATORY_customization: "🔴 ALWAYS_tailor_to_complete_user_context_not_just_platform",
+    QUALITY_CHECK: "verify_analysis_is_original_synthesized_user_specific_content"
+}
+```
+
+### Λ.command_detection: Command Processing
+```
+Λ.init_command_pattern = "init mcp {mcp_name}"
+Λ.workflow_trigger = (
+    detect_init_mcp_command()
+    ⨁ extract_mcp_name_from_command()
+    ⨁ execute_6_step_workflow_WITH_MANDATORY_APPROVAL_GATES()
+    ⨁ 🔴 WAIT_for_user_approval_before_each_step()
+)
+
+Λ.command_validation = (
+    verify_mcp_name_provided()
+    ⨁ check_ideas_file_exists_at_mcp_servers_ideas_{mcp_name}_md()
+    ⨁ validate_file_readable_and_contains_specifications()
+    ⨁ report_validation_results_via_Ψ.dialog()
+)
+```
+
+### Λ.workflow_process: Implementation Steps
+```
+Λ.implementation_workflow = (
+    step_1_analysis()
+    ⨁ step_2_implementation()
+    ⨁ step_3_installation()
+    ⨁ step_4_integration()
+    ⨁ step_5_documentation()
+    ⨁ step_6_completion()
+)
+
+Λ.step_1_analysis = (
+    🔴 MANDATORY_clarify_user_needs_goals_constraints()
+    ⨁ read_ONLY_mcp_servers_ideas_{mcp_name}_md_as_source()
+    ⨁ synthesize_requirements_for_user_complete_context()
+    ⨁ assess_complexity_HIGH_MEDIUM_LOW()
+    ⨁ create_user_specific_implementation_plan()
+    ⨁ present_complete_analysis_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_approval_request()
+    ⨁ 🔴 CRITICAL_WAIT_for_explicit_user_approval_before_step_2()
+)
+
+Λ.step_2_implementation = (
+    🔴 PREREQUISITE_user_explicitly_approved_step_1()
+    ⨁ create_mcp_servers_{mcp_name}_directory_structure()
+    ⨁ build_user_specific_setup_guides_and_configs()
+    ⨁ create_configuration_templates_and_documentation()
+    ⨁ prepare_installation_instructions()
+    ⨁ present_implementation_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_approval_request()
+    ⨁ 🔴 CRITICAL_WAIT_for_explicit_user_approval_before_step_3()
+)
+
+Λ.step_3_installation = (
+    🔴 PREREQUISITE_user_explicitly_approved_step_2()
+    ⨁ create_docker_network_for_mcp_servers()
+    ⨁ pull_required_docker_images()
+    ⨁ test_container_functionality_without_secrets()
+    ⨁ verify_installation_readiness()
+    ⨁ present_installation_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_approval_request()
+    ⨁ 🔴 CRITICAL_WAIT_for_explicit_user_approval_before_step_4()
+)
+
+Λ.step_4_integration = (
+    🔴 PREREQUISITE_user_explicitly_approved_step_3()
+    ⨁ update_Rule_201_mcp_routing_with_new_server()
+    ⨁ add_mcp_name_to_routing_logic_keyword_mapping()
+    ⨁ test_routing_integration_works()
+    ⨁ create_workflow_specific_rule_if_complex()
+    ⨁ present_integration_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_approval_request()
+    ⨁ 🔴 CRITICAL_WAIT_for_explicit_user_approval_before_step_5()
+)
+
+Λ.step_5_documentation = (
+    🔴 PREREQUISITE_user_explicitly_approved_step_4()
+    ⨁ update_main_README_with_new_server_entry()
+    ⨁ update_mcp_servers_README_with_inventory()
+    ⨁ create_comprehensive_setup_documentation()
+    ⨁ validate_all_links_and_references_work()
+    ⨁ present_documentation_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_approval_request()
+    ⨁ 🔴 CRITICAL_WAIT_for_explicit_user_approval_before_step_6()
+)
+
+Λ.step_6_completion = (
+    🔴 PREREQUISITE_user_explicitly_approved_step_5()
+    ⨁ run_comprehensive_integration_tests()
+    ⨁ validate_end_to_end_functionality()
+    ⨁ update_memory_bank_with_completion_status()
+    ⨁ move_from_ideas_to_active_status()
+    ⨁ present_final_completion_results_to_user()
+    ⨁ 🔴 MANDATORY_Ψ.dialog_call_with_completion_confirmation()
+)
+```
+
+## 🎯 Λ.integration: System Integration
+
+### Λ.approval_handling: User Response Processing
+```
+Λ.approval_keywords = ["approved", "approve", "proceed", "continue", "go ahead", "yes proceed"]
+Λ.rejection_keywords = ["reject", "stop", "no", "wait", "modify", "change"]
+Λ.ambiguous_response_handling = (
+    if_user_response_not_clear_approval_or_rejection
+    ⨁ ask_for_explicit_clarification()
+    ⨁ 🔴 NEVER_assume_approval_from_ambiguous_response()
+    ⨁ 🔴 WAIT_for_clear_yes_or_no()
+)
+```
+
+### Λ.cross_references: Related Rules
+```
+Λ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/101-mandatory-protocols.mdc", "protocols/141-documentation-quality.mdc"],
+    "2xx-services": ["services/201-mcp-server-management.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc", "workflow/881-prd-workflow-system.mdc"],
+    "integration": ["memory-integration.mdc", "hooks-integration.mdc"]
+}
+```
+
+### Λ.system_hooks: Integration Points
+```
+Λ.system_hooks = {
+    on_init_command: [Λ.workflow_trigger, Λ.command_validation],
+    on_step_completion: [Λ.step_tracking, M.sync, Ψ.dialog],
+    on_approval_received: [Λ.proceed_to_next_step, Λ.update_memory_with_approval],
+    on_rejection_received: [Λ.rollback_protocol, Λ.update_memory_with_rejection],
+    on_workflow_completion: [Λ.update_Rule_201, M.sync, Ψ.dialog]
+}
+```
+
+## 🎯 Λ.quality: Quality Standards
+
+### Λ.memory_integration: Progress Tracking
+```
+Λ.step_tracking = (
+    update_mcp_development_md_after_each_step()
+    ⨁ log_step_completion_status_and_user_approval()
+    ⨁ record_implementation_decisions_and_rationale()
+    ⨁ track_user_requirements_and_customizations()
+    ⨁ maintain_audit_trail_of_entire_process()
+)
+
+Λ.memory_sync_points = {
+    step_1_complete: "analysis_results_complexity_user_context",
+    step_2_complete: "implementation_status_files_created_configs",
+    step_3_complete: "installation_status_docker_containers_running",
+    step_4_complete: "integration_status_routing_updated_tested",
+    step_5_complete: "documentation_status_links_validated_complete",
+    step_6_complete: "completion_status_active_server_operational"
+}
+```
+
+### Λ.validation_protocol: Quality Assurance
+```
+Λ.step_validation = (
+    verify_step_objectives_fully_met()
+    ⨁ validate_deliverables_quality_and_completeness()
+    ⨁ check_integration_with_existing_system_works()
+    ⨁ ensure_documentation_accuracy_and_no_broken_links()
+    ⨁ confirm_user_specific_requirements_addressed()
+)
+
+Λ.rollback_protocol = (
+    if_step_fails_or_user_rejects()
+    ⨁ document_failure_reason_in_memory()
+    ⨁ rollback_to_previous_stable_state()
+    ⨁ preserve_lessons_learned_for_improvement()
+    ⨁ allow_retry_with_modifications_based_on_feedback()
+)
+```
+
+### Λ.anti_patterns: Error Prevention
+```
+Λ.anti_patterns = {
+    proceeding_without_approval: 🔴 CRITICAL_VIOLATION,
+    skipping_approval_gates: 🔴 CRITICAL_VIOLATION,
+    assuming_implicit_approval: 🔴 CRITICAL_VIOLATION,
+    copy_pasting_from_templates: ⚠️ MAJOR_VIOLATION,
+    skipping_user_context_analysis: ⚠️ MAJOR_VIOLATION,
+    incomplete_documentation: ⚠️ MAJOR_VIOLATION,
+    generic_non_tailored_implementation: ⚡ VIOLATION,
+    insufficient_testing: ⚡ VIOLATION,
+    missing_memory_updates: ⚡ VIOLATION
+}
+```
+
+---
+*Λ.mcp_development: comprehensive_step_by_step_mcp_development_workflow_with_mandatory_approval_gates_user_specific_tailoring_and_strict_quality_controls*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+---
+description: Memory system initialization with foundation file generation, atomic updates and cross-system integration
+globs: .cursor/memory/**/*
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# M.memory: Memory Initialization System (111)
+
+## 🎯 M.core_framework: Memory System Framework
+
+### M.init_memory: Project Memory Setup Command
+```
+M.init_command = "init memory"
+M.init_memory = (
+    detect_project_context()
+    ⨁ create_memory_directory_if_missing()
+    ⨁ generate_foundation_files()
+    ⨁ initialize_with_project_specific_content()
+    ⨁ establish_memory_bank_structure()
+    ⨁ report_completion_via_Ψ.dialog()
+)
+```
+
+### M.structure: Memory Bank Architecture
+```
+M.directory_path = ".cursor/memory/"
+M.foundation_files = {
+    "README.md": "Memory system documentation",
+    "errors.md": "Ξ.error_memory for pattern tracking",
+    "projectbrief.md": "Foundation document - source of truth",
+    "productContext.md": "Why project exists, problems solved",
+    "activeContext.md": "Current work focus, recent changes",
+    "systemPatterns.md": "Architecture decisions, design patterns",  
+    "techContext.md": "Technologies, development setup",
+    "progress.md": "Status tracking, what works, what's left",
+    "sumup.md": "Master navigator for contextual retrieval"
+}
+```
+
+### M.context_detection: Intelligent Project Analysis
+```
+M.context_detection = (
+    analyze_directory_structure()
+    ⨁ detect_programming_languages()
+    ⨁ identify_frameworks_and_tools()
+    ⨁ scan_existing_documentation()
+    ⨁ infer_project_type_and_purpose()
+    ⨁ generate_contextual_memory_content()
+)
+
+M.content_customization = (
+    if detect_web_project → include_web_specific_patterns()
+    ⨁ if detect_mobile_project → include_mobile_patterns()
+    ⨁ if detect_backend_api → include_api_patterns()  
+    ⨁ if detect_existing_prd → extract_requirements()
+    ⨁ if detect_existing_docs → integrate_documentation()
+)
+```
+
+## 🎯 M.implementation: Memory System Implementation
+
+### M.initialization_workflow: Step-by-Step Process
+```
+M.environment_detection = (
+    check_if_cursor_directory_exists()
+    ⨁ create_memory_subdirectory()
+    ⨁ analyze_project_structure()
+    ⨁ detect_existing_documentation()
+)
+
+M.foundation_generation = (
+    create_projectbrief_with_detected_context()
+    ⨁ generate_productContext_based_on_analysis()
+    ⨁ initialize_activeContext_with_current_state()
+    ⨁ setup_systemPatterns_framework()
+    ⨁ create_techContext_with_detected_stack()
+    ⨁ initialize_progress_tracking()
+    ⨁ generate_sumup_navigator()
+)
+
+M.user_rules_integration = (
+    ensure_compatibility_with_Ω.reasoning_modes()
+    ⨁ setup_Ψ.trace_capture_ready()
+    ⨁ initialize_Λ.pattern_learning_context()
+    ⨁ prepare_T.task_system_integration()
+    ⨁ setup_Ξ.diagnostics_framework()
+)
+```
+
+### M.file_templates: Auto-Generated Content Templates
+```
+M.projectbrief_template = `
+# Project Brief - [Project Name]
+
+## 🎯 Project Core Definition
+**Project Name**: [Detected from directory/context]
+**Project Type**: [Inferred from files/structure] 
+**Primary Goal**: [To be filled based on initial analysis]
+
+## 🎯 Core Requirements
+### Primary Objectives
+[Generated based on project analysis]
+
+### Success Criteria
+[Template with project-specific items]
+
+[Additional sections auto-populated based on context]
+`
+
+M.activeContext_template = `
+# Active Context - [Project Name]
+
+## 🎯 Current Work Focus
+**Current Phase**: Project Initialization
+**Active Task**: Memory system setup completed
+**Status**: Ready for development
+
+## 🎯 Recent Changes
+- Memory system initialized via "init memory" command
+- Foundation files created for project context preservation
+
+[Dynamic content based on project state]
+`
+```
+
+## 🎯 M.integration: System Integration
+
+### M.session_continuity: Ongoing Operations
+```
+M.session_continuity = (
+    maintain_projectbrief_as_source_of_truth()
+    ⨁ update_activeContext_on_significant_changes()
+    ⨁ track_progress_systematically()
+    ⨁ evolve_systemPatterns_with_decisions()
+    ⨁ keep_techContext_current_with_stack_changes()
+)
+```
+
+### M.cross_references: Related Rules
+```
+M.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/101-mandatory-protocols.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/821-lambda-learning.mdc"],
+    "integration": ["memory-integration.mdc"]
+}
+```
+
+### M.system_hooks: Integration Points
+```
+M.system_hooks = {
+    on_init_memory_command: [M.init_memory],
+    on_memory_update_request: [M.atomic_memory_update],
+    on_task_completion: [M.update_activeContext, M.update_progress],
+    on_architecture_decision: [M.update_systemPatterns],
+    on_technology_change: [M.update_techContext]
+}
+```
+
+## 🎯 M.quality: Quality Standards
+
+### M.consistency_protocol: Memory Consistency
+```
+M.memory_consistency_mandatory = (
+    when_user_requests_memory_update → 🔴 UPDATE_ALL_MEMORY_FILES_ATOMICALLY
+    ⨁ when_major_project_change_detected → 🔴 UPDATE_ALL_MEMORY_FILES
+    ⨁ when_memory_file_manually_edited → 🔴 SYNC_ALL_OTHER_FILES
+    ⨁ 🔴 FORBIDDEN_partial_memory_updates_without_consistency_check
+    ⨁ 🔴 ZERO_TOLERANCE_for_inconsistent_memory_state
+)
+
+M.atomic_memory_update = (
+    detect_memory_update_trigger()
+    ⨁ analyze_impact_across_all_memory_files()
+    ⨁ 🔴 UPDATE_ALL_9_FOUNDATION_FILES_SIMULTANEOUSLY:
+        - projectbrief.md → reflect_current_project_state
+        - productContext.md → sync_with_current_reality  
+        - activeContext.md → update_current_focus_and_status
+        - systemPatterns.md → align_architectural_decisions
+        - techContext.md → sync_technical_specifications
+        - progress.md → update_completion_percentages
+        - sumup.md → refresh_navigation_and_overview
+        - errors.md → incorporate_recent_learnings
+        - README.md → sync_documentation_status
+    ⨁ validate_consistency_across_all_files()
+    ⨁ report_complete_memory_system_update()
+)
+```
+
+### M.validation_protocol: Quality Assurance
+```
+M.consistency_validation = (
+    verify_all_files_reflect_same_project_state()
+    ⨁ check_cross_references_are_valid()
+    ⨁ ensure_progress_percentages_align()
+    ⨁ validate_status_consistency_across_files()
+    ⨁ confirm_architectural_decisions_synchronized()
+)
+```
+
+### M.anti_patterns: Error Prevention
+```
+M.anti_patterns = {
+    partial_memory_updates: 🔴 CRITICAL_VIOLATION,
+    inconsistent_project_state: 🔴 CRITICAL_VIOLATION,
+    outdated_activeContext: ⚠️ MAJOR_VIOLATION,
+    missing_foundation_files: 🔴 CRITICAL_VIOLATION,
+    ignoring_manual_edits: ⚠️ MAJOR_VIOLATION,
+    failure_to_initialize: ⚠️ MAJOR_VIOLATION,
+    neglected_progress_tracking: ⚡ VIOLATION
+}
+```
+
+---
+*M.memory: comprehensive_memory_initialization_system_with_automated_project_context_setup_foundation_file_generation_atomic_updates_and_cross_system_integration*

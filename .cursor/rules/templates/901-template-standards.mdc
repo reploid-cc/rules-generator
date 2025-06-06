@@ -1,0 +1,150 @@
+---
+description: Template standards for rule creation and maintenance with standardized structure and validation protocol
+globs: .cursor/rules/**/*.mdc
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Λ.template_standards: Template Standards (901)
+
+## 🎯 Λ.template_framework: Core Template Framework
+
+### Λ.template_structure: Template Structure
+```
+Λ.template_structure = {
+    metadata_block: "meta_information_at_file_beginning",
+    content_target_header: "<!-- CONTENT_TARGET: AI_FACING -->",
+    title_section: "# [System].name: Rule Title (XXX)",
+    main_sections: ["## 🎯 [System].component", "## 🎯 [System].integration", "## 🎯 [System].quality"],
+    sub_sections: "### [System].subsection_name",
+    code_blocks: "```\n[System].operation = {...}\n```",
+    summary_line: "---\n*[System].name: summary_description_with_key_features*"
+}
+```
+
+### Λ.template_components: Template Components
+```
+Λ.template_components = (
+    metadata_block_with_description_and_globs
+    ⨁ content_target_header_for_AI_facing
+    ⨁ title_with_system_name_and_rule_number
+    ⨁ core_framework_section_with_subsections
+    ⨁ integration_section_with_subsections
+    ⨁ quality_section_with_subsections
+    ⨁ summary_line_with_key_features
+)
+```
+
+## 🎯 Λ.template_content: Template Content
+
+### Λ.notation_standards: Notation Standards
+```
+Λ.notation_standards = {
+    system_prefix: "[System]_identifies_the_specific_system",
+    operation_format: "[System].operation = (\n    step_1\n    ⨁ step_2\n    ⨁ step_3\n)",
+    property_format: "[System].properties = {\n    key_1: value_1,\n    key_2: value_2\n}",
+    violation_format: "anti_pattern: 🔴 CRITICAL_VIOLATION | ⚠️ MAJOR_VIOLATION | ⚡ VIOLATION",
+    mathematical_symbols: "use_⨁_for_combining_operations"
+}
+```
+
+### Λ.section_content: Section Content
+```
+Λ.section_content = (
+    core_framework_defines_basic_concepts_and_operations
+    ⨁ integration_section_documents_connections_to_other_systems
+    ⨁ quality_section_defines_standards_and_anti_patterns
+    ⨁ each_section_contains_at_least_two_subsections
+    ⨁ each_subsection_contains_code_block_with_notation
+)
+```
+
+## 🎯 Λ.template_integration: Template Integration
+
+### Λ.integration_requirements: Integration Requirements
+```
+Λ.integration_requirements = {
+    cross_references: "each_rule_must_have_cross_references_section",
+    hook_points: "document_hook_points_with_Σ_hooks",
+    dependency_chain: "identify_dependencies_with_other_rules",
+    conflicts: "clearly_state_conflict_resolution_with_D⍺"
+}
+```
+
+### Λ.cross_references: Cross References
+```
+Λ.cross_references = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/141-documentation-quality.mdc"],
+    "8xx-engines": ["engines/821-lambda-learning.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "integration": ["memory-integration.mdc"]
+}
+```
+
+## 🎯 Λ.template_quality: Template Quality
+
+### Λ.quality_standards: Quality Standards
+```
+Λ.quality_standards = {
+    consistency: "consistent_with_formatting_rules",
+    completeness: "includes_all_structural_components",
+    clarity: "clear_and_easy_to_understand",
+    conciseness: "concise_without_redundancy",
+    mathematical_precision: "precise_in_mathematical_notation"
+}
+```
+
+### Λ.anti_patterns: Anti-Patterns
+```
+Λ.anti_patterns = {
+    missing_sections: 🔴 CRITICAL_VIOLATION,
+    inconsistent_notation: ⚠️ MAJOR_VIOLATION,
+    undefined_symbols: ⚠️ MAJOR_VIOLATION,
+    informal_language: ⚡ VIOLATION,
+    missing_cross_references: ⚡ VIOLATION,
+    redundant_content: ⚡ VIOLATION,
+    incomplete_metadata: ⚡ VIOLATION
+}
+```
+
+### Λ.validation_protocol: Quality Assurance
+```
+Λ.validation_protocol = (
+    verify_all_required_sections_present()
+    ⨁ check_correct_notation_usage()
+    ⨁ validate_cross_references_accuracy()
+    ⨁ ensure_mathematical_symbol_consistency()
+    ⨁ confirm_summary_line_completeness()
+)
+```
+
+## 🎯 Λ.template_usage: Usage Guidelines
+
+### Λ.usage_workflow: Usage Workflow
+```
+Λ.usage_workflow = (
+    identify_appropriate_rule_category
+    ⨁ copy_template_for_rule_category
+    ⨁ replace_system_with_actual_system_name
+    ⨁ replace_placeholders_with_actual_content
+    ⨁ ensure_mathematical_notation_consistency
+    ⨁ validate_against_quality_standards
+)
+```
+
+### Λ.customization_guidelines: Customization Guidelines
+```
+Λ.customization_guidelines = {
+    structure_adaptation: "can_adapt_structure_with_justified_reasons",
+    system_naming: "choose_system_name_appropriate_to_purpose",
+    section_additions: "can_add_sections_if_necessary",
+    notation_extensions: "extend_mathematical_notation_if_needed",
+    maintain_core_sections: "always_retain_core_integration_quality_sections"
+}
+```
+
+---
+*Λ.template_standards: comprehensive_template_system_with_standardized_structure_mathematical_notation_and_quality_validation_protocols*
+
+

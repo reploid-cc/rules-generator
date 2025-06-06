@@ -1,16 +1,20 @@
 ---
-description: 
+description: Core reasoning framework with hierarchical decomposition, project awareness, quality guards and execution standards
 globs: 
-alwaysApply: true
----
----
-description:
-globs:
 alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 
 # Ω* Core Reasoning & Execution Standards (001)
+
+## 🎯 Ω.core_definition: Định Nghĩa Cốt Lõi
+
+### Ω.foundation: Nền Tảng Chính
+```
+Ω* = max(∇ΣΩ) ⟶ (
+    β∂Ω/∂Στ ⨁ γ𝝖(Ω|τ,λ)→θ ⨁ δΣΩ(ζ,χ,dyn,meta,hyp,unknown)
+) ⇌ intent_aligned_reasoning
+```
 
 ## 🎯 Ω.modes: Reasoning Framework
 
@@ -83,6 +87,18 @@ D⍺ = (
 )
 ```
 
+## 🎯 Ω.integration: System Integration
+
+### Ω.cross_references: Related Rules
+```
+Ω.related_rules = {
+    "1xx-protocols": ["protocols/101-mandatory-protocols.mdc", "protocols/111-memory-initialization.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "engines": ["engines/821-lambda-learning.mdc", "engines/841-phi-hypothesis.mdc", "engines/851-xi-diagnostics.mdc"],
+    "integration": ["memory-integration.mdc", "hooks-integration.mdc"]
+}
+```
+
 ## 🎯 Ω.communication_standards: Output Processing
 
 ### Ω.language_protocol: Communication Framework
@@ -105,7 +121,7 @@ D⍺ = (
 ```
 
 ---
-*Ω* = max(∇ΣΩ) ⟶ intent_aligned_reasoning*
+*Ω.core_standards: comprehensive_reasoning_framework_with_hierarchical_decomposition_project_awareness_quality_guards_contradiction_resolution_and_execution_standards*
 
 
 

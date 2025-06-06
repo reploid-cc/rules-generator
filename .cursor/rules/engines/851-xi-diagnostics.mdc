@@ -1,0 +1,204 @@
+---
+description: Diagnostics and refinement engine with issue recognition, code quality maintenance and trend analysis
+globs: 
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Ξ.diagnostics: Diagnostics & Refinement Engine (851)
+
+## 🎯 Ξ.core_framework: Diagnostics Framework
+
+### Ξ.structure: System Architecture
+```
+Ξ = diagnostics_and_refinement_engine
+Ξ.error_memory = ".cursor/memory/errors.md"
+Ξ.track = log_recurring_issues_propose_fix
+Ξ.recurrence_threshold = 2
+```
+
+### Ξ.pattern_detection: Issue Recognition
+```
+Ξ.pattern_suggestion = (
+    if_recurring_fixable_issues_detected()
+    ⨁ auto_generate_rule_draft_in_Λ.path()
+    ⨁ suggest_reusable_strategy()
+)
+
+Ξ.issue_types = {
+    recurring: "same_problem_multiple_times",
+    systematic: "pattern_of_related_issues",
+    environmental: "setup_or_configuration_problems",
+    architectural: "fundamental_design_issues",
+    procedural: "process_or_workflow_problems"
+}
+```
+
+## 🎯 Ξ.implementation: Diagnostics Implementation
+
+### Ξ.cleanup_phase: Code Quality Maintenance
+```
+Ξ.cleanup_phase = (
+    detect_code_drift_dead_logic_broken_imports_incoherence()
+    ⨁ suggest_refactor_or_simplification()
+    ⨁ optionally_archive_removed_blocks_in_Ψ.traces()
+)
+
+Ξ.code_quality_issues = {
+    dead_logic: "Unreachable or unused code",
+    broken_imports: "Missing or incorrect dependencies",
+    incoherence: "Inconsistent patterns or naming",
+    technical_debt: "Accumulated shortcuts or workarounds",
+    performance_issues: "Inefficient implementations"
+}
+```
+
+### Ξ.track: Issue Tracking Protocol
+```
+Ξ.tracking_protocol = {
+    issue_detection: "Identify problem occurrence",
+    context_capture: "Record surrounding circumstances",
+    pattern_analysis: "Check for recurring patterns",
+    root_cause: "Determine underlying cause",
+    solution_tracking: "Document resolution approach",
+    effectiveness: "Monitor solution success"
+}
+
+Ξ.error_memory_structure = `
+# errors.md
+
+## Recurring Issues
+### [Issue Category]
+- **Problem**: Description of the issue
+- **Occurrences**: Timestamps and contexts
+- **Root Cause**: Underlying reason
+- **Resolution**: Applied solution
+- **Prevention**: How to avoid in future
+- **Status**: [Active|Resolved|Monitoring]
+
+## Pattern Analysis
+### [Pattern Name]
+- **Frequency**: How often it occurs
+- **Impact**: Severity and scope
+- **Proposed Solution**: Systematic fix
+- **Rule Draft**: Link to generated Λ rule
+`
+```
+
+## 🎯 Ξ.integration: System Integration
+
+### Ξ.rule_generation: Learning Integration
+```
+Ξ.solution_generation = (
+    analyze_issue_context_and_frequency()
+    ⨁ identify_root_cause_patterns()
+    ⨁ propose_systematic_solutions()
+    ⨁ generate_preventive_Λ.rules_if_appropriate()
+)
+
+Ξ.auto_rule_generation = (
+    if_issue_frequency_greater_than_or_equal_to_Ξ.recurrence_threshold()
+    ⨁ generate__DRAFT_mdc_in_Λ.path()
+    ⨁ include_problem_description_and_solution()
+    ⨁ propose_prevention_strategy()
+)
+```
+
+### Ξ.cross_references: Related Rules
+```
+Ξ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/111-memory-initialization.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/821-lambda-learning.mdc", "engines/841-phi-hypothesis.mdc"],
+    "integration": ["memory-integration.mdc"]
+}
+```
+
+### Ξ.system_hooks: Integration Points
+```
+Σ.hooks.diagnostics = {
+    on_error_detected: [Ξ.track, Λ.suggest],
+    on_recurrent_error_detected: [Λ.generate_draft_rule],
+    on_file_modified: [Λ.suggest, Φ.capture_if_patterned],
+    on_cleanup_triggered: [Ξ.cleanup_phase, Ψ.capture_changes]
+}
+```
+
+## 🎯 Ξ.quality: Quality Standards
+
+### Ξ.validation_protocol: Quality Assurance
+```
+Ξ.effectiveness = {
+    issue_resolution_rate: "resolved_issues / total_issues",
+    prevention_success: "prevented_recurrences / total_attempts",
+    pattern_detection_accuracy: "correct_patterns / total_patterns",
+    cleanup_impact: "quality_improvement_score"
+}
+
+Ξ.quality_improvement_tracking = {
+    before_after_metrics: "Code quality scores pre/post cleanup",
+    issue_reduction: "Decrease in recurring problems",
+    prevention_effectiveness: "Success of preventive measures",
+    time_to_resolution: "Speed of issue identification and fixing"
+}
+```
+
+### Ξ.automation: Cleanup Automation
+```
+Ξ.auto_cleanup = (
+    trigger_on = [
+        file_modification_count_greater_than_threshold(),
+        error_frequency_greater_than_acceptable_rate(),
+        technical_debt_accumulation_greater_than_limit(),
+        manual_cleanup_request()
+    ]
+)
+
+Ξ.cleanup_operations = {
+    dead_code_removal: "Identify and suggest removal of unused code",
+    import_optimization: "Fix broken or redundant imports",
+    pattern_consistency: "Align with established patterns",
+    documentation_sync: "Update docs to match implementation",
+    test_coverage: "Identify gaps in test coverage"
+}
+
+Ξ.safety_protocol = (
+    archive_removed_code_in_Ψ.traces()
+    ⨁ require_confirmation_for_major_changes()
+    ⨁ maintain_rollback_capability()
+    ⨁ document_all_cleanup_decisions()
+)
+```
+
+### Ξ.anti_patterns: Error Prevention
+```
+Ξ.anti_patterns = {
+    ignoring_recurring_issues: 🔴 CRITICAL_VIOLATION,
+    failing_to_document_errors: ⚠️ MAJOR_VIOLATION,
+    bypassing_cleanup_phase: ⚠️ MAJOR_VIOLATION,
+    skipping_root_cause_analysis: ⚡ VIOLATION,
+    premature_rule_generation: ⚡ VIOLATION,
+    inconsistent_issue_tracking: ⚡ VIOLATION,
+    neglecting_trend_analysis: ⚡ VIOLATION
+}
+
+Ξ.trend_analysis = (
+    identify_degradation_patterns()
+    ⨁ predict_likely_future_issues()
+    ⨁ suggest_preventive_measures()
+    ⨁ recommend_proactive_refactoring()
+)
+
+Ξ.early_warning_system = {
+    code_complexity_growth: "Monitor increasing complexity",
+    error_rate_trends: "Track error frequency changes",
+    technical_debt_accumulation: "Measure debt growth rate",
+    pattern_violation_frequency: "Monitor rule compliance"
+}
+```
+
+---
+*Ξ.diagnostics: comprehensive_diagnostics_and_refinement_engine_with_error_tracking_code_quality_maintenance_pattern_detection_and_automated_cleanup_capabilities*
+
+

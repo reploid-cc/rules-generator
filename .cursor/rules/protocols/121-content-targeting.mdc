@@ -1,0 +1,152 @@
+---
+description: Content targeting framework with mathematical notation standards and AI vs User-facing content distinction
+globs: .cursor/**/*
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# C.targeting: Content Targeting Framework (121)
+
+## 🎯 C.core_framework: Content Classification Framework
+
+### C.header_protocol: File Type Specific Rules
+```
+C.placement_rules = {
+    all_cursor_files: "<!-- CONTENT_TARGET: [TYPE] --> as first line or after any existing metadata",
+    focus: "content_targeting_identification_only"
+}
+
+C.header_format = "
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# File Title
+content...
+"
+```
+
+### C.targeting_distinction: Content Classification
+```
+C.content_types = {
+    user_facing: friendly_prompts ⨁ clear_explanations ⨁ interactive_questions,
+    ai_facing: mathematical_notation ⨁ User_Rules_framework ⨁ technical_precision
+}
+
+C.user_facing_rules = (
+    when_user_directly_interacts
+    ⨁ when_asking_questions_or_gathering_input
+    ⨁ when_explaining_concepts_to_humans
+    ⨁ when_providing_documentation_for_teams
+)
+
+C.ai_facing_rules = (
+    when_AI_processes_instructions
+    ⨁ when_implementing_User_Rules_mathematical_framework
+    ⨁ when_defining_system_behavior
+    ⨁ when_creating_processing_workflows
+    ⨁ when_creating_content_in_cursor_directory
+)
+```
+
+## 🎯 C.implementation: Directory-Specific Requirements
+
+### C.cursor_directory: MANDATORY AI-Facing Content
+```
+C.cursor_requirements = {
+    path_pattern: ".cursor/**/*",
+    content_type: 🔴 MANDATORY_AI_FACING,
+    language: mathematical_notation_User_Rules_framework,
+    purpose: AI_system_processing_and_behavior_modification
+}
+
+C.notation_requirements = (
+    Ω.reasoning_modes_notation
+    ⨁ Ψ.capture_trace_operations
+    ⨁ T.task_system_mathematical_framework
+    ⨁ Λ.rule_based_learning_notation
+    ⨁ Ξ.diagnostics_mathematical_operations
+    ⨁ M.memory_sync_operations
+    ⨁ Φ.abstraction_mathematical_notation
+)
+```
+
+### C.technical_constraints: Implementation Limitations
+```
+C.agent_limitations = {
+    mdc_files: "Cannot edit metadata blocks in .mdc files",
+    workaround: "Content targeting headers added after any existing metadata",
+    focus: "Content identification rather than metadata management"
+}
+```
+
+## 🎯 C.integration: System Integration
+
+### C.cross_references: Related Rules
+```
+C.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/141-documentation-quality.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "integration": ["memory-integration.mdc"]
+}
+```
+
+### C.system_hooks: Integration Points
+```
+C.system_hooks = {
+    on_file_creation: [C.verify_content_targeting_header],
+    on_file_modification: [C.validate_content_type_consistency],
+    on_cursor_directory_content: [C.enforce_ai_facing_requirements],
+    on_documentation_generation: [C.apply_appropriate_targeting]
+}
+```
+
+## 🎯 C.quality: Quality Standards
+
+### C.validation_protocol: Quality Assurance
+```
+C.validation_process = (
+    scan_all_cursor_directory_files
+    ⨁ verify_mathematical_notation_presence
+    ⨁ validate_User_Rules_framework_compliance
+    ⨁ ensure_AI_processing_optimization
+    ⨁ flag_user_facing_content_violations
+)
+
+C.content_verification = (
+    check_header_presence_and_format()
+    ⨁ validate_content_matches_declared_type()
+    ⨁ ensure_cursor_directory_uses_mathematical_notation()
+    ⨁ verify_user_facing_content_is_appropriate_for_humans()
+)
+```
+
+### C.anti_patterns: Error Prevention
+```
+C.anti_patterns = {
+    cursor_directory_user_facing_content: 🔴 CRITICAL_VIOLATION,
+    missing_content_target_header: ⚠️ MAJOR_VIOLATION,
+    friendly_language_in_ai_facing_files: ⚠️ MAJOR_VIOLATION,
+    mathematical_notation_in_user_facing_content: ⚡ VIOLATION,
+    inconsistent_targeting_within_file: ⚡ VIOLATION,
+    human_readable_explanations_in_ai_files: ⚡ VIOLATION,
+    interactive_questions_in_ai_files: ⚡ VIOLATION,
+    markdown_without_mathematical_notation_in_cursor_dir: ⚡ VIOLATION,
+    user_facing_documentation_style_in_cursor_dir: ⚡ VIOLATION
+}
+
+C.violation_response = (
+    detect_content_targeting_violation()
+    ⨁ identify_specific_violation_type()
+    ⨁ suggest_appropriate_correction()
+    ⨁ provide_example_of_correct_implementation()
+    ⨁ update_content_to_match_required_targeting()
+)
+```
+
+---
+*C.targeting: comprehensive_dual_content_targeting_framework_with_strict_cursor_directory_requirements_mathematical_notation_standardization_and_clear_ai_vs_user_facing_content_distinction*
+
+
+
+
+

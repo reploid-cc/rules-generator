@@ -14,7 +14,8 @@ T.prd_step_5 = {
     inputs: "PRD.md" + "features.md" + "rules.md",
     process: RFC_breakdown + implementation_prompt_generation + RFCS_master_creation,
     outputs: "RFCs/" + "RFCS.md" + "RFC-xxx.md" + "implementation-prompts/",
-    validation: dependency_analysis + implementation_feasibility + sequential_order
+    validation: dependency_analysis + implementation_feasibility + sequential_order,
+    exact_structure: "ALL files within outputs/RFCs/ directory structure"
 }
 ```
 
@@ -117,11 +118,37 @@ T.progress_tracking → sequential_implementation_plan
 ### **📊 Output Structure Generation**
 ```
 T.outputs = {
-    RFCs_directory: individual_RFC_xxx_md_files,
-    RFCS_master: implementation_roadmap + dependency_graph,
-    implementation_prompts: template_cloned_prompt_files,
-    sequential_order: strict_numerical_implementation_sequence
+    base_directory: ".cursor/tasks/prd_workflow/outputs/RFCs/",
+    structure: {
+        "RFCS.md": "master_roadmap_file_inside_RFCs_directory",
+        "RFC-001-[Title].md": "individual_RFC_files_inside_RFCs_directory", 
+        "RFC-002-[Title].md": "individual_RFC_files_inside_RFCs_directory",
+        "RFC-003-[Title].md": "individual_RFC_files_inside_RFCs_directory",
+        "implementation-prompts/": "subdirectory_inside_RFCs_directory",
+        "implementation-prompts/implementation-prompt-RFC-001.md": "template_cloned_files",
+        "implementation-prompts/implementation-prompt-RFC-002.md": "template_cloned_files",
+        "implementation-prompts/implementation-prompt-RFC-003.md": "template_cloned_files"
+    },
+    exact_file_structure: "
+        outputs/RFCs/
+        ├── RFCS.md
+        ├── RFC-001-[Title].md
+        ├── RFC-002-[Title].md  
+        ├── RFC-003-[Title].md
+        └── implementation-prompts/
+            ├── implementation-prompt-RFC-001.md
+            ├── implementation-prompt-RFC-002.md
+            └── implementation-prompt-RFC-003.md
+    "
 }
+```
+
+**CRITICAL FILE PLACEMENT RULE**:
+```
+EVERYTHING_inside_RFCs_directory = TRUE
+RFCS_md_location = "outputs/RFCs/RFCS.md" (NOT outputs/RFCS.md)
+implementation_prompts_location = "outputs/RFCs/implementation-prompts/" (NOT outputs/implementation-prompts/)
+consolidated_structure = ALL_files_within_single_RFCs_directory
 ```
 
 **VALIDATION REQUIREMENTS**

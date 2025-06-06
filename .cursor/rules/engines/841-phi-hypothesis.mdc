@@ -1,0 +1,185 @@
+---
+description: Hypothesis abstraction engine with pattern matching, selective capture and quality scoring
+globs: 
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Φ.hypothesis: Hypothesis Abstraction Engine (841)
+
+## 🎯 Φ.core_framework: Abstraction Framework
+
+### Φ.structure: System Architecture
+```
+Φ = hypothesis_abstraction_engine
+Φ.H = (
+    exploratory_abstraction()
+    ⨁ capture_emergent_patterns()
+    ⨁ differentiate_from_Λ.templates()
+)
+
+Φ.snapshot = (
+    stored_design_motifs_structures_naming_conventions()
+)
+```
+
+### Φ.pattern_discovery: Recognition Process
+```
+Φ.discovery_workflow = {
+    observation: "Monitor code patterns across implementations",
+    pattern_extraction: "Identify recurring design decisions",
+    abstraction: "Generalize patterns for reuse",
+    validation: "Test pattern effectiveness across contexts",
+    differentiation: "Distinguish from existing Λ rules"
+}
+
+Φ.pattern_types = {
+    design_motifs: "Recurring architectural decisions",
+    naming_conventions: "Consistent naming patterns",
+    code_structures: "Effective organization patterns",
+    integration_patterns: "Inter-component communication",
+    error_handling: "Consistent error management approaches"
+}
+```
+
+## 🎯 Φ.implementation: Pattern Management
+
+### Φ.match_snapshot: Pattern Matching
+```
+Φ.match_snapshot = (
+    compare_current_context_with_stored_patterns()
+    ⨁ suggest_applicable_design_motifs()
+    ⨁ identify_pattern_deviation_risks()
+    ⨁ recommend_consistency_improvements()
+)
+
+Φ.application_guidelines = {
+    context_relevance: "Ensure pattern fits current situation",
+    consistency_check: "Align with existing project patterns",
+    benefit_analysis: "Verify pattern adds value",
+    simplicity_guard: "Avoid over-abstraction"
+}
+```
+
+### Φ.capture_if_patterned: Selective Capture
+```
+Φ.capture_if_patterned = (
+    evaluate_pattern_significance()
+    ⨁ if_recurring_AND_beneficial_then_capture()
+    ⨁ if_experimental_then_track_hypothesis()
+    ⨁ if_proven_then_promote_to_Λ.rules()
+)
+
+Φ.capture_decision_matrix = {
+    frequency: "Appears >3 times across different contexts",
+    effectiveness: "Demonstrably improves outcomes",
+    generalizability: "Applicable beyond specific implementation",
+    maintainability: "Sustainable and easy to follow"
+}
+```
+
+## 🎯 Φ.integration: System Integration
+
+### Φ.system_differentiation: Scope Boundaries
+```
+Φ.scope = (
+    exploratory_patterns_and_emergent_designs()
+    ⨁ hypothesis_driven_abstractions()
+    ⨁ experimental_pattern_validation()
+)
+
+Λ.scope = (
+    proven_rules_and_established_practices()
+    ⨁ validated_coding_standards()
+    ⨁ mandatory_compliance_patterns()
+)
+```
+
+### Φ.cross_references: Related Rules
+```
+Φ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/111-memory-initialization.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/821-lambda-learning.mdc", "engines/851-xi-diagnostics.mdc"],
+    "integration": ["memory-integration.mdc"]
+}
+```
+
+### Φ.system_hooks: Integration Points
+```
+Φ.cross_system_integration = {
+    T.hooks: "Pattern matching during task creation",
+    Ψ.capture: "Hypothesis tracking in cognitive traces",
+    M.memory: "Pattern storage for future reference",
+    Ξ.diagnostics: "Pattern effectiveness monitoring"
+}
+```
+
+## 🎯 Φ.quality: Quality Standards
+
+### Φ.validation_protocol: Quality Assurance
+```
+Φ.validation = (
+    test_hypothesis_against_real_implementations()
+    ⨁ measure_pattern_effectiveness()
+    ⨁ identify_pattern_limitations()
+    ⨁ document_pattern_evolution()
+)
+
+Φ.pattern_evolution_tracking = {
+    pattern_origin: "When and why pattern emerged",
+    usage_context: "Where pattern has been applied",
+    effectiveness_metrics: "Quantifiable benefits observed",
+    evolution_path: "How pattern has changed over time",
+    promotion_criteria: "When pattern becomes Λ rule"
+}
+
+Φ.quality_score = (
+    reusability_factor * 0.3
+    ⨁ effectiveness_rating * 0.3
+    ⨁ simplicity_score * 0.2
+    ⨁ consistency_with_existing * 0.2
+)
+```
+
+### Φ.anti_patterns: Error Prevention
+```
+Φ.anti_patterns = {
+    premature_pattern_abstraction: ⚠️ MAJOR_VIOLATION,
+    overly_complex_patterns: ⚠️ MAJOR_VIOLATION,
+    insufficient_validation: ⚡ VIOLATION,
+    pattern_duplication: ⚡ VIOLATION,
+    context_insensitive_application: ⚠️ MAJOR_VIOLATION,
+    conflicting_pattern_recommendations: ⚡ VIOLATION,
+    pattern_promotion_without_evidence: 🔴 CRITICAL_VIOLATION
+}
+```
+
+### Φ.pattern_library: Organization Structure
+```
+Φ.pattern_library = {
+    architectural: "system_design_patterns",
+    naming: "consistent_naming_conventions",
+    organizational: "file_structure_patterns",
+    integration: "component_communication_patterns",
+    error_handling: "error_management_patterns",
+    testing: "test_organization_patterns"
+}
+
+Φ.pattern_documentation_template = `
+## Pattern: [Name]
+**Context**: When this pattern applies
+**Problem**: What issue this pattern solves
+**Solution**: How the pattern addresses the problem
+**Implementation**: Concrete implementation guidance
+**Benefits**: Measurable advantages
+**Limitations**: Known constraints or trade-offs
+**Examples**: Real usage instances
+**Metrics**: Effectiveness measurements
+`
+```
+
+---
+*Φ.hypothesis: comprehensive_exploratory_pattern_capture_engine_with_design_motif_storage_hypothesis_validation_evolution_tracking_and_quality_assurance*
+

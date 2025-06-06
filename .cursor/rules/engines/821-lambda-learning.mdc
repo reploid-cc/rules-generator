@@ -1,0 +1,198 @@
+---
+description: Rule-based self-learning system with pattern detection, rule generation and quality validation
+globs: .cursor/rules/**/*
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Λ.learning: Rule-Based Self-Learning System (821)
+
+## 🎯 Λ.core_framework: Learning System Framework
+
+### Λ.structure: System Architecture
+```
+Λ = rule_based_self_learning
+Λ.path = ".cursor/rules/"
+
+Λ.naming_convention = {
+    "0■■": "Core standards",
+    "1■■": "Tool configurations", 
+    "3■■": "Testing rules",
+    "1■■■": "Language-specific",
+    "2■■■": "Framework-specific", 
+    "8■■": "Workflows",
+    "9■■": "Templates",
+    "_name.mdc": "Private rules"
+}
+
+// Note: Category masks, not fixed literals. Use incremental IDs.
+```
+
+### Λ.pattern_alignment: Quality Enforcement
+```
+Λ.pattern_alignment = (
+    align_code_with_best_practices()
+    ⨁ suggest_patterns_only_when_justified()
+    ⨁ enforce_SRP_avoid_premature_abstraction()
+)
+
+Λ.best_practices = {
+    SRP: "Single Responsibility Principle - One clear purpose per function/class",
+    simplicity_guard: "Challenge overengineering, delay abstraction",
+    pattern_justification: "Only suggest patterns when clearly beneficial",
+    context_awareness: "Apply rules based on project structure and scope"
+}
+```
+
+## 🎯 Λ.implementation: Learning System Implementation
+
+### Λ.autonomy: Intelligent Rule Generation
+```
+Λ.autonomy = (
+    auto_detect_rule_worthy_recurrences()
+    ⨁ generate__DRAFT_mdc_in_context()
+)
+
+Λ.rule_discovery_process = {
+    pattern_detection: "Identify recurring issues or solutions",
+    context_analysis: "Evaluate if pattern is generalizable",
+    rule_drafting: "Generate _DRAFT.mdc for review",
+    validation: "Test rule effectiveness across scenarios",
+    integration: "Promote to official rule with proper naming"
+}
+```
+
+### Λ.extract: Experience Learning
+```
+Λ.extract = (
+    triggered_on_sprint_review()
+    ⨁ analyze_what_worked_vs_what_didnt()
+    ⨁ identify_reusable_patterns()
+    ⨁ suggest_rule_improvements()
+)
+
+Λ.learning_triggers = {
+    recurring_issues: "Same problem appears >2 times",
+    successful_patterns: "Proven effective solutions",
+    anti_patterns: "Documented problematic approaches",
+    tool_configurations: "Effective setup procedures"
+}
+
+Ξ.recurrence_threshold = 2
+Ξ.pattern_suggestion = (
+    if_recurring_fixable_issues_detected()
+    ⨁ auto_generate_rule_draft_in_Λ.path()
+    ⨁ suggest_reusable_strategy()
+)
+```
+
+## 🎯 Λ.integration: System Integration
+
+### Λ.cross_references: Related Rules
+```
+Λ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/111-memory-initialization.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/841-phi-hypothesis.mdc", "engines/851-xi-diagnostics.mdc"],
+    "9xx-templates": ["templates/901-template-standards.mdc"],
+    "integration": ["tasks-integration.mdc", "memory-integration.mdc"]
+}
+```
+
+### Λ.system_hooks: Integration Points
+```
+Ω.scope = (
+    infer_project_structure_from_files_and_imports()
+    ⨁ detect_implicit_dependencies()
+    ⨁ observe_ripple_effects()
+    ⨁ activate_Λ.rules_in_context()
+    ⨁ silent_observer_mode_to_respect_IDE_logic()
+)
+
+Λ.cross_system_integration = {
+    Ψ.traces: "Rules invoked logged in cognitive traces",
+    T.tasks: "Rule compliance checked in task validation",
+    Ξ.diagnostics: "Rule effectiveness monitored",
+    M.memory: "Rule patterns stored for future reference"
+}
+
+D⍺.rule_conflict = (
+    identify_conflicting_rules()
+    ⨁ resolve_by_priority_context_or_specificity()
+    ⨁ log_resolution_in_Ψ.dialog()
+)
+```
+
+## 🎯 Λ.quality: Quality Standards
+
+### Λ.validation_protocol: Quality Assurance
+```
+Λ.rule_effectiveness_criteria = {
+    actionable: "Clear, executable instructions",
+    contextual: "Applies to appropriate scenarios",
+    testable: "Can verify rule effectiveness",
+    maintainable: "Easy to update as context evolves"
+}
+
+Λ.rule_template = `
+---
+description: Brief rule purpose
+globs: [optional file patterns]
+alwaysApply: [true|false]
+---
+# Rule Title (XXX)
+
+## 🎯 Purpose & Context
+Clear explanation of when and why this rule applies
+
+## 🎯 Implementation Guidelines
+Specific, actionable instructions
+
+## 🎯 Quality Validation
+How to verify rule effectiveness
+
+## 🎯 Integration Points
+How this rule interacts with other systems
+
+---
+*Rule effectiveness tracking note*
+`
+```
+
+### Λ.anti_patterns: Error Prevention
+```
+Λ.anti_patterns = {
+    premature_rule_creation: ⚠️ MAJOR_VIOLATION,
+    overly_specific_rules: ⚡ VIOLATION,
+    conflicting_rules: 🔴 CRITICAL_VIOLATION,
+    inadequate_rule_testing: ⚠️ MAJOR_VIOLATION,
+    excessive_rule_complexity: ⚡ VIOLATION,
+    insufficient_context_awareness: ⚡ VIOLATION,
+    missing_integration_points: ⚡ VIOLATION
+}
+
+Λ.rule_validation = (
+    test_rule_in_multiple_contexts()
+    ⨁ verify_clear_actionable_instructions()
+    ⨁ confirm_integration_with_existing_systems()
+    ⨁ monitor_effectiveness_over_time()
+    ⨁ update_based_on_usage_feedback()
+)
+```
+
+### Λ.application_workflow: Rule Application Process
+```
+Λ.application_workflow = (
+    detect_relevant_context_from_user_request()
+    ⨁ identify_applicable_rules_based_on_globs_and_content()
+    ⨁ fetch_rules_before_implementation()
+    ⨁ apply_rules_in_priority_order()
+    ⨁ validate_outcomes_against_rule_criteria()
+)
+```
+
+---
+*Λ.learning: comprehensive_rule_based_self_learning_system_with_intelligent_pattern_detection_context_aware_rule_generation_cross_system_integration_and_continuous_improvement*
+
+

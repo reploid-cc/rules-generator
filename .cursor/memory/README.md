@@ -1,174 +1,223 @@
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 
-# M.memory_path - Memory Bank System
+# M.memory_system: Rules Generator Memory Architecture
 
-## M.memory_system: Core Implementation
-```
-M.memory_path = ".cursor/memory/"
-M.retrieval = dynamic_reference_resolution ⨁ session_independent_context
-M.sync = (
-    triggered_on_review
-    ⨁ store_ideas_constraints_insights_edge_notes
-    ⨁ maintain_session_independent_context_files
-)
-```
+## 🎯 M.core_purpose: Memory System Definition
 
-## M.file_organization: System Structure
-
-### M.error_memory: Ξ.error_memory
+### M.memory_identity: System Purpose
 ```
-errors.md = {
-    issue_tracking_pattern_analysis,
-    recurrence_detection_automatic_rule_generation,
-    diagnostic_effectiveness_metrics
+M.memory_system = {
+    path: ".cursor/memory/",
+    purpose: "session_independent_context_preservation",
+    implementation: "file_based_memory_with_foundation_files",
+    integration: "cross_session_knowledge_retention_with_dynamic_reference_resolution"
 }
 ```
 
-### M.cognitive_traces: Ψ.output_path  
+### M.system_architecture: Memory Organization
 ```
-trace_{task_id}.md = {
-    cognitive_traces_complex_tasks,
-    reasoning_paths_decision_documentation,
-    cross_system_integration_records
+M.memory_architecture = {
+    foundation_files: "9_core_files_with_specific_responsibilities",
+    context_directory: "session_independent_context_storage",
+    patterns_directory: "design_pattern_capture_and_evolution",
+    trace_files: "cognitive_trace_capture_for_reasoning_paths"
 }
 ```
 
-### M.pattern_storage: Φ.snapshot_storage
-```
-patterns/ = {
-    design_motif_captures,
-    naming_convention_patterns,
-    architectural_decision_records,
-    pattern_evolution_tracking
-}
-```
+## 🎯 M.foundation_files: Core Memory Components
 
-### M.context_artifacts: M.sync_artifacts
+### M.primary_files: Critical Memory Files
 ```
-context/ = {
-    session_context_preservation,
-    cross_session_knowledge_transfer,
-    constraint_insight_storage,
-    edge_case_documentation
-}
-```
-
-### M.session_independent_files: Memory Bank Integration
-```
-session_independent_files = {
-    projectbrief.md: foundation_document_source_of_truth,
-    productContext.md: project_purpose_problems_solved,
-    activeContext.md: current_work_focus_recent_changes,
-    systemPatterns.md: architecture_decisions_design_patterns,
-    techContext.md: technologies_development_setup,
-    progress.md: status_tracking_what_works_left,
-    sumup.md: master_navigator_contextual_retrieval
-}
-```
-
-### M.lambda_rules_integration: Active Λ Rules
-```
-Λ.active_rules = {
-    141-documentation-quality: {
-        Λ.broken_links_prevention: zero_tolerance_broken_links,
-        Λ.user_workflow_validation: user_centric_documentation,
-        Λ.content_placement_logic: context_appropriate_placement,
-        Λ.pre_commit_validation: mandatory_link_verification
+M.foundation_files = {
+    "README.md": {
+        purpose: "memory_system_documentation",
+        content: "architecture_organization_usage_protocols"
     },
-    142-git-permission: {
-        Λ.explicit_permission_required: mandatory_git_authorization,
-        Λ.git_operations_covered: comprehensive_git_command_scope,
-        Λ.permission_request_protocol: standardized_authorization_workflow,
-        Λ.violation_detection: unauthorized_operation_prevention
+    "projectbrief.md": {
+        purpose: "foundation_document_source_of_truth",
+        content: "core_project_definition_requirements_architecture"
     },
-    161-refactor-workflow: {
-        Λ.init_rules_trigger: ["init refactor"] command_recognition,
-        Λ.scope_clarification: 8_refactor_scope_options_with_user_confirmation,
-        Λ.step_by_step_execution: mandatory_user_approval_between_each_step,
-        Λ.mandatory_safety: zero_tolerance_proceeding_without_approval,
-        Λ.asset_cleanup: user_confirmation_required_before_file_deletion,
-        Λ.existing_rules_integration: cross_rule_integration_with_001_851_801_821_841
+    "productContext.md": {
+        purpose: "project_purpose_problems_solved",
+        content: "why_project_exists_value_proposition_target_users"
+    },
+    "activeContext.md": {
+        purpose: "current_work_focus_recent_changes",
+        content: "current_state_recent_accomplishments_enhancements"
+    },
+    "systemPatterns.md": {
+        purpose: "architecture_decisions_design_patterns",
+        content: "system_design_conventions_evolution_naming"
+    },
+    "techContext.md": {
+        purpose: "technologies_setup_constraints",
+        content: "technical_specifications_development_environment"
+    },
+    "progress.md": {
+        purpose: "status_tracking_completion_metrics",
+        content: "what_works_whats_left_to_do_milestones"
+    },
+    "errors.md": {
+        purpose: "error_tracking_pattern_analysis",
+        content: "recurring_issues_pattern_detection_Ξ.error_memory"
+    },
+    "sumup.md": {
+        purpose: "master_navigator_contextual_retrieval",
+        content: "central_reference_for_system_navigation"
     }
 }
 ```
 
-## M.sync_hooks: Memory Operations Protocol
-
-### M.mandatory_memory_operations
+### M.subdirectories: Specialized Memory Storage
 ```
-M.mandatory_operations = {
-    task_start: read_ALL_relevant_files_memory_bank(M.retrieval),
-    task_complete: store_insights_constraints_decisions(M.sync),
-    problem_detection: log_patterns_solutions_context(Ξ.track),
-    pattern_discovery: capture_emergent_designs(Φ.snapshot)
+M.memory_subdirectories = {
+    "context/": {
+        purpose: "session_independent_context_storage",
+        content: "environment_project_state_snapshots_constraints",
+        usage: "cross_session_knowledge_preservation"
+    },
+    "patterns/": {
+        purpose: "design_pattern_storage",
+        content: "architectural_patterns_naming_conventions_code_structures",
+        usage: "pattern_capture_evolution_consistency_enforcement"
+    }
 }
 ```
 
-### Σ_hooks.memory_integration
-```
-Σ_hooks.memory = {
-    on_task_created: [M.recall, Φ.match_snapshot],
-    on_plan_consolidated: [M.sync_if_contextual],
-    on_step_completed: [M.sync_if_contextual],
-    on_sprint_review: [M.sync, Λ.extract, Ψ.summarize],
-    on_error_detected: [M.link_context],
-    on_user_feedback: [M.append_if_relevant]
-}
-```
+## 🎯 M.memory_operations: System Functionality
 
-## M.quality_assurance: Effectiveness Metrics
-
-### M.memory_effectiveness_metrics
+### M.initialization: Memory Setup
 ```
-M.effectiveness = {
-    context_retrieval_accuracy,
-    cross_session_knowledge_transfer_success,
-    pattern_recognition_improvement_over_time,
-    decision_quality_enhancement_through_historical_reference
-}
-```
-
-### M.memory_management_protocol
-```
-M.management = {
-    automatic_relevance_scoring,
-    context_aging_archival,
-    pattern_consolidation,
-    knowledge_graph_maintenance
-}
-```
-
-## M.usage_protocols: Processing Requirements
-
-### M.task_start_protocol: MANDATORY
-```
-M.task_start = (
-    execute_M.retrieval_for_relevant_context
-    ⨁ load_applicable_patterns_via_Φ.match_snapshot
-    ⨁ check_Ξ.error_memory_for_known_issues
-    ⨁ establish_baseline_knowledge_state
+M.initialization_process = (
+    detect_project_structure()
+    ⨁ create_foundation_files_if_missing()
+    ⨁ populate_with_project_context()
+    ⨁ establish_cross_references()
+    ⨁ verify_consistency_across_files()
 )
 ```
 
-### M.task_execution_protocol
+### M.synchronization: Memory Updates
 ```
-M.task_execution = (
-    capture_decisions_reasoning_in_Ψ.capture
-    ⨁ note_emerging_patterns_for_Φ.snapshot
-    ⨁ document_constraints_insights
-    ⨁ track_cross_system_interactions
+M.sync_operations = {
+    atomic_updates: "all_related_files_updated_simultaneously",
+    consistency_validation: "cross_reference_integrity_checking",
+    trigger_events: [
+        "major_project_changes_detected",
+        "user_edits_memory_file_manually",
+        "sprint_review_completion",
+        "significant_context_changes"
+    ]
+}
+```
+
+### M.retrieval: Context Access
+```
+M.retrieval_process = (
+    load_relevant_foundation_files()
+    ⨁ resolve_dynamic_references()
+    ⨁ extract_contextual_information()
+    ⨁ integrate_with_current_task_context()
 )
 ```
 
-### M.task_completion_protocol: MANDATORY
+## 🎯 M.integration: System Connections
+
+### M.cross_references: Related Rules
 ```
-M.task_completion = (
-    execute_M.sync_to_store_insights
-    ⨁ update_pattern_library_via_Φ.snapshot
-    ⨁ log_lessons_learned_in_appropriate_files
-    ⨁ prepare_context_for_future_retrieval
+M.related_rules = {
+    memory_initialization: ".cursor/rules/protocols/111-memory-initialization.mdc",
+    mandatory_protocols: ".cursor/rules/protocols/101-mandatory-protocols.mdc",
+    core_standards: ".cursor/rules/core/001-core-standards.mdc",
+    task_system: ".cursor/rules/workflow/801-task-system.mdc",
+    diagnostics: ".cursor/rules/engines/851-xi-diagnostics.mdc"
+}
+```
+
+### M.hooks: Event Integration
+```
+M.memory_hooks = {
+    on_task_created: "M.recall_context",
+    on_step_completed: "M.sync_if_contextual",
+    on_sprint_review: "M.sync",
+    on_user_feedback: "M.append_if_relevant",
+    on_error_detected: "M.update_errors_md"
+}
+```
+
+## 🎯 M.usage_protocols: Operational Guidelines
+
+### M.update_protocol: Memory Modification
+```
+M.update_protocol = (
+    detect_memory_update_trigger()
+    ⨁ analyze_impact_across_all_memory_files()
+    ⨁ UPDATE_ALL_9_FOUNDATION_FILES_SIMULTANEOUSLY()
+    ⨁ validate_consistency_across_all_files()
+    ⨁ report_complete_memory_system_update()
 )
+```
+
+### M.consistency_requirements: Quality Standards
+```
+M.consistency_requirements = {
+    cross_references: "all_references_must_resolve_correctly",
+    language: "all_content_must_use_english_language",
+    notation: "all_content_must_use_mathematical_notation_format",
+    completeness: "all_9_foundation_files_must_exist_and_be_populated",
+    directory_structure: "context_and_patterns_directories_must_exist"
+}
+```
+
+### M.anti_patterns: Error Prevention
+```
+M.anti_patterns = {
+    partial_updates: "🔴 CRITICAL_VIOLATION - updating_only_subset_of_memory_files",
+    mixed_language: "⚠️ MAJOR_VIOLATION - using_mixed_languages_in_memory_files",
+    user_facing_format: "⚠️ MAJOR_VIOLATION - using_user_facing_content_in_memory_files",
+    broken_references: "⚠️ MAJOR_VIOLATION - references_that_do_not_resolve_correctly",
+    inconsistent_notation: "⚡ VIOLATION - mathematical_notation_inconsistencies"
+}
+```
+
+## 🎯 M.commands: Operational Instructions
+
+### M.memory_commands: System Operations
+```
+M.commands = {
+    initialization: "init memory",
+    comprehensive_update: "update memory bank",
+    consistency_validation: "validate memory consistency"
+}
+```
+
+### M.command_workflow: Operation Sequence
+```
+M.command_workflow = {
+    "init memory": [
+        "detect_project_structure()",
+        "create_foundation_files_if_missing()",
+        "populate_with_project_context()",
+        "establish_cross_references()",
+        "verify_consistency_across_files()"
+    ],
+    
+    "update memory bank": [
+        "analyze_impact_across_all_memory_files()",
+        "update_all_9_foundation_files_simultaneously()",
+        "validate_consistency_across_all_files()",
+        "report_complete_memory_system_update()"
+    ],
+    
+    "validate memory consistency": [
+        "check_all_foundation_files_exist()",
+        "verify_cross_references_resolve_correctly()",
+        "ensure_consistent_mathematical_notation()",
+        "validate_directory_structure_integrity()",
+        "report_consistency_validation_results()"
+    ]
+}
 ```
 
 ---
-*M.memory_path = ".cursor/memory/" - Dynamic_context_preservation_intelligent_retrieval* 
+*M.memory_system = comprehensive_file_based_memory_architecture_for_session_independent_context_preservation* 

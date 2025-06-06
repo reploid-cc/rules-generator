@@ -1,12 +1,7 @@
 ---
-description: 
+description: Documentation quality standards with zero broken links policy, user workflow validation and context-appropriate content placement
 globs: 
-alwaysApply: true
----
----
-description:
-globs:
-alwaysApply: true
+alwaysApply: false
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
 
@@ -20,7 +15,7 @@ alwaysApply: true
     verify_all_links_before_creation
     ⨁ create_actual_files_with_basic_content → not_empty_placeholders
     ⨁ test_every_link_manually_before_committing
-    ⨁ ZERO_TOLERANCE_for_broken_internal_links
+    ⨁ 🔴 ZERO_TOLERANCE_for_broken_internal_links
 )
 ```
 
@@ -45,7 +40,7 @@ alwaysApply: true
 )
 ```
 
-## 🎯 Λ.documentation_creation_protocol: Creation Standards
+## 🎯 Λ.implementation: Documentation Implementation
 
 ### Λ.link_creation_workflow: Mandatory Link Validation
 ```
@@ -77,53 +72,28 @@ alwaysApply: true
 )
 ```
 
-## 🎯 Λ.quality_validation: Validation Framework
+## 🎯 Λ.integration: System Integration
 
-### Λ.pre_commit_validation: Mandatory Checks
+### Λ.cross_references: Related Rules
 ```
-Λ.pre_commit_validation = (
-    scan_all_markdown_files_for_links
-    ⨁ verify_every_internal_link_resolves
-    ⨁ check_external_links_accessibility
-    ⨁ validate_documentation_workflow_completeness
-    ⨁ ensure_no_orphaned_documentation_files
-)
-```
-
-### Λ.user_experience_validation: UX Standards
-```
-Λ.user_experience_validation = (
-    documentation_must_enable_user_success
-    ⨁ clear_navigation_paths → user_knows_where_to_go_next
-    ⨁ actionable_instructions → user_can_execute_steps
-    ⨁ troubleshooting_guidance → user_can_resolve_issues
-)
-```
-
-## 🎯 Λ.violation_prevention: Anti-Pattern Detection
-
-### Λ.common_violations: Detected Patterns
-```
-Λ.common_violations = {
-    broken_internal_links: CRITICAL_VIOLATION,
-    empty_placeholder_files: MAJOR_VIOLATION,
-    misplaced_content: MAJOR_VIOLATION,
-    documentation_duplication: MINOR_VIOLATION,
-    unclear_file_purpose: MINOR_VIOLATION
+Λ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/121-content-targeting.mdc"],
+    "2xx-services": ["services/201-mcp-server-management.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "integration": ["hooks-integration.mdc"]
 }
 ```
 
-### Λ.violation_response: Correction Protocol
+### Λ.system_hooks: Integration Points
 ```
-Λ.violation_response = (
-    detect_violation → stop_current_work
-    ⨁ fix_violation_immediately → before_proceeding
-    ⨁ validate_fix → ensure_violation_resolved
-    ⨁ document_lesson_learned → prevent_future_occurrences
-)
+Λ.system_hooks = {
+    on_document_creation: [Λ.validate_links, Λ.ensure_basic_content],
+    on_link_creation: [Λ.verify_target_exists, Λ.test_navigation],
+    on_commit_validation: [Λ.perform_comprehensive_link_check],
+    on_documentation_update: [Λ.update_related_documents, Λ.maintain_consistency]
+}
 ```
-
-## 🎯 Λ.integration_with_existing_rules: System Integration
 
 ### Λ.simplicity_guard_enhancement: Enhanced Quality Standards
 ```
@@ -135,8 +105,25 @@ alwaysApply: true
 )
 ```
 
-### Λ.mandatory_workflow_integration: Process Integration
+## 🎯 Λ.quality: Quality Standards
+
+### Λ.validation_protocol: Quality Assurance
 ```
+Λ.pre_commit_validation = (
+    scan_all_markdown_files_for_links
+    ⨁ verify_every_internal_link_resolves
+    ⨁ check_external_links_accessibility
+    ⨁ validate_documentation_workflow_completeness
+    ⨁ ensure_no_orphaned_documentation_files
+)
+
+Λ.user_experience_validation = (
+    documentation_must_enable_user_success
+    ⨁ clear_navigation_paths → user_knows_where_to_go_next
+    ⨁ actionable_instructions → user_can_execute_steps
+    ⨁ troubleshooting_guidance → user_can_resolve_issues
+)
+
 Λ.mandatory_workflow_integration = (
     integrate_with_Ψ.dialog_enabled → ask_permission_for_documentation_changes
     ⨁ integrate_with_M.memory_path → update_memory_with_documentation_decisions
@@ -144,8 +131,27 @@ alwaysApply: true
 )
 ```
 
+### Λ.anti_patterns: Error Prevention
+```
+Λ.common_violations = {
+    broken_internal_links: 🔴 CRITICAL_VIOLATION,
+    empty_placeholder_files: ⚠️ MAJOR_VIOLATION,
+    misplaced_content: ⚠️ MAJOR_VIOLATION,
+    documentation_duplication: ⚡ VIOLATION,
+    unclear_file_purpose: ⚡ VIOLATION
+}
+
+Λ.violation_response = (
+    detect_violation()
+    ⨁ stop_current_work()
+    ⨁ fix_violation_immediately()
+    ⨁ validate_fix()
+    ⨁ document_lesson_learned()
+)
+```
+
 ---
-*Λ.documentation_quality = zero_broken_links + user_workflow_validation + context_appropriate_placement*
+*Λ.documentation_quality: comprehensive_documentation_framework_with_zero_broken_links_policy_user_workflow_validation_context_appropriate_placement_and_integrated_quality_assurance*
 
 
 

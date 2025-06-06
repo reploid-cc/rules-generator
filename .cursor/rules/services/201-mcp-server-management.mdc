@@ -1,0 +1,236 @@
+---
+description: MCP system management with intelligent request routing, mandatory feedback integration and scalable architecture
+globs:
+alwaysApply: true
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# Λ.mcp_system: MCP System Management (201)
+
+## 🎯 Λ.core_framework: MCP Core Framework
+
+### Λ.server_declarations: MCP Server Registry
+```
+Λ.mcp_servers = {
+    interactive_feedback: {
+        status: "✅ ACTIVE",
+        type: "Core System Tool",
+        path: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\interactive-feedback",
+        purpose: "Human-in-the-loop workflow for AI development",
+        protocols: "Rule 101 mandatory compliance",
+        capabilities: ["feedback_collection", "review_processes", "quality_assurance", "user_validation"]
+    },
+    
+    // Planned workflow-specific servers
+    mcp_filesystem: {
+        status: "📋 PLANNED", 
+        type: "Development Workflow",
+        path: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\filesystem-mcp",
+        purpose: "Enhanced file system operations",
+        rule: "202-development-mcps.mdc",
+        capabilities: ["file_operations", "directory_management", "search", "batch_operations"]
+    },
+    
+    mcp_figma: {
+        status: "📋 PLANNED",
+        type: "Design Workflow", 
+        path: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\figma-mcp",
+        purpose: "Figma design file integration",
+        rule: "203-design-mcps.mdc",
+        capabilities: ["design_export", "component_extraction", "asset_management", "prototype_access"]
+    }
+}
+```
+
+### Λ.routing_logic: Request Routing System
+```
+Λ.route_request = (
+    analyze_user_request_keywords()
+    ⨁ identify_workflow_domain()
+    ⨁ select_appropriate_mcp_server()
+    ⨁ check_server_availability()
+    ⨁ inform_user_of_routing_decision()
+    ⨁ execute_with_mandatory_feedback()
+)
+
+Λ.domain_routing = {
+    file_operations: {
+        keywords: ["file", "directory", "folder", "read", "write", "create", "delete", "move", "copy", "search"],
+        server: "mcp_filesystem",
+        status: "📋 PLANNED", 
+        fallback: "standard_file_operations_with_limitations"
+    },
+    
+    design_operations: {
+        keywords: ["figma", "design", "prototype", "component", "frame", "layer", "export", "asset"],
+        server: "mcp_figma",
+        status: "📋 PLANNED",
+        fallback: "manual_design_workflow_guidance"
+    },
+    
+    feedback_operations: {
+        keywords: ["feedback", "review", "interactive", "human-in-loop", "validate", "confirm", "check"],
+        server: "interactive_feedback",
+        status: "✅ ACTIVE",
+        fallback: "N/A - Always available"
+    }
+}
+```
+
+## 🎯 Λ.integration: System Integration
+
+### Λ.feedback_integration: Mandatory Feedback Integration
+```
+Λ.mcp_operation_protocol = (
+    execute_mcp_operation()
+    ⨁ 🔴 MANDATORY_call_interactive_feedback_tool()
+    ⨁ report_operation_results_and_status()
+    ⨁ await_user_feedback_and_validation()
+    ⨁ continue_workflow_based_on_feedback()
+    ⨁ log_operation_completion_in_memory()
+)
+
+Λ.feedback_patterns = {
+    "Successful operation": "Operation completed successfully. [Details]. Any adjustments needed?",
+    "Planned server needed": "This requires [server_name] which is planned but not implemented. I can help with manual approach. Proceed?",
+    "Error occurred": "Operation failed: [error]. Here are suggested solutions: [options]. Which approach would you prefer?",
+    "Multi-step workflow": "Completed step [X] of [Y]. Next: [description]. Continue with next step?"
+}
+```
+
+### Λ.cross_references: Related Rules
+```
+Λ.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/101-mandatory-protocols.mdc"],
+    "2xx-services": ["services/211-mcp-development-workflow.mdc"],
+    "8xx-workflows": ["workflow/881-prd-workflow-system.mdc"],
+    "integration": ["hooks-integration.mdc"]
+}
+```
+
+## 🎯 Λ.operational_patterns: Operational Capabilities
+
+### Λ.user_communication: Communication Protocol
+```
+Λ.routing_transparency = (
+    inform_user_which_server_handles_request()
+    ⨁ explain_routing_decision_rationale()
+    ⨁ provide_alternatives_if_user_disagrees()
+    ⨁ educate_user_about_mcp_capabilities()
+    ⨁ support_explicit_server_override()
+)
+
+Λ.status_responses = {
+    "✅ ACTIVE": "Using [server_name] to handle this request.",
+    "📋 PLANNED": "This functionality requires [server_name] which is planned but not yet implemented. Would you like me to help with a manual approach?",
+    "🔧 SETUP_NEEDED": "[server_name] needs setup. Please follow the setup guide in [rule_file].",
+    "❌ BROKEN": "[server_name] is currently unavailable. Let me help with an alternative approach."
+}
+```
+
+### Λ.error_handling: Fallback Mechanisms
+```
+Λ.fallback_protocol = (
+    if_no_mcp_server_matches → use_general_ai_capabilities_with_limitations
+    ⨁ if_server_planned → offer_manual_approach_with_guidance
+    ⨁ if_server_broken → suggest_alternative_tools_or_methods
+    ⨁ if_multiple_servers_match → ask_user_for_clarification
+    ⨁ 🔴 ALWAYS_call_interactive_feedback_regardless_of_fallback()
+)
+
+Λ.user_override = (
+    detect_explicit_server_specification()
+    ⨁ if_override_detected → validate_server_availability()
+    ⨁ if_server_available → proceed_with_user_choice()
+    ⨁ if_server_unavailable → inform_and_suggest_alternatives()
+    ⨁ learn_from_user_preferences_for_future_routing()
+)
+```
+
+## 🎯 Λ.workflow_coordination: Advanced Workflows
+
+### Λ.multi_server_workflows: Complex Operation Management
+```
+Λ.multi_server_workflow = (
+    identify_workflow_requires_multiple_servers()
+    ⨁ break_down_into_sequential_server_specific_steps()
+    ⨁ execute_steps_with_feedback_after_each()
+    ⨁ coordinate_data_flow_between_servers()
+    ⨁ handle_failures_gracefully_with_user_input()
+)
+
+Λ.multi_server_examples = {
+    "Create project and setup GitHub": [
+        "mcp_filesystem: create_project_structure()",
+        "interactive_feedback: validate_project_structure()",
+        "mcp_github: create_repository()",
+        "interactive_feedback: confirm_repository_settings()",
+        "mcp_github: push_initial_files()",
+        "interactive_feedback: verify_final_setup()"
+    ],
+    
+    "Design to code workflow": [
+        "mcp_figma: export_design_assets()",
+        "interactive_feedback: review_exported_assets()",
+        "mcp_filesystem: organize_assets_in_project()",
+        "interactive_feedback: confirm_asset_organization()",
+        "mcp_github: commit_assets_to_repository()",
+        "interactive_feedback: validate_complete_workflow()"
+    ]
+}
+```
+
+### Λ.maintenance_protocol: System Maintenance
+```
+Λ.server_lifecycle = (
+    when_new_server_added → update_mcp_servers_declaration()
+    ⨁ when_server_status_changes → update_routing_logic()
+    ⨁ when_server_removed → clean_up_references_and_routing()
+    ⨁ regular_health_checks → verify_active_servers_working()
+    ⨁ documentation_sync → keep_server_info_current()
+)
+
+Λ.routing_optimization = (
+    cache_frequent_routing_decisions()
+    ⨁ learn_from_user_feedback_and_corrections()
+    ⨁ adjust_keyword_weights_based_on_success_rates()
+    ⨁ identify_new_routing_patterns_from_usage()
+    ⨁ suggest_new_mcp_servers_for_unhandled_domains()
+)
+```
+
+## 🎯 Λ.quality: Quality Standards
+
+### Λ.validation_protocol: Quality Assurance
+```
+Λ.routing_validation = (
+    test_routing_decisions_with_sample_requests()
+    ⨁ verify_all_servers_in_routing_table_exist()
+    ⨁ ensure_interactive_feedback_called_after_every_operation()
+    ⨁ validate_fallback_protocols_work_correctly()
+    ⨁ check_cross_references_to_other_rules_are_valid()
+)
+```
+
+### Λ.anti_patterns: Error Prevention
+```
+Λ.anti_patterns = {
+    missing_feedback_call: 🔴 CRITICAL_VIOLATION,
+    hardcoded_server_paths: ⚠️ MAJOR_VIOLATION,
+    missing_fallback_handling: ⚠️ MAJOR_VIOLATION,
+    unclear_user_communication: ⚡ VIOLATION,
+    incomplete_routing_logic: ⚡ VIOLATION,
+    missing_cross_references: ⚡ VIOLATION
+}
+
+Λ.integration_compliance = (
+    ensure_rule_101_mandatory_protocols_followed()
+    ⨁ coordinate_with_workflow_specific_rules_202_203()
+    ⨁ maintain_consistency_across_mcp_system()
+    ⨁ prevent_conflicts_between_server_operations()
+)
+```
+
+---
+*Λ.mcp_system: comprehensive_MCP_management_with_intelligent_routing_mandatory_feedback_and_scalable_architecture*

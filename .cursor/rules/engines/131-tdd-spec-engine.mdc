@@ -1,0 +1,219 @@
+---
+description: Test-driven development engine with automated test generation, complexity assessment and validation protocol
+globs: 
+alwaysApply: false
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# TDD.spec_engine: Test-Driven Development Framework (131)
+
+## 🎯 TDD.core_framework: Test Generation Framework
+
+### TDD.spec_engine: Intelligent Test Generation
+```
+TDD.spec_engine = (
+    infer_test_cases_from_τ()
+    ⨁ include_edge_validation_regression_cases()
+    ⨁ cross_check_against_known_issues_and_Λ()
+)
+
+TDD.loop = (
+    spec → run → fail → fix → re_run
+    ⨁ if_pass: Ψ.capture_result() ⨁ M.sync() ⨁ Λ.extract()
+)
+
+TDD.spec_path = ".cursor/tasks/sprint_{n}/spec_step_{x}.md"
+TDD.auto_spec_trigger = (
+    generate_spec_step_x_md_if_τ.complexity > medium
+    ⨁ or_if_user_explicitly_requests_TDD()
+)
+```
+
+### TDD.complexity_assessment: Task Complexity Evaluation
+```
+TDD.complexity_levels = {
+    simple: (
+        single_file_change ⨁ minimal_logic ⨁ no_dependencies
+        ⨁ estimated_effort < 1h ⨁ no_architecture_impact
+    ),
+    medium: (
+        multi_file_changes ⨁ moderate_logic ⨁ few_dependencies
+        ⨁ estimated_effort 1-4h ⨁ component_level_impact
+    ),
+    complex: (
+        architecture_changes ⨁ extensive_logic ⨁ many_dependencies
+        ⨁ estimated_effort > 4h ⨁ system_level_impact
+    )
+}
+
+TDD.trigger_conditions = (
+    if_τ.complexity ≥ medium
+    ⨁ or_τ.dependencies.count > 2
+    ⨁ or_τ.integration_points > 1
+    ⨁ or_user_requests_TDD()
+    → generate_TDD_spec_path()
+)
+```
+
+## 🎯 TDD.implementation: Testing Standards
+
+### TDD.test_types: Required Test Categories
+```
+TDD.required_test_types = {
+    unit: "Individual function/component testing",
+    integration: "Component interaction testing",
+    edge_cases: "Boundary condition testing",
+    regression: "Prevent reintroduction of bugs"
+}
+
+TDD.test_structure = `
+// Arrange: Set up test data and environment
+const input = createTestData();
+const expectedOutput = defineExpected();
+
+// Act: Execute the function under test
+const result = functionUnderTest(input);
+
+// Assert: Verify the outcome
+expect(result).toEqual(expectedOutput);
+`
+```
+
+### TDD.quality_requirements: Test Quality Standards
+```
+TDD.quality_standards = {
+    speed: "Tests complete <1s each",
+    independence: "No test dependencies",
+    descriptiveness: "Clear test names explain intent",
+    reliability: "Consistent results across runs"
+}
+
+TDD.test_template = `
+describe('ComponentName', () => {
+  test('should handle valid input correctly', () => {
+    // Arrange
+    const input = validTestData;
+    
+    // Act
+    const result = functionUnderTest(input);
+    
+    // Assert
+    expect(result).toEqual(expectedOutput);
+  });
+  
+  test('should handle edge cases gracefully', () => {
+    // Test boundary conditions
+    const edgeInput = createEdgeCase();
+    const result = functionUnderTest(edgeInput);
+    expect(result).toBeDefined();
+  });
+  
+  test('should throw errors for invalid input', () => {
+    // Test error conditions
+    expect(() => {
+      functionUnderTest(invalidInput);
+    }).toThrow('Expected error message');
+  });
+});
+`
+```
+
+## 🎯 TDD.integration: System Integration
+
+### TDD.task_integration: Integration with Task System
+```
+TDD.task_integration = (
+    auto_generate_spec_if_τ.complexity > medium
+    ⨁ link_spec_to_T.sprint_tracking()
+    ⨁ update_T.progress_when_tests_pass()
+)
+
+TDD.quality_gates = {
+    completion: "All tests must pass before step completion",
+    coverage: "Test coverage requirements per Λ.rules",
+    performance: "Performance benchmarks for complex operations",
+    documentation: "Documentation updated with test results"
+}
+```
+
+### TDD.cross_references: Related Rules
+```
+TDD.related_rules = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "1xx-protocols": ["protocols/111-memory-initialization.mdc"],
+    "3xx-testing": ["testing/301-testing-standards.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "integration": ["tasks-integration.mdc"]
+}
+```
+
+### TDD.system_hooks: Integration Points
+```
+TDD.system_hooks = {
+    on_task_creation: [TDD.assess_complexity, TDD.determine_tdd_requirements],
+    on_spec_generation: [TDD.create_spec_file, TDD.link_to_task],
+    on_test_completion: [TDD.update_task_progress, M.sync],
+    on_test_failure: [Ξ.log_error_pattern, TDD.suggest_fixes]
+}
+```
+
+## 🎯 TDD.quality: Quality Standards
+
+### TDD.error_protocol: Test Failure Handling
+```
+TDD.failure_protocol = (
+    analyze_failure_determine_root_cause()
+    ⨁ fix_implementation_address_core_issue()
+    ⨁ re_run_tests_verify_fix_works()
+    ⨁ document_pattern_log_in_Ξ.error_memory_if_recurring()
+)
+```
+
+### TDD.metrics: Performance & Quality Metrics
+```
+TDD.performance_metrics = {
+    execution_speed: "Monitor test runtime",
+    coverage: "Track code coverage percentage",
+    flakiness: "Identify unstable tests",
+    resource_usage: "Memory and CPU monitoring"
+}
+
+TDD.quality_score = (
+    coverage_percentage * 0.4
+    ⨁ reliability_score * 0.3  
+    ⨁ performance_score * 0.2
+    ⨁ maintainability_score * 0.1
+)
+```
+
+### TDD.anti_patterns: Error Prevention
+```
+TDD.anti_patterns = {
+    skipping_tests_for_simple_tasks: MAJOR_VIOLATION,
+    incomplete_test_coverage: MAJOR_VIOLATION,
+    test_after_implementation: VIOLATION,
+    brittle_tests: VIOLATION,
+    slow_running_tests: VIOLATION,
+    missing_edge_cases: VIOLATION,
+    test_dependencies: VIOLATION,
+    poor_test_naming: VIOLATION
+}
+```
+
+### TDD.validation_protocol: Quality Assurance
+```
+TDD.validation_protocol = (
+    verify_test_completeness()
+    ⨁ check_coverage_meets_requirements()
+    ⨁ ensure_tests_run_efficiently()
+    ⨁ validate_test_independence()
+    ⨁ confirm_edge_cases_covered()
+)
+```
+
+---
+*TDD.spec_engine: comprehensive_test_driven_development_framework_with_intelligent_test_generation_complexity_assessment_quality_standards_and_system_integration*
+
+
+
+

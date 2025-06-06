@@ -1,0 +1,163 @@
+---
+description: Testing standards with test-first approach, clean tests and comprehensive coverage
+globs:
+alwaysApply: true
+---
+<!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
+
+# TDD.standards: Testing Standards (301)
+
+## 🎯 TDD.core_framework: Core Testing Framework
+
+### TDD.principles: Core Principles
+```
+TDD.principles = {
+    test_first: "write_tests_before_writing_code",
+    red_green_refactor: "fail→pass→optimize_cycle",
+    minimal_implementation: "only_code_enough_to_pass_tests",
+    clean_tests: "tests_must_be_clear_and_maintainable",
+    comprehensive_coverage: "test_all_possible_cases"
+}
+```
+
+### TDD.workflow: Working Process
+```
+TDD.workflow = (
+    write_failing_test_first
+    ⨁ implement_minimal_code_to_pass
+    ⨁ refactor_without_breaking_tests
+    ⨁ repeat_for_each_feature
+    ⨁ ensure_regression_prevention
+)
+```
+
+## 🎯 TDD.integration: System Integration
+
+### TDD.system_integration: Integration With Other Systems
+```
+TDD.system_integration = {
+    task_system: "integrate_with_T.task_system_via_TDD.spec_path",
+    memory_system: "use_M.memory_path_to_store_test_artifacts",
+    diagnostics: "use_Ξ.track_to_record_test_failures",
+    hooks: "trigger_Σ.hooks.on_test_completed"
+}
+```
+
+### TDD.cross_references: Cross References
+```
+TDD.cross_references = {
+    "0xx-core": ["core/001-core-standards.mdc"],
+    "engines": ["engines/131-tdd-spec-engine.mdc"],
+    "8xx-workflows": ["workflow/801-task-system.mdc"],
+    "8xx-engines": ["engines/851-xi-diagnostics.mdc"],
+    "integration": ["memory-integration.mdc", "tasks-integration.mdc"]
+}
+```
+
+## 🎯 TDD.test_categories: Test Categories
+
+### TDD.unit_testing: Unit Testing
+```
+TDD.unit_testing = (
+    test_smallest_functional_units
+    ⨁ isolate_dependencies_with_mocks
+    ⨁ verify_individual_component_behavior
+    ⨁ aim_for_high_coverage_metrics
+    ⨁ keep_tests_fast_and_deterministic
+)
+```
+
+### TDD.integration_testing: Integration Testing
+```
+TDD.integration_testing = (
+    test_component_interactions
+    ⨁ verify_correct_communication
+    ⨁ validate_data_flow_between_modules
+    ⨁ test_external_dependencies_selectively
+    ⨁ focus_on_interface_contracts
+)
+```
+
+### TDD.e2e_testing: End-to-End Testing
+```
+TDD.e2e_testing = (
+    simulate_real_user_scenarios
+    ⨁ test_complete_application_flow
+    ⨁ validate_system_behavior_holistically
+    ⨁ include_UI_and_external_services
+    ⨁ focus_on_critical_user_paths
+)
+```
+
+## 🎯 TDD.quality_standards: Quality Standards
+
+### TDD.test_quality: Test Quality
+```
+TDD.test_quality = {
+    readability: "tests_easy_to_read_and_understand_purpose",
+    maintainability: "tests_easy_to_maintain_and_update",
+    reliability: "tests_reliable_and_deterministic",
+    speed: "tests_run_fast_for_short_feedback_loop",
+    isolation: "tests_independent_from_each_other"
+}
+```
+
+### TDD.anti_patterns: Anti-Pattern Recognition
+```
+TDD.anti_patterns = {
+    flaky_tests: 🔴 CRITICAL_VIOLATION,
+    test_after_implementation: ⚠️ MAJOR_VIOLATION,
+    testing_implementation_details: ⚡ VIOLATION,
+    complex_test_logic: ⚡ VIOLATION,
+    missing_edge_cases: ⚡ VIOLATION,
+    not_using_assertions: 🔴 CRITICAL_VIOLATION
+}
+```
+
+## 🎯 TDD.implementation: Practical Implementation
+
+### TDD.spec_generation: Test Specification Generation
+```
+TDD.spec_generation = (
+    analyze_task_requirements
+    ⨁ identify_testable_components
+    ⨁ determine_test_categories_needed
+    ⨁ write_structured_test_specifications
+    ⨁ prioritize_tests_by_criticality
+)
+```
+
+### TDD.task_integration: Task Integration
+```
+TDD.task_integration = {
+    spec_path: ".cursor/tasks/sprint_{n}/spec_step_{x}.md",
+    auto_trigger: "when_task_complexity > medium",
+    review_process: "validate_test_coverage_during_task_review",
+    documentation: "include_test_summary_in_task_completion"
+}
+```
+
+### TDD.enforcement: Standards Enforcement
+```
+TDD.enforcement = (
+    verify_test_first_approach_followed()
+    ⨁ check_minimum_coverage_requirements()
+    ⨁ ensure_tests_run_on_every_commit()
+    ⨁ require_test_review_in_code_review()
+    ⨁ block_merging_code_with_failing_tests()
+)
+
+TDD.coverage_thresholds = {
+    critical_code: "90% or higher",
+    core_modules: "80% or higher", 
+    utilities: "70% or higher",
+    frontend_components: "75% or higher",
+    edge_cases: "must be explicitly tested"
+}
+```
+
+---
+*TDD.standards: comprehensive_testing_framework_with_test_first_approach_clear_quality_standards_system_integration_and_enforcement_mechanisms*
+
+
+
