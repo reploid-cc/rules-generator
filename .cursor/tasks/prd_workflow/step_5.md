@@ -78,36 +78,38 @@ M.retrieval → [PRD.md, features.md, rules.md] from outputs/
 ```
 Ω.skeptical → validate_RFC_completeness + challenge_assumptions
 Φ.snapshot → capture_architecture_decisions + design_patterns
+template_source = RFC-XXX-template.md
 ```
 
-Generate RFCs with:
-- Unique identifier reflecting implementation order (RFC-001-User-Authentication)
-- Clear title describing functionality
-- Summary of RFC coverage
-- All features/requirements addressed
-- Technical approach and architecture considerations
-- Explicit identification of previous RFC dependencies
-- Specification of future RFCs building upon this RFC
-- Complexity estimate (Low/Medium/High)
-- Detailed acceptance criteria per feature
-- API contracts/interfaces exposed
-- Data models and database schema changes
-- State management approach
+- Use RFC-XXX-template.md as the template source
+- Follow template structure exactly for all generated RFCs
+- Maintain metadata format and section organization
+- Create RFC files in numerical sequence (001, 002, 003)
+- Ensure each RFC contains:
+  * Unique identifier reflecting implementation order (RFC-001-User-Authentication)
+  * Clear title describing functionality
+  * Phase, priority, complexity, status metadata
+  * Dependencies and dependent RFCs clearly listed
+  * Estimated duration and version information
+  * Complete implementation details in all required sections
+  * Technical approach and architecture considerations
+  * Detailed acceptance criteria per feature
 
 **Step 5: Implementation Prompt Creation (Λ.autonomy + Template Cloning)**
 ```
 Λ.autonomy → detect_template_cloning_requirements
 template_cloning_protocol = EXACT_COPY + specific_replacements_only
+template_source = implementation-prompt-RFC-XXX-template.md
 ```
 
 - Create implementation prompts in strict numerical sequence (001, 002, 003)
 - For each RFC, create "implementation-prompt-RFC-[ID].md"
-- **MANDATORY**: Copy EXACT content from @implementation-prompt-template.md
+- **MANDATORY**: Copy EXACT content from implementation-prompt-RFC-XXX-template.md
 - Make ONLY these specific replacements:
   * Replace "[ID]" with RFC identifier (e.g., "001")
   * Replace "[Title]" with RFC title (e.g., "User Authentication")
-  * Replace "[brief description]" with concise RFC purpose summary
-- DO NOT modify any other template content, sections, formatting, or structure
+  * Replace appropriate sections with RFC-specific content
+- DO NOT modify template structure, mathematical notation, or framework sections
 
 **Step 6: RFCS.md Master Creation (Ψ.materialization + T.progress_tracking)**
 ```
@@ -156,6 +158,7 @@ consolidated_structure = ALL_files_within_single_RFCs_directory
 dependency_analysis = component_dependencies_mapped + integration_points_identified + sequential_order_validated
 implementation_feasibility = technical_complexity_assessed + resource_requirements_estimated + timeline_validated
 RFCS_master_complete = master_file_created + dependency_graph_included + implementation_roadmap_clear
+template_compliance = RFC_template_followed + implementation_prompt_template_followed
 ```
 
 **OUTPUT PROTOCOL**: 
@@ -171,11 +174,12 @@ T.update_progress → step_5_complete
 dependency_analysis = component_dependencies_mapped + integration_points_identified + sequential_order_validated
 implementation_feasibility = technical_complexity_assessed + resource_requirements_estimated + timeline_validated
 RFCS_master_complete = master_file_created + dependency_graph_included + implementation_roadmap_clear
+template_compliance = RFC_template_followed + implementation_prompt_template_followed
 ```
 
 ## 🎯 Integration Hooks
 ```
-on_start: [M.recall_all_context, Φ.match_architecture_patterns, @implementation-prompt-template.md, Ω.activate_rfc_modes]
+on_start: [M.recall_all_context, Φ.match_architecture_patterns, @RFC-XXX-template.md, @implementation-prompt-RFC-XXX-template.md, Ω.activate_rfc_modes]
 on_complete: [T.update_progress, M.sync_rfcs, Ψ.capture_architecture_decisions, Φ.snapshot_rfc_patterns, Λ.extract_patterns]
 on_validation_pass: [T.advance_to_step_6, Ψ.dialog_required]
 ```
