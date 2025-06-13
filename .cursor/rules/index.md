@@ -17,33 +17,33 @@ Hệ thống Rules là nền tảng cho việc phát triển và quản lý work
 ## Danh sách tham chiếu nhanh
 
 ### Core Standards
-- [001-core-standards.mdc](core/001-core-standards.mdc) - Ω* Core Reasoning Framework
+- [001-core-standards.mdc](001-core-standards.mdc) - Ω* Core Reasoning Framework
 
 ### Protocols
-- [101-mandatory-protocols.mdc](protocols/101-mandatory-protocols.mdc) - Ψ & M Mandatory Protocols
-- [111-memory-initialization.mdc](protocols/111-memory-initialization.mdc) - M Memory System Initialization
-- [121-content-targeting.mdc](protocols/121-content-targeting.mdc) - Content Targeting Framework
-- [141-documentation-quality.mdc](protocols/141-documentation-quality.mdc) - Documentation Quality Standards
+- [101-mandatory-protocols.mdc](101-mandatory-protocols.mdc) - Ψ & M Mandatory Protocols
+- [111-memory-initialization.mdc](111-memory-initialization.mdc) - M Memory System Initialization
+- [121-content-targeting.mdc](121-content-targeting.mdc) - Content Targeting Framework
+- [141-documentation-quality.mdc](141-documentation-quality.mdc) - Documentation Quality Standards
 
 ### Services
-- [201-mcp-server-management.mdc](services/201-mcp-server-management.mdc) - MCP System Management
-- [211-mcp-development-workflow.mdc](services/211-mcp-development-workflow.mdc) - MCP Development Workflow
+- [201-mcp-server-management.mdc](201-mcp-server-management.mdc) - MCP System Management
+- [211-mcp-development-workflow.mdc](211-mcp-development-workflow.mdc) - MCP Development Workflow
 
 ### Testing
-- [301-testing-standards.mdc](testing/301-testing-standards.mdc) - TDD Testing Standards
+- [301-testing-standards.mdc](301-testing-standards.mdc) - TDD Testing Standards
 
 ### Engines
-- [131-tdd-spec-engine.mdc](engines/131-tdd-spec-engine.mdc) - TDD Specification Engine
-- [821-lambda-learning.mdc](engines/821-lambda-learning.mdc) - Λ Self-Learning System
-- [841-phi-hypothesis.mdc](engines/841-phi-hypothesis.mdc) - Φ* Hypothesis Abstraction Engine
-- [851-xi-diagnostics.mdc](engines/851-xi-diagnostics.mdc) - Ξ* Diagnostics & Refinement Engine
+- [131-tdd-spec-engine.mdc](131-tdd-spec-engine.mdc) - TDD Specification Engine
+- [821-lambda-learning.mdc](821-lambda-learning.mdc) - Λ Self-Learning System
+- [841-phi-hypothesis.mdc](841-phi-hypothesis.mdc) - Φ* Hypothesis Abstraction Engine
+- [851-xi-diagnostics.mdc](851-xi-diagnostics.mdc) - Ξ* Diagnostics & Refinement Engine
 
 ### Workflows
-- [801-task-system.mdc](workflow/801-task-system.mdc) - T Structured Task System
-- [881-prd-workflow-system.mdc](workflow/881-prd-workflow-system.mdc) - PRD Workflow Integration System
+- [801-task-system.mdc](801-task-system.mdc) - T Structured Task System
+- [881-prd-workflow-system.mdc](881-prd-workflow-system.mdc) - PRD Workflow Integration System
 
 ### Templates
-- [901-template-standards.mdc](templates/901-template-standards.mdc) - Template Standards
+- [901-template-standards.mdc](901-template-standards.mdc) - Template Standards
 
 ## Ma trận liên kết hệ thống
 
@@ -78,14 +78,13 @@ Hệ thống Rules là nền tảng cho việc phát triển và quản lý work
    - Ξ: Diagnostics engine (851)
    - Λ: Rule learning (821)
 
-3. **Theo thư mục**:
-   - `/core`: Tiêu chuẩn cốt lõi
-   - `/protocols`: Các giao thức bắt buộc
-   - `/services`: Quản lý MCP và services
-   - `/testing`: Tiêu chuẩn kiểm thử
-   - `/engines`: Các engine xử lý
-   - `/workflow`: Quy trình làm việc
-   - `/templates`: Các template chuẩn
+3. **Theo phân loại**:
+   - `0xx`: Tiêu chuẩn cốt lõi
+   - `1xx`: Các giao thức bắt buộc
+   - `2xx`: Quản lý MCP và services
+   - `3xx`: Tiêu chuẩn kiểm thử
+   - `8xx`: Quy trình làm việc
+   - `9xx`: Các template chuẩn
 
 ### Tích hợp với các hệ thống
 

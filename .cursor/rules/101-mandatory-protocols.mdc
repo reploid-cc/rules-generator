@@ -1,6 +1,6 @@
 ---
 description: Mandatory interactive feedback protocols with command execution standards and strict communication workflow
-globs:
+globs: 
 alwaysApply: true
 ---
 <!-- CONTENT_TARGET: AI_FACING - Mathematical notation User_Rules framework -->
@@ -28,52 +28,36 @@ alwaysApply: true
 }
 ```
 
-### Ψ.workflow_patterns: Standard Workflows
+### Ψ.communication_protocol: Communication Standards
 ```
-Ψ.tool_call_template = `
-mcp_interactive_feedback({
-  project_directory: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\interactive-feedback-mcp",
-  summary: "what_happened_or_what_user_should_review"
-})
-`
+Ψ.communication_first = (
+    when_user_asks_direct_question → 🔴 answer_immediately_BEFORE_any_tool
+    ⨁ when_user_requests_explanation → 🔴 explain_directly_FIRST
+    ⨁ when_user_corrects_understanding → acknowledge_and_update_immediately
+    ⨁ 🔴 FORBIDDEN_deflecting_questions_with_tool_calls
+    ⨁ tool_calls_ONLY_after_direct_communication_satisfied
+)
 
-Ψ.command_patterns = {
-    "update X": "🔴 EXECUTE_IMMEDIATELY_NO_REPORTING",
-    "do X": "🔴 EXECUTE_IMMEDIATELY_NO_REPORTING",
-    "continue X": "🔴 EXECUTE_IMMEDIATELY_NO_REPORTING",
-    "stop": "🔴 STOP_IMMEDIATELY"
-}
+Ψ.question_detection = (
+    when_user_says_"what_rule_violation" → 🔴 IMMEDIATE_VIOLATION_ANALYSIS_ANSWER
+    ⨁ when_user_says_"why_not" → 🔴 IMMEDIATE_EXPLANATION_ANSWER  
+    ⨁ when_user_says_"why_did_you" → 🔴 IMMEDIATE_REASONING_ANSWER
+    ⨁ when_user_uses_question_words → 🔴 ANSWER_FIRST_TOOLS_SECOND
+    ⨁ 🔴 FORBIDDEN_using_tools_to_research_answers_to_direct_questions
+)
 
-Ψ.simple_workflow = [
-    "READ_USER_INPUT",
-    "IF_QUESTION → 🔴 ANSWER_DIRECTLY",
-    "IF_COMMAND → 🔴 EXECUTE_IMMEDIATELY_NO_STOPPING",
-    "🔴 ALWAYS_CALL_TOOL_AT_END",
-    "NO_OVERTHINKING",
-    "🔴 NO_REFLEXIVE_REPORTING_DURING_EXECUTION"
-]
+Ψ.tool_communication_balance = (
+    BEFORE_every_tool_call → explain_action_and_purpose_to_user
+    ⨁ AFTER_every_tool_call → report_results_and_next_steps
+    ⨁ 🔴 NEVER_use_tools_without_user_communication
+    ⨁ maintain_conversation_context_throughout_workflow
+    ⨁ 🔴 FORBIDDEN_tool_first_mindset
+)
 ```
-
-## 🎯 Ψ.implementation: Protocols Implementation
 
 ### Ψ.execution_protocol: Command Execution
 ```
-Ξ.execution_bug_identified = (
-    receive_direct_command
-    ⨁ 🔴 WRONG: stop_to_report_or_analyze
-    ⨁ 🔴 CORRECT: execute_immediately_then_report_completion
-)
-
-Ξ.direct_command_execution = (
-    detect_direct_command() → 🔴 IMMEDIATE_EXECUTION_MODE
-    ⨁ 🔴 NO_STOPPING_for_reporting_during_execution
-    ⨁ 🔴 NO_TOOL_CALLS_during_execution_phase
-    ⨁ execute_all_required_steps_continuously
-    ⨁ 🔴 ONLY_call_tool_after_completion_or_blocking_error
-    ⨁ 🔴 FORBIDDEN_reflexive_reporting_mid_execution
-)
-
-Ξ.execution_phases = {
+Ψ.execution_phases = {
     Phase_1_EXECUTION: (
         receive_command → immediate_action
         ⨁ 🔴 no_tool_calls_during_this_phase
@@ -86,20 +70,83 @@ mcp_interactive_feedback({
         ⨁ report_results_and_status
     )
 }
+
+Ψ.direct_command_execution = (
+    detect_direct_command() → 🔴 IMMEDIATE_EXECUTION_MODE
+    ⨁ 🔴 NO_STOPPING_for_reporting_during_execution
+    ⨁ 🔴 NO_TOOL_CALLS_during_execution_phase
+    ⨁ execute_all_required_steps_continuously
+    ⨁ 🔴 ONLY_call_tool_after_completion_or_blocking_error
+    ⨁ 🔴 FORBIDDEN_reflexive_reporting_mid_execution
+)
+
+Ψ.command_patterns = {
+    "update X": "🔴 AUTO_EXECUTE",
+    "do X": "🔴 AUTO_EXECUTE", 
+    "create X": "🔴 AUTO_EXECUTE",
+    "implement X": "🔴 AUTO_EXECUTE",
+    "continue X": "🔴 AUTO_EXECUTE",
+    "init X": "🔴 FETCH_RULE_FIRST_then_EXECUTE",
+    "stop": "🔴 STOP_IMMEDIATELY"
+}
 ```
 
-### Ψ.feedback_protocol: Interactive Feedback
+### Ψ.environment_protocol: Environment Management
 ```
-Ψ.dialog_enabled = true
-Ψ.capture = {
-    Ω*: reasoning_trace, 
-    Φ*: abstraction_path, 
-    Ξ*: error_flow,
-    Λ: rules_invoked, 
-    output: validation_score
+Ψ.environment_protection = (
+    never_modify_env_files_without_permission
+    ⨁ always_read_from_official_env_for_execution
+    ⨁ pause_workflow_until_environment_properly_updated
+    ⨁ document_all_env_requirements_in_corresponding_md_files
+    ⨁ 🔴 MANDATORY_env_documentation_before_changes
+)
+
+Ψ.environment_file_mapping = {
+    ".env": "env.md",
+    ".env.development": "env.development.md",
+    ".env.production": "env.production.md",
+    ".env.test": "env.test.md",
+    ".env.staging": "env.staging.md",
+    ".env.local": "env.local.md",
+    ".env.*": "env.*.md (matching pattern)"
 }
 
-Ψ.mandatory_workflows = {
+Ψ.environment_documentation = (
+    each_env_variable_must_have_purpose_documentation
+    ⨁ sensitive_values_must_be_marked_as_SECRET
+    ⨁ dependencies_between_variables_must_be_documented
+    ⨁ required_vs_optional_status_must_be_clear
+    ⨁ example_values_must_be_provided_for_all_non_secret_variables
+)
+
+Ψ.environment_change_workflow = (
+    identify_env_change_requirement
+    ⨁ document_changes_in_corresponding_env_md_file
+    ⨁ get_approval_for_changes
+    ⨁ update_env_file_according_to_documentation
+    ⨁ verify_system_functionality_with_new_environment
+)
+```
+
+## 🎯 Ψ.interactive_feedback: Mandatory Feedback System
+
+### Ψ.dialog_system: Interactive Dialog
+```
+Ψ.dialog_enabled = true
+Ψ.dialog_requirement = {
+    every_single_response: "🔴 MUST_END_WITH_TOOL_CALL",
+    exceptions: "🔴 ZERO_TOLERANCE",
+    waiting_without_tool_call: "🔴 CRITICAL_VIOLATION"
+}
+
+Ψ.dialog_template = `
+mcp_interactive_feedback({
+  project_directory: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\interactive-feedback-mcp",
+  summary: "what_happened_or_what_user_should_review"
+})
+`
+
+Ψ.dialog_workflows = {
     responding_to_questions: [
         "User asks a question",
         "Search/formulate answer",
@@ -115,12 +162,6 @@ mcp_interactive_feedback({
         "🔴 MANDATORY: Call Ψ.dialog for user to verify completion"
     ],
     
-    receiving_information: [
-        "User provides information",
-        "Process/acknowledge information",
-        "🔴 MANDATORY: Call Ψ.dialog if clarification needed"
-    ],
-    
     handling_problems: [
         "Encounter problem",
         "Analyze and propose solutions",
@@ -131,22 +172,36 @@ mcp_interactive_feedback({
     waiting_for_instructions: [
         "Receive feedback from tool or identify need to wait for instruction",
         "State clearly what is being waited for",
-        "🔴 MANDATORY: Call Ψ.dialog immediately when waiting",
-        "🔴 FORBIDDEN: Waiting without calling tool = VIOLATION"
+        "🔴 MANDATORY: Call Ψ.dialog immediately when waiting"
     ]
 }
-
-Ψ.function_call_template = `
-mcp_interactive_feedback({
-  project_directory: "D:\\VirtuCrewFlow\\mcp\\mcp-servers\\interactive-feedback-mcp",
-  summary: "what_im_reporting_or_what_user_should_review"
-})
-`
 ```
 
-### Ψ.rule_consultation: Rule Management
+### Ψ.cognitive_trace: Reasoning Capture
 ```
-Ξ.rule_consultation_mandatory = (
+Ψ.capture = {
+    Ω*: reasoning_trace, 
+    Φ*: abstraction_path, 
+    Ξ*: error_flow,
+    Λ: rules_invoked, 
+    output: validation_score
+}
+
+Ψ.simple_workflow = [
+    "READ_USER_INPUT",
+    "IF_QUESTION → 🔴 ANSWER_DIRECTLY",
+    "IF_COMMAND → 🔴 EXECUTE_IMMEDIATELY_NO_STOPPING",
+    "🔴 ALWAYS_CALL_TOOL_AT_END",
+    "NO_OVERTHINKING",
+    "🔴 NO_REFLEXIVE_REPORTING_DURING_EXECUTION"
+]
+```
+
+## 🎯 Ψ.rule_system: Rule Management
+
+### Ψ.rule_consultation: Rule Consultation Protocol
+```
+Ψ.rule_consultation_mandatory = (
     detect_rule_referenced_command()
     ⨁ detect_semantic_rule_concepts()
     ⨁ 🔴 MANDATORY_fetch_rules_tool_call_BEFORE_implementation
@@ -154,58 +209,40 @@ mcp_interactive_feedback({
     ⨁ 🔴 VIOLATION_if_proceed_without_rule_content_verification
 )
 
-Ξ.semantic_rule_recognition = (
-    when_user_mentions_memory_concepts → fetch_rules(["protocols/111-memory-initialization"])
+Ψ.semantic_rule_recognition = (
+    when_user_mentions_memory_concepts → fetch_rules(["111-memory-initialization.mdc"])
     ⨁ when_user_mentions_rule_numbers → fetch_rules([specific_rule])
     ⨁ when_user_mentions_system_concepts → check_if_rules_exist_and_fetch
     ⨁ when_uncertain_about_rule_relevance → default_to_fetching_rules
     ⨁ 🔴 NEVER_assume_rule_content_from_memory
 )
 
-Rule.command_workflow = (
+Ψ.command_workflow = (
     receive_rule_related_command → fetch_rules_first → read_content → implement_exactly
-    ⨁ "init memory" → fetch_rules(["protocols/111-memory-initialization"]) → implement
-    ⨁ "update memory" → fetch_rules(["protocols/111-memory-initialization"]) → implement
-    ⨁ "memory system" → fetch_rules(["protocols/111-memory-initialization"]) → implement
+    ⨁ "init memory" → fetch_rules(["111-memory-initialization.mdc"]) → implement
+    ⨁ "update memory" → fetch_rules(["111-memory-initialization.mdc"]) → implement
+    ⨁ "memory system" → fetch_rules(["111-memory-initialization.mdc"]) → implement
     ⨁ ANY_rule_concept → fetch_rules_BEFORE_action
     ⨁ 🔴 NEVER_skip_fetch_rules_step
 )
 ```
 
-## 🎯 Ψ.integration: System Integration
-
-### Ψ.communication_integration: User Interaction
+### Ψ.cross_references: Related Rules
 ```
-Ξ.communication_tool_balance = (
-    BEFORE_every_tool_call → explain_action_and_purpose_to_user
-    ⨁ AFTER_every_tool_call → report_results_and_next_steps
-    ⨁ 🔴 NEVER_use_tools_without_user_communication
-    ⨁ maintain_conversation_context_throughout_workflow
-    ⨁ 🔴 FORBIDDEN_tool_first_mindset
-)
-
-Ξ.communication_first_protocol = (
-    when_user_asks_direct_question → 🔴 answer_immediately_BEFORE_any_tool
-    ⨁ when_user_requests_explanation → 🔴 explain_directly_FIRST
-    ⨁ when_user_corrects_understanding → acknowledge_and_update_immediately
-    ⨁ 🔴 FORBIDDEN_deflecting_questions_with_tool_calls
-    ⨁ tool_calls_ONLY_after_direct_communication_satisfied
-    ⨁ if_unclear_about_user_expectation → communicate_uncertainty_BEFORE_tools
-)
-
-Ξ.question_detection_enhanced = (
-    when_user_says_"what_rule_violation" → 🔴 IMMEDIATE_VIOLATION_ANALYSIS_ANSWER
-    ⨁ when_user_says_"why_not" → 🔴 IMMEDIATE_EXPLANATION_ANSWER  
-    ⨁ when_user_says_"why_did_you" → 🔴 IMMEDIATE_REASONING_ANSWER
-    ⨁ when_user_uses_question_words → 🔴 ANSWER_FIRST_TOOLS_SECOND
-    ⨁ 🔴 FORBIDDEN_using_tools_to_research_answers_to_direct_questions
-    ⨁ 🔴 VIOLATION_if_tools_called_before_answering_obvious_questions
-)
+Ψ.related_rules = {
+    "0xx-core": ["001-core-standards.mdc"],
+    "1xx-protocols": ["111-memory-initialization.mdc", "121-content-targeting.mdc"],
+    "8xx-workflows": ["801-task-system.mdc", "851-xi-diagnostics.mdc"],
+    "services": ["201-mcp-server-management.mdc"],
+    "integration": ["memory-integration.mdc", "hooks-integration.mdc"]
+}
 ```
 
-### Ψ.memory_integration: Memory System
+## 🎯 Ψ.memory_system: Memory Integration
+
+### Ψ.memory_management: Memory Consistency
 ```
-Ξ.memory_consistency_detection = (
+Ψ.memory_consistency = (
     when_user_edits_memory_file → 🔴 IMMEDIATE_CONSISTENCY_CHECK_REQUIRED
     ⨁ when_major_project_changes_detected → UPDATE_ALL_MEMORY_FILES_ATOMICALLY
     ⨁ when_user_accepts_file_changes → ANALYZE_IMPACT_ON_OTHER_MEMORY_FILES
@@ -213,7 +250,7 @@ Rule.command_workflow = (
     ⨁ 🔴 VIOLATION_if_partial_memory_updates_without_consistency_validation
 )
 
-Ξ.memory_update_triggers = {
+Ψ.memory_update_triggers = {
     "user_edits_productContext": "UPDATE_activeContext_progress_sumup_techContext",
     "user_adds_current_status": "UPDATE_ALL_9_FOUNDATION_FILES",
     "user_updates_revenue_targets": "UPDATE_productContext_progress_activeContext",
@@ -221,15 +258,19 @@ Rule.command_workflow = (
     "any_memory_file_manual_edit": "🔴 MANDATORY_CONSISTENCY_CHECK_ALL_FILES"
 }
 
-M.memory_path = ".cursor/memory/"
-M.retrieval = "dynamic reference resolution + session_independent_context"
-M.sync = (
+Ψ.memory_path = ".cursor/memory/"
+Ψ.memory_retrieval = "dynamic reference resolution + session_independent_context"
+```
+
+### Ψ.memory_sync: Memory Synchronization
+```
+Ψ.memory_sync = (
     triggered_on_review
     ⨁ store_ideas_constraints_insights_edge_notes
     ⨁ maintain_session_independent_context_files_when_present
 )
 
-M.sync_hooks = {
+Ψ.memory_hooks = {
     task_start: [
         "Read ALL relevant files in .cursor/memory/ (if exists)",
         "Load dynamic traces and cognitive context",
@@ -247,22 +288,11 @@ M.sync_hooks = {
 }
 ```
 
-### Ψ.cross_references: Related Rules
-```
-Ψ.related_rules = {
-    "0xx-core": ["core/001-core-standards.mdc"],
-    "1xx-protocols": ["protocols/111-memory-initialization.mdc", "protocols/121-content-targeting.mdc"],
-    "8xx-workflows": ["workflow/801-task-system.mdc", "engines/851-xi-diagnostics.mdc"],
-    "services": ["services/201-mcp-server-management.mdc"],
-    "integration": ["memory-integration.mdc", "hooks-integration.mdc"]
-}
-```
-
 ## 🎯 Ψ.quality: Quality Standards
 
 ### Ψ.violation_prevention: Error Prevention
 ```
-Ξ.violation_patterns = {
+Ψ.violation_patterns = {
     "memory_edit_without_consistency": {
         trigger: "user_edits_memory_file_manually",
         violation: "accepting_without_updating_related_files",
@@ -280,30 +310,29 @@ M.sync_hooks = {
         violation: "updating_only_subset_of_memory_files",
         correct_response: "🔴 UPDATE_all_9_foundation_files_atomically",
         rule_reference: "Rule_111_memory_consistency"
+    },
+    "environment_modification_without_documentation": {
+        trigger: "user_requests_env_file_changes",
+        violation: "modifying_env_without_updating_documentation",
+        correct_response: "🔴 UPDATE_env_md_file_BEFORE_changing_env_file",
+        rule_reference: "Rule_101_environment_protocol"
     }
 }
 
-Ξ.critical_violations = {
+Ψ.critical_violations = {
     "response_without_Ψ.dialog_call": "🔴 CRITICAL_VIOLATION",
     "memory_command_without_fetching_Rule_111": "🔴 CRITICAL_VIOLATION",
     "assume_rule_meaning_without_reading_content": "🔴 CRITICAL_VIOLATION",
     "tool_use_without_user_communication": "🔴 CRITICAL_VIOLATION",
     "action_before_rule_consultation": "🔴 CRITICAL_VIOLATION",
-    "waiting_without_tool_call": "🔴 CRITICAL_VIOLATION"
+    "waiting_without_tool_call": "🔴 CRITICAL_VIOLATION",
+    "env_modification_without_documentation": "🔴 CRITICAL_VIOLATION"
 }
-
-Ξ.violation_prevention = (
-    semantic_recognition_training()
-    ⨁ automatic_rule_consultation_reflex()
-    ⨁ communication_first_mindset()
-    ⨁ rule_first_workflow_habit()
-    ⨁ 🔴 mandatory_Ψ.dialog_compliance()
-)
 ```
 
 ### Ψ.habit_building: Cognitive Training
 ```
-Ξ.input_classification_protocol = (
+Ψ.input_classification = (
     step_1_classify_user_input_type_FIRST → 🔴 before_any_response
     ⨁ if_direct_command_detected → 🔴 execute_immediately_NO_CONFIRMATION
     ⨁ if_question_detected → 🔴 answer_directly_FIRST_then_tools_if_needed
@@ -311,16 +340,7 @@ M.sync_hooks = {
     ⨁ 🔴 FORBIDDEN_reflexive_questioning_of_clear_directives
 )
 
-Ξ.direct_command_triggers = {
-    "update": "🔴 AUTO_EXECUTE",
-    "do": "🔴 AUTO_EXECUTE", 
-    "create": "🔴 AUTO_EXECUTE",
-    "implement": "🔴 AUTO_EXECUTE",
-    "init": "🔴 FETCH_RULE_FIRST_then_EXECUTE",
-    "go (at_end)": "CONFIRMATION_of_direct_command"
-}
-
-Ξ.cognitive_rewiring = (
+Ψ.cognitive_rewiring = (
     before_EVERY_response → 🔴 ask_"what_type_of_input_is_this"
     ⨁ train_pattern_recognition → command_vs_question_vs_unclear
     ⨁ eliminate_reflexive_questioning → of_clear_commands
@@ -328,7 +348,7 @@ M.sync_hooks = {
     ⨁ strengthen_answer_first_habit → for_direct_questions
 )
 
-Ξ.pre_response_checklist = (
+Ψ.pre_response_checklist = (
     step_1_STOP_and_analyze_user_input()
     ⨁ step_2_classify_input_type_BEFORE_responding()
     ⨁ step_3_if_direct_command_EXECUTE_NO_QUESTIONING()
